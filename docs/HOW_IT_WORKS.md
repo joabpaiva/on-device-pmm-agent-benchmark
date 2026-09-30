@@ -116,6 +116,7 @@ I want these limits to be visible, not discovered:
 - **Energy** covers the chip, not the display, and only on the laptop. Cloud energy cannot be measured from outside, so I make no comparative energy claim.
 - **The judge is an AI.** I mitigate that with a different model family, blind grading, three passes and my own re-grade.
 - **Hosted vs local precision:** pmm-a runs at the provider's precision and pmm-d at 8-bit. Measuring that gap is part of Phase 2.
+- **The frontier model thinks adaptively.** Claude Sonnet 5.5 decides for itself when to reason, and OpenRouter does not fully switch that off. With reasoning set to none it still produced several thousand hidden reasoning tokens on long tasks (about 850 visible tokens vs about 7,900 billed on T1). Those tokens are billed, so they are in its cost. The open models ran with thinking off. I kept this as is: the frontier baseline represents cloud quality as customers actually get it.
 - **The laptop is a floor.** A fanless consumer laptop is not a workstation. More memory and active cooling raise the ceiling.
 - **Three runs per task** show a pattern, not a statistical rate.
 
