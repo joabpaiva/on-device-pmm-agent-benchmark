@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "The summary stays within 250 words and has three bullets, but it does not keep every test condition: it omits the room and power setup, median reporting, image-generation test size and resolution, and several workload details. A marketer would need to restore those conditions before sending it.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.017053
+}

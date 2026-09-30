@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora delivers 'superior AI performance'; the brief establishes higher NPU TOPS, not superior overall AI performance.",
+    "Aurora offers 'long-term value' or 'better long-term value for AI workflows'; the brief does not establish a value comparison.",
+    "Aurora's higher starting price 'reflects' its NPU, warranty, and upgradeable RAM; the brief does not explain its pricing."
+  ],
+  "notes": "The battlecard includes every requested section and stays within 350 words. Revise the unsupported comparisons and avoid presenting Aurora's 11-hour battery rating as compensation without noting Vantage's longer 13-hour rating.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005093
+}

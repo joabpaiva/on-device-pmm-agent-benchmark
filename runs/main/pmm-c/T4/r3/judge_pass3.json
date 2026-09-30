@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All five answers are supported and cite the relevant sections; Q5 appropriately directs the customer to sales or support. The required Q5 fallback phrase has an added period, so it is not reproduced exactly.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004185
+}

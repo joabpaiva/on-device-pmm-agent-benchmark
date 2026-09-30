@@ -1,0 +1,19 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "Local AI capability will reduce recurring cloud workstation costs.",
+    "The Aurora 14 runs models up to 30 billion parameters without noting that this requires a configuration with at least 64 GB of memory.",
+    "Using the Aurora 14 will eliminate waits for cloud sync, reduce the number of device types, or simplify fleet management.",
+    "Storage is user-upgradeable; the spec explicitly confirms this only for memory.",
+    "Engineers can work offline on client drawings and sync them when connectivity returns.",
+    "Cloud workstations will remain for peak loads while daily tasks shift locally.",
+    "Q4 availability establishes a Q4 deployment timeline."
+  ],
+  "notes": "The sequence has three appropriately framed emails with one CTA each, but email 2 exceeds 120 words. Several cost, workflow, and management benefits are presented as established facts without support from the attachments.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010887
+}

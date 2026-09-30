@@ -1,0 +1,19 @@
+{
+  "facts": 1,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The Aurora 14 can reduce the firm's cloud workstation costs; the source provides no cost comparison.",
+    "Cloud workstation use adds a monthly bill to every seat, and the firm's data stays in the office.",
+    "Engineers can access client files offline and process drawings and project files on the Aurora 14 without sending them to the cloud; those workflows are not established by the spec sheet.",
+    "Client drawings and project files never leave the device unless the firm authorizes it.",
+    "The Aurora 14 will keep engineers productive during connectivity failures.",
+    "Storage is user-upgradeable; the spec sheet specifies two M.2 slots but only explicitly calls memory user-upgradeable.",
+    "Ordering now positions the firm for deployment when its new budget cycle opens."
+  ],
+  "notes": "All three emails have a subject and one CTA, and they follow the requested sequence. Emails 1 and 2 exceed 120 words, while several central cost, security and offline-work claims go beyond the supplied facts.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011913
+}

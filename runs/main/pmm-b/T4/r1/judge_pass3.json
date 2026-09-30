@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered using supported information. The four documented answers cite their sections, and the Ubuntu certification answer identifies the gap and directs the customer to sales or support.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002766
+}

@@ -1,0 +1,19 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "Headline describes the workstation as 15 pounds; the spec says it starts at 3.64 lb.",
+    "\u201c64-Bit Performance\u201d is not specified.",
+    "Local code generation and real-time translation are not specified capabilities.",
+    "The fingerprint reader and IR camera are described as providing two-factor authentication, which the spec does not establish.",
+    "Claims of desktop-level performance and storage that avoids workflow bottlenecks are unsupported.",
+    "The claim that Windows 11 Pro meets engineering teams\u2019 baseline security requirements is not established by the spec.",
+    "The instruction to visit a website to configure the system or request pricing assumes an unspecified sales channel."
+  ],
+  "notes": "The post addresses relevant IT concerns and includes a call to action, but its intro has three sentences rather than two and it adds a fourth section headed \u201cFinal Thoughts.\u201d The unsupported claims, especially the contradictory weight in the headline, prevent it from being send-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010596
+}

@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 1,
+  "reader": 3,
+  "ready": 1,
+  "format": 1,
+  "invented_facts": [
+    "The cloud workstation bill keeps running every time connectivity fails on site.",
+    "Productivity drops every time connectivity fails on site.",
+    "Aurora 14 runs models up to 30 billion parameters without noting that this requires a configuration with at least 64 GB of memory.",
+    "The reference to 2026 fleet needs; no year is supplied."
+  ],
+  "notes": "The email is brief and addresses the buyer\u2019s cloud-first setup, but the requested three-email sequence contains only one email. It does not provide a separate fact-based response to the cloud-first objection or a meeting ask, and the closing question plus reply prompt read as two calls to action.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007579
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Cloud desktops are easy to manage centrally."
+  ],
+  "notes": "All three emails meet the word limit and have one CTA each, with the requested progression and a direct tone suited to Morgan. The source does not establish the central-management claim; the prefatory comments and extensive notes would also need removal before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010291
+}

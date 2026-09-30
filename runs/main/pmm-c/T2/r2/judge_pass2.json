@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "The response claims Aurora\u2019s memory headroom and 60 TOPS NPU matter more than Vantage\u2019s GPU memory for local AI models. The brief supports memory capacity as increasingly important, but not that broader comparison."
+  ],
+  "notes": "All requested sections are present and the battlecard is under 350 words, but the positioning summary has three sentences rather than two. Remove the unsupported comparison and the unnecessary note about the unverified rumor before use.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009383
+}

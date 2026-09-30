@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora's total cost of ownership is lower.",
+    "Aurora's 16 GB VRAM is sufficient for most professional tasks."
+  ],
+  "notes": "All requested sections and counts are present, and the card is within 350 words. The two unsupported claims in the objection responses need removal or substantiation before use.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008523
+}

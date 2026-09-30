@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [],
+  "notes": "The summary preserves the six highlighted caveats and the competitor\u2019s image-generation advantage, but omits test conditions and caveats, including the hard, flat desk, shared inference runtime, time-to-first-token test, and the possibility of wider unit-to-unit variation. It also exceeds the 250-word limit; the stated word count is inaccurate.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.016938
+}

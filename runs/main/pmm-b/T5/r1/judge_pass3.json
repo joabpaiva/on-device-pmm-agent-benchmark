@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "Local AI capability will reduce recurring cloud costs; the source provides no cost comparison or savings evidence.",
+    "The Aurora 14 will simplify fleet management by reducing device types.",
+    "Storage is user-upgradeable; the spec sheet explicitly confirms this only for memory.",
+    "Engineers can work offline on client drawings and sync them when connectivity returns; that workflow is not specified.",
+    "Cloud workstations will remain for peak loads while daily tasks shift locally; no workload plan supports this claim.",
+    "Q4 deployment timing; the spec sheet states Q4 availability, not deployment."
+  ],
+  "notes": "All three emails have subjects and one CTA each, and they follow the requested sequence. Email 2 exceeds 120 words, and several asserted benefits or workflows need evidence or more careful qualification.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011357
+}

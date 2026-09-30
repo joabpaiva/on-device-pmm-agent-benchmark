@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All substantive claims are supported, and each answered question cites the relevant section. Q5 suggests an appropriate contact, but its required exact phrase has an added period.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006738
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All substantive claims are supported, and each question is answered appropriately. Q5 adds a period to the required exact wording, a minor format deviation.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004275
+}

@@ -1,0 +1,24 @@
+# Workstation Comparison Matrix
+
+## Product Summary
+
+| Attribute | Aurora 14 | Summit X15 | Vantage Pro 16 |
+|-----------|-----------|------------|----------------|
+| **CPU** | Helix H9 AI, 16 cores | Helix H7 AI, 12 cores | Corvex X12, 14 cores |
+| **GPU** | Vireo V8000 Pro, 16 GB dedicated memory | Vireo V6000, 8 GB graphics memory | Vireo V9000, 24 GB |
+| **Max Memory** | 128 GB (user-upgradeable) | 96 GB | 64 GB (soldered) |
+| **Max Storage** | 4 TB NVMe | not stated | 2 TB |
+| **Display** | 14-inch OLED, 2880 x 1800, 120 Hz | 15.6-inch OLED, 3840 x 2400, 60 Hz | 16-inch IPS, 2560 x 1600, 165 Hz |
+| **Weight** | 1.65 kg | 1.95 kg | 2.30 kg |
+| **Battery** | 86 Wh | not stated | 99 Wh |
+| **Ports** | 2 x Thunderbolt 5, 1 x USB-A, HDMI 2.1, SD card reader | 2 x Thunderbolt 4, 1 x USB-A, HDMI 2.1 | not stated |
+
+## Aurora 14 Differentiators
+
+Based on the table above, here are three differentiators for the Aurora 14:
+
+1. **Lightest chassis at 1.65 kg** - 324 g lighter than the Summit X15 and 650 g lighter than the Vantage Pro 16, making it the most portable option.
+
+2. **Thunderbolt 5 support** - Aurora 14 is the only workstation listed with Thunderbolt 5 connectivity, offering faster data transfer and display bandwidth compared to Thunderbolt 4 (Summit X15) or unspecified connectivity (Vantage Pro 16).
+
+3. **User-upgradeable memory** - Unlike the Vantage Pro 16 which has soldered 64 GB memory, Aurora 14 offers up to 128 GB user-upgradeable capacity, providing both higher max memory and future upgrade paths that soldered designs cannot match.

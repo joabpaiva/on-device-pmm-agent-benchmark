@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 is 324 g lighter than Summit X15; the stated weights show a 300 g difference.",
+    "Thunderbolt 5 offers faster data transfer and display bandwidth than Thunderbolt 4; the source files do not state those performance claims."
+  ],
+  "notes": "The table covers all eight requested attributes and correctly marks missing values as not stated. One differentiator has an incorrect weight calculation, and another adds an unsupported performance claim.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003423
+}

@@ -1,0 +1,7 @@
+label,profile,model,task,run,started_at,exit_code,error,duration_s,ttft_s,tokens_in,tokens_out,cache_read,tokens_per_s,cost_usd,tool_calls,tool_errors,output_file_saved,files_written,energy_wh,avg_power_w,peak_llama_rss_gb,remote_endpoints
+offline,pmm-d,qwen3.5-9b-q8_0,T1,1,2026-09-30T16:21:32,0,,79.57,4.95,4384,720,3819,9.0,0.0,0,0,,0,,,9.65,
+offline,pmm-d,qwen3.5-9b-q8_0,T2,1,2026-09-30T16:22:53,0,,70.72,6.4,4610,618,3819,8.7,0.0,0,0,,0,,,9.66,
+offline,pmm-d,qwen3.5-9b-q8_0,T3,1,2026-09-30T16:24:06,0,,81.91,12.92,5400,655,3819,8.0,0.0,0,0,,0,,,9.91,
+offline,pmm-d,qwen3.5-9b-q8_0,T4,1,2026-09-30T16:25:30,0,,46.55,4.99,4394,380,3819,8.2,0.0,0,0,,0,,,9.91,
+offline,pmm-d,qwen3.5-9b-q8_0,T5,1,2026-09-30T16:26:18,0,,61.85,7.74,4666,485,3819,7.8,0.0,0,0,,0,,,9.91,
+offline,pmm-d,qwen3.5-9b-q8_0,T6,1,2026-09-30T16:27:22,0,,258.75,7.42,62673,1419,53380,5.5,0.0,7,0,True,1,,,11.09,

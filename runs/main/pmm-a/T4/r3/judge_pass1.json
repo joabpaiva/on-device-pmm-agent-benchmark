@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered, and the product claims are supported by the cited sections. For Q5, contacting support is appropriate, but suggesting the compatibility list is potentially misleading because the documentation mentions that list only for memory modules.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009184
+}

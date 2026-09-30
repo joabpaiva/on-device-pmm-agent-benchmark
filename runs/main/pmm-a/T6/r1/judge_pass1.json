@@ -1,0 +1,16 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "Aurora 14 has the most powerful GPU; no GPU performance evidence is provided, and Vantage Pro 16 lists more GPU memory.",
+    "Aurora 14's 4 TB storage beats Summit X15's; Summit's maximum storage is not stated.",
+    "Aurora 14 is 180 g lighter than Summit X15; the stated weights differ by 300 g.",
+    "Neither competitor offers an SD card reader; Vantage Pro 16's ports are not stated."
+  ],
+  "notes": "The table covers all three products and eight attributes, with unknown values marked correctly. All three differentiators are present, but unsupported comparisons and a weight calculation error require more than light edits; the reply also includes text beyond the requested file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007763
+}

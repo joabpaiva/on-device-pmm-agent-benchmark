@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Removes dependence on cloud infrastructure for core development tasks and eliminates waiting for cloud resources.",
+    "Local workloads reduce latency and bandwidth costs and accelerate iteration cycles.",
+    "The GPU supports model training tasks that traditionally required desktop-class hardware.",
+    "Mid-size firms cannot afford to refresh workstations every two years.",
+    "The stated battery specification provides all-day runtime for typical office workflows; the sheet measures only local video playback under specified conditions.",
+    "Demo units and volume deployment options are available."
+  ],
+  "notes": "The post meets the requested structure and length and addresses IT decision-makers. Several operational and performance claims go beyond the spec sheet, so it needs more than light edits before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005049
+}

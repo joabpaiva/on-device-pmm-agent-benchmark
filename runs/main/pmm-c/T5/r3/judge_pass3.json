@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Cloud workstations give you central control."
+  ],
+  "notes": "All three emails meet the word limit and have a subject line and one scheduling or reply CTA. Email 2 uses relevant specs but does not directly address the cost of buying laptops alongside cloud workstations; the lengthy notes and file-path request would need to be removed before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006302
+}

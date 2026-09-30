@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "The warranty difference is described as 30 months; three years versus one year is 24 months.",
+    "Aurora\u2019s OLED panel is claimed to offer superior contrast and color accuracy; the brief provides no comparison of either.",
+    "The $300 price difference is described as being 'at launch'; no launch timing is given.",
+    "Volume discounts or rebates are suggested as possible ways to offset the price difference; neither is in the brief."
+  ],
+  "notes": "The battlecard includes the requested sections and treats Vantage\u2019s screen and GPU memory fairly, but unsupported claims and an incorrect warranty calculation need correction before use. The discovery section asks two questions rather than one.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008926
+}

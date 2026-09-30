@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "\u201cLeading AI performance\u201d is not established by the NPU specifications alone.",
+    "\u201cMeeting typical mobile work requirements\u201d is not supported by the video-playback battery rating.",
+    "The discovery question assumes the customer\u2019s use of local AI models is growing."
+  ],
+  "notes": "The battlecard includes every requested section and handles Vantage\u2019s advantages fairly. A marketer should remove or qualify the unsupported performance and customer-workload claims before sending it.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004633
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 4,
+  "reader": 5,
+  "ready": 4,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The comparisons are supported by the brief and fairly acknowledge Vantage\u2019s advantages. The positioning summary has three sentences rather than two, and the discovery section asks two questions rather than one.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003829
+}

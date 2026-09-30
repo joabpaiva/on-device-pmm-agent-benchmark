@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [
+    "Field engineers can use large in-context windows.",
+    "The upgrade path eliminates the need to refresh devices when models outgrow their allocation.",
+    "Self-healing BIOS reduces downtime from firmware corruption events.",
+    "Windows 11 Pro provides seamless integration with existing management and security infrastructure."
+  ],
+  "notes": "The post has the requested headline, two-sentence intro, three benefit sections, and call to action, and it addresses IT decision-makers well. At roughly 455 words, it falls short of the 500\u2013600-word requirement; several operational benefits also go beyond what the spec sheet supports.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.019774
+}

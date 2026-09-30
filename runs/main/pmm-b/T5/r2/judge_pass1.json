@@ -1,0 +1,19 @@
+{
+  "facts": 1,
+  "complete": 5,
+  "reader": 3,
+  "ready": 1,
+  "format": 2,
+  "invented_facts": [
+    "The Aurora 14 can lower the firm's cloud bill or replace ongoing subscription fees.",
+    "Approving pilot units now would mean deployment before the Q1 budget window closes.",
+    "Client drawings are locked behind a firewall when engineers use cloud workstations.",
+    "Engineers can annotate drawings, run simulations, and access project files offline on the Aurora 14.",
+    "Data never leaves the device unless the user chooses to sync it, and using the device improves the firm's security posture.",
+    "The Aurora 14's storage is user-upgradeable; the spec sheet confirms two M.2 slots but only explicitly calls memory user-upgradeable.",
+    "Waiting would lock in current cloud costs for another year."
+  ],
+  "notes": "The sequence covers the requested progression and speaks to Morgan's priorities, but it repeatedly presents assumptions as facts. Emails 1 and 2 exceed 120 words, and email 3 offers two ways to act rather than exactly one call to action.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007681
+}

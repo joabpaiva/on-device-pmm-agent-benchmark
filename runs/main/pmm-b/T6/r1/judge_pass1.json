@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "\u201cFastest connectivity\u201d is not established by the spec sheets; they provide port types, not measured speeds.",
+    "\u201cSuperior I/O options\u201d is not established across all three products because Vantage Pro 16\u2019s ports are not stated."
+  ],
+  "notes": "The table covers all eight requested attributes, uses \u201cnot stated\u201d where needed, and includes three differentiators. The connectivity differentiator needs a narrower claim before the file is ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006393
+}

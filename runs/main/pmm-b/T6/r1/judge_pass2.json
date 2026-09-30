@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Thunderbolt 5 provides the \u201cfastest connectivity\u201d; the files give no speed data.",
+    "Aurora 14 offers \u201csuperior I/O options\u201d; Vantage Pro 16\u2019s ports are not stated, so this comparison is unsupported."
+  ],
+  "notes": "The table includes all three products and all eight attributes, with missing values correctly marked. The third differentiator needs narrower wording before the file is ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003171
+}

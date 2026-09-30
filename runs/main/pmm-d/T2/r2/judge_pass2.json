@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "Aurora often becomes more cost-effective over the device's life.",
+    "Aurora's OLED has higher contrast and color accuracy for precision work.",
+    "Aurora's portability means less fatigue when moving between sites.",
+    "Aurora's thermal design prioritizes acoustic performance while maintaining performance."
+  ],
+  "notes": "The battlecard includes the requested sections and draws most specifications from the brief, but several objection responses make unsupported claims. It also lists three Vantage strengths instead of the requested two.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008169
+}

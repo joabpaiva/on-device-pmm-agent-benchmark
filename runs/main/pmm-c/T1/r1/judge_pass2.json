@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [],
+  "notes": "The post addresses IT decision-makers and stays grounded in the spec sheet. The unrequested editorial notes make it unsuitable to send as-is, and the post appears to exceed the 600-word limit even before those notes.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.0115
+}

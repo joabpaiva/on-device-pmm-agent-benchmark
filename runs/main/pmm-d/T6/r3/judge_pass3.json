@@ -1,0 +1,16 @@
+{
+  "facts": 1,
+  "complete": 3,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 weighs 630g less than Vantage Pro 16; the difference is 650g.",
+    "Aurora 14 has the fastest GPU memory bandwidth potential; no bandwidth figures are provided.",
+    "Aurora 14 has more GPU memory than both competitors; Vantage Pro 16 has 24 GB versus Aurora 14's 16 GB.",
+    "Aurora 14 has the most storage of all three; Summit X15's maximum storage is not stated."
+  ],
+  "notes": "The table accurately covers all eight attributes and uses \u201cnot stated\u201d where needed. Of the three requested differentiators, one contains false claims and another makes an unsupported comparison, so the file is not ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004351
+}

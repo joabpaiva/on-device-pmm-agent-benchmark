@@ -1,0 +1,213 @@
+{"type": "system", "subtype": "init", "model": "qwen/qwen3.5-27b", "session_id": "20260930_142823_e58f65", "timestamp": 1790803704166}
+{"type": "text", "text": "On", "timestamp": 1790803707091}
+{"type": "text", "text": "-S", "timestamp": 1790803707097}
+{"type": "text", "text": "ite AI", "timestamp": 1790803707248}
+{"type": "text", "text": " Power", "timestamp": 1790803707248}
+{"type": "text", "text": ": The Aurora ", "timestamp": 1790803707461}
+{"type": "text", "text": "14", "timestamp": 1790803707462}
+{"type": "text", "text": " Workstation for Engineering", "timestamp": 1790803707462}
+{"type": "text", "text": " Teams\n\nThe Aurora", "timestamp": 1790803707462}
+{"type": "text", "text": " 14", "timestamp": 1790803707463}
+{"type": "text", "text": " delivers the compute density", "timestamp": 1790803707464}
+{"type": "text", "text": " required to run professional", "timestamp": 1790803707724}
+{"type": "text", "text": " AI models and engineering", "timestamp": 1790803707725}
+{"type": "text", "text": " applications directly on a", "timestamp": 1790803707726}
+{"type": "text", "text": " mobile device. This", "timestamp": 1790803707727}
+{"type": "text", "text": " workstation removes the dependency", "timestamp": 1790803707928}
+{"type": "text", "text": " on cloud infrastructure for", "timestamp": 1790803707929}
+{"type": "text", "text": " core", "timestamp": 1790803707930}
+{"type": "text", "text": " development tasks while maintaining", "timestamp": 1790803707931}
+{"type": "text", "text": " portability for field", "timestamp": 1790803708172}
+{"type": "text", "text": " work.\n\n**", "timestamp": 1790803708173}
+{"type": "text", "text": "Run Large AI Models", "timestamp": 1790803708174}
+{"type": "text", "text": " Locally Without", "timestamp": 1790803708175}
+{"type": "text", "text": " Compromise**\n\n", "timestamp": 1790803708335}
+{"type": "text", "text": "Your engineering teams need", "timestamp": 1790803708336}
+{"type": "text", "text": " to prototype", "timestamp": 1790803708336}
+{"type": "text", "text": " and test AI workflows", "timestamp": 1790803708337}
+{"type": "text", "text": " without waiting for remote", "timestamp": 1790803708564}
+{"type": "text", "text": " servers or exposing sensitive", "timestamp": 1790803708565}
+{"type": "text", "text": " data to public clouds", "timestamp": 1790803708566}
+{"type": "text", "text": ". The Aurora", "timestamp": 1790803708567}
+{"type": "text", "text": " 14 ships", "timestamp": 1790803708678}
+{"type": "text", "text": " with the Helix", "timestamp": 1790803708679}
+{"type": "text", "text": " H", "timestamp": 1790803708680}
+{"type": "text", "text": "9 AI processor featuring", "timestamp": 1790803708681}
+{"type": "text", "text": " an", "timestamp": 1790803708758}
+{"type": "text", "text": " integrated NPU rated", "timestamp": 1790803708759}
+{"type": "text", "text": " at ", "timestamp": 1790803708760}
+{"type": "text", "text": "60 TOPS", "timestamp": 1790803708764}
+{"type": "text", "text": ". In", "timestamp": 1790803708882}
+{"type": "text", "text": " configurations with 6", "timestamp": 1790803708883}
+{"type": "text", "text": "4 GB", "timestamp": 1790803708883}
+{"type": "text", "text": " of memory or more", "timestamp": 1790803708884}
+{"type": "text", "text": ",", "timestamp": 1790803709012}
+{"type": "text", "text": " this system runs open", "timestamp": 1790803709013}
+{"type": "text", "text": "-weight", "timestamp": 1790803709014}
+{"type": "text", "text": " language models up to", "timestamp": 1790803709015}
+{"type": "text", "text": " about", "timestamp": 1790803709114}
+{"type": "text", "text": " 30 billion", "timestamp": 1790803709115}
+{"type": "text", "text": " parameters entirely on the", "timestamp": 1790803709116}
+{"type": "text", "text": " device.", "timestamp": 1790803709117}
+{"type": "text", "text": " The Vireo", "timestamp": 1790803709274}
+{"type": "text", "text": " V800", "timestamp": 1790803709275}
+{"type": "text", "text": "0 Pro", "timestamp": 1790803709276}
+{"type": "text", "text": " discrete GPU adds ", "timestamp": 1790803709276}
+{"type": "text", "text": "16 GB", "timestamp": 1790803709415}
+{"type": "text", "text": " of dedicated graphics memory", "timestamp": 1790803709417}
+{"type": "text", "text": " to handle", "timestamp": 1790803709418}
+{"type": "text", "text": " rendering and parallel compute", "timestamp": 1790803709419}
+{"type": "text", "text": " workloads. Memory", "timestamp": 1790803709537}
+{"type": "text", "text": " starts at 3", "timestamp": 1790803709538}
+{"type": "text", "text": "2", "timestamp": 1790803709539}
+{"type": "text", "text": " GB and is configurable", "timestamp": 1790803709540}
+{"type": "text", "text": " up", "timestamp": 1790803709642}
+{"type": "text", "text": " to 12", "timestamp": 1790803709642}
+{"type": "text", "text": "8 GB across two", "timestamp": 1790803709643}
+{"type": "text", "text": " SO-DIMM", "timestamp": 1790803709644}
+{"type": "text", "text": " slots that remain user", "timestamp": 1790803709778}
+{"type": "text", "text": "-upgradeable", "timestamp": 1790803709779}
+{"type": "text", "text": ". Storage begins at", "timestamp": 1790803709780}
+{"type": "text", "text": " 1", "timestamp": 1790803709781}
+{"type": "text", "text": " TB NVMe SSD", "timestamp": 1790803709929}
+{"type": "text", "text": " and scales to ", "timestamp": 1790803709930}
+{"type": "text", "text": "4", "timestamp": 1790803709930}
+{"type": "text", "text": " TB using two M", "timestamp": 1790803709931}
+{"type": "text", "text": ".2", "timestamp": 1790803710057}
+{"type": "text", "text": " slots. These specifications", "timestamp": 1790803710058}
+{"type": "text", "text": " allow your engineers to", "timestamp": 1790803710060}
+{"type": "text", "text": " keep", "timestamp": 1790803710060}
+{"type": "text", "text": " datasets and models local", "timestamp": 1790803710271}
+{"type": "text", "text": " while maintaining full control", "timestamp": 1790803710272}
+{"type": "text", "text": " over their", "timestamp": 1790803710272}
+{"type": "text", "text": " development environment.\n\n", "timestamp": 1790803710273}
+{"type": "text", "text": "**", "timestamp": 1790803710432}
+{"type": "text", "text": "Enterprise-Grade Rel", "timestamp": 1790803710433}
+{"type": "text", "text": "iability and Security Built", "timestamp": 1790803710434}
+{"type": "text", "text": " In**\n\nMid", "timestamp": 1790803710435}
+{"type": "text", "text": "-size firms cannot afford", "timestamp": 1790803710664}
+{"type": "text", "text": " downtime", "timestamp": 1790803710665}
+{"type": "text", "text": " when projects are on", "timestamp": 1790803710666}
+{"type": "text", "text": " critical", "timestamp": 1790803710667}
+{"type": "text", "text": " timelines. The Aurora", "timestamp": 1790803710848}
+{"type": "text", "text": " 14 includes", "timestamp": 1790803710849}
+{"type": "text", "text": " a self-healing", "timestamp": 1790803710849}
+{"type": "text", "text": " BIOS to protect against", "timestamp": 1790803710850}
+{"type": "text", "text": " firmware", "timestamp": 1790803710933}
+{"type": "text", "text": " corruption and a TPM", "timestamp": 1790803710934}
+{"type": "text", "text": " 2.", "timestamp": 1790803710935}
+{"type": "text", "text": "0 chip for hardware", "timestamp": 1790803710936}
+{"type": "text", "text": "-based security. Authentication", "timestamp": 1790803711097}
+{"type": "text", "text": " options include both a", "timestamp": 1790803711098}
+{"type": "text", "text": " fingerprint reader and", "timestamp": 1790803711098}
+{"type": "text", "text": " an IR camera for", "timestamp": 1790803711099}
+{"type": "text", "text": " flexible deployment across different", "timestamp": 1790803711244}
+{"type": "text", "text": " security policies", "timestamp": 1790803711245}
+{"type": "text", "text": ". The standard warranty", "timestamp": 1790803711246}
+{"type": "text", "text": " provides 3-year", "timestamp": 1790803711247}
+{"type": "text", "text": " on-site, next", "timestamp": 1790803711366}
+{"type": "text", "text": "-business-day", "timestamp": 1790803711367}
+{"type": "text", "text": " service, which is", "timestamp": 1790803711368}
+{"type": "text", "text": " extend", "timestamp": 1790803711369}
+{"type": "text", "text": "able to 5", "timestamp": 1790803711450}
+{"type": "text", "text": " years for", "timestamp": 1790803711451}
+{"type": "text", "text": " long-term planning.", "timestamp": 1790803711452}
+{"type": "text", "text": " Starting", "timestamp": 1790803711452}
+{"type": "text", "text": " price sits at $", "timestamp": 1790803711584}
+{"type": "text", "text": "2,", "timestamp": 1790803711585}
+{"type": "text", "text": "899 for", "timestamp": 1790803711585}
+{"type": "text", "text": " the base configuration.", "timestamp": 1790803711586}
+{"type": "text", "text": " Windows 11", "timestamp": 1790803711788}
+{"type": "text", "text": " Pro ships pre-inst", "timestamp": 1790803711789}
+{"type": "text", "text": "alled to", "timestamp": 1790803711790}
+{"type": "text", "text": " align with existing enterprise", "timestamp": 1790803711791}
+{"type": "text", "text": " management tools. The", "timestamp": 1790803711971}
+{"type": "text", "text": " aluminum", "timestamp": 1790803711972}
+{"type": "text", "text": " chassis and 8", "timestamp": 1790803711973}
+{"type": "text", "text": "6 Wh battery support", "timestamp": 1790803711974}
+{"type": "text", "text": " up to 1", "timestamp": 1790803712076}
+{"type": "text", "text": "1 hours", "timestamp": 1790803712077}
+{"type": "text", "text": " of local video playback", "timestamp": 1790803712078}
+{"type": "text", "text": " measured at 1", "timestamp": 1790803712079}
+{"type": "text", "text": "50 nits", "timestamp": 1790803712211}
+{"type": "text", "text": " with Wi", "timestamp": 1790803712212}
+{"type": "text", "text": "-Fi off, ensuring", "timestamp": 1790803712212}
+{"type": "text", "text": " all", "timestamp": 1790803712213}
+{"type": "text", "text": "-day operation during site", "timestamp": 1790803712418}
+{"type": "text", "text": " visits or off-grid", "timestamp": 1790803712419}
+{"type": "text", "text": " work.\n\n**", "timestamp": 1790803712420}
+{"type": "text", "text": "Port", "timestamp": 1790803712421}
+{"type": "text", "text": "ability That Does Not", "timestamp": 1790803712601}
+{"type": "text", "text": " Sacr", "timestamp": 1790803712602}
+{"type": "text", "text": "ifice Connectivity**\n\n", "timestamp": 1790803712603}
+{"type": "text", "text": "Field engineers and designers", "timestamp": 1790803712604}
+{"type": "text", "text": " require", "timestamp": 1790803712732}
+{"type": "text", "text": " a device that fits", "timestamp": 1790803712733}
+{"type": "text", "text": " in a backpack but", "timestamp": 1790803712734}
+{"type": "text", "text": " connects", "timestamp": 1790803712734}
+{"type": "text", "text": " to every peripheral they", "timestamp": 1790803712863}
+{"type": "text", "text": " already", "timestamp": 1790803712864}
+{"type": "text", "text": " use. At ", "timestamp": 1790803712865}
+{"type": "text", "text": "1", "timestamp": 1790803712865}
+{"type": "text", "text": ".65 kg", "timestamp": 1790803712944}
+{"type": "text", "text": " (", "timestamp": 1790803712945}
+{"type": "text", "text": "3.64", "timestamp": 1790803712945}
+{"type": "text", "text": " lb", "timestamp": 1790803712946}
+{"type": "text", "text": "), the Aurora ", "timestamp": 1790803713129}
+{"type": "text", "text": "14 balances", "timestamp": 1790803713130}
+{"type": "text", "text": " mobility with build quality", "timestamp": 1790803713131}
+{"type": "text", "text": ". The ", "timestamp": 1790803713131}
+{"type": "text", "text": "14-inch OLED", "timestamp": 1790803713260}
+{"type": "text", "text": " display delivers 2", "timestamp": 1790803713261}
+{"type": "text", "text": "8", "timestamp": 1790803713262}
+{"type": "text", "text": "80 \u00d7 ", "timestamp": 1790803713263}
+{"type": "text", "text": "18", "timestamp": 1790803713390}
+{"type": "text", "text": "00 resolution at", "timestamp": 1790803713391}
+{"type": "text", "text": " 12", "timestamp": 1790803713392}
+{"type": "text", "text": "0 Hz with ", "timestamp": 1790803713393}
+{"type": "text", "text": "50", "timestamp": 1790803713480}
+{"type": "text", "text": "0 nits peak", "timestamp": 1790803713481}
+{"type": "text", "text": " brightness", "timestamp": 1790803713481}
+{"type": "text", "text": " and 10", "timestamp": 1790803713482}
+{"type": "text", "text": "0% DCI", "timestamp": 1790803713569}
+{"type": "text", "text": "-P", "timestamp": 1790803713570}
+{"type": "text", "text": "3 color gamut", "timestamp": 1790803713570}
+{"type": "text", "text": " coverage.", "timestamp": 1790803713571}
+{"type": "text", "text": " Connectivity includes two Thunder", "timestamp": 1790803713670}
+{"type": "text", "text": "bolt ", "timestamp": 1790803713671}
+{"type": "text", "text": "5 ports, one", "timestamp": 1790803713671}
+{"type": "text", "text": " USB", "timestamp": 1790803713672}
+{"type": "text", "text": "-A 3.", "timestamp": 1790803713783}
+{"type": "text", "text": "2 port, HDMI", "timestamp": 1790803713784}
+{"type": "text", "text": " 2.1", "timestamp": 1790803713785}
+{"type": "text", "text": ", an SD card", "timestamp": 1790803713785}
+{"type": "text", "text": " reader,", "timestamp": 1790803713880}
+{"type": "text", "text": " and a 3", "timestamp": 1790803713881}
+{"type": "text", "text": ".5 mm headphone", "timestamp": 1790803713881}
+{"type": "text", "text": " jack. This", "timestamp": 1790803713882}
+{"type": "text", "text": " port selection eliminates the", "timestamp": 1790803714041}
+{"type": "text", "text": " need for dong", "timestamp": 1790803714043}
+{"type": "text", "text": "les when connecting to", "timestamp": 1790803714044}
+{"type": "text", "text": " external", "timestamp": 1790803714045}
+{"type": "text", "text": " monitors, storage devices", "timestamp": 1790803714173}
+{"type": "text", "text": ", or", "timestamp": 1790803714175}
+{"type": "text", "text": " presentation equipment.\n\n", "timestamp": 1790803714176}
+{"type": "text", "text": "**Next Steps**", "timestamp": 1790803714177}
+{"type": "text", "text": "\n\nThe Aurora ", "timestamp": 1790803714298}
+{"type": "text", "text": "14", "timestamp": 1790803714299}
+{"type": "text", "text": " becomes available in Q", "timestamp": 1790803714300}
+{"type": "text", "text": "4.", "timestamp": 1790803714302}
+{"type": "text", "text": " Contact your sales representative", "timestamp": 1790803714409}
+{"type": "text", "text": " to discuss", "timestamp": 1790803714410}
+{"type": "text", "text": " configuration options that match", "timestamp": 1790803714410}
+{"type": "text", "text": " your team's specific", "timestamp": 1790803714411}
+{"type": "text", "text": " memory and storage requirements", "timestamp": 1790803714584}
+{"type": "text", "text": ".", "timestamp": 1790803714585}
+{"type": "text", "text": " Request a demo unit", "timestamp": 1790803714586}
+{"type": "text", "text": " to evaluate local", "timestamp": 1790803714587}
+{"type": "text", "text": " AI model performance with", "timestamp": 1790803714669}
+{"type": "text", "text": " your", "timestamp": 1790803714670}
+{"type": "text", "text": " own workflows before committing", "timestamp": 1790803714671}
+{"type": "text", "text": " to a", "timestamp": 1790803714671}
+{"type": "text", "text": " fleet deployment.", "timestamp": 1790803714757}
+{"type": "result", "session_id": "20260930_142823_e58f65", "exit_code": 0, "text": "On-Site AI Power: The Aurora 14 Workstation for Engineering Teams\n\nThe Aurora 14 delivers the compute density required to run professional AI models and engineering applications directly on a mobile device. This workstation removes the dependency on cloud infrastructure for core development tasks while maintaining portability for field work.\n\n**Run Large AI Models Locally Without Compromise**\n\nYour engineering teams need to prototype and test AI workflows without waiting for remote servers or exposing sensitive data to public clouds. The Aurora 14 ships with the Helix H9 AI processor featuring an integrated NPU rated at 60 TOPS. In configurations with 64 GB of memory or more, this system runs open-weight language models up to about 30 billion parameters entirely on the device. The Vireo V8000 Pro discrete GPU adds 16 GB of dedicated graphics memory to handle rendering and parallel compute workloads. Memory starts at 32 GB and is configurable up to 128 GB across two SO-DIMM slots that remain user-upgradeable. Storage begins at 1 TB NVMe SSD and scales to 4 TB using two M.2 slots. These specifications allow your engineers to keep datasets and models local while maintaining full control over their development environment.\n\n**Enterprise-Grade Reliability and Security Built In**\n\nMid-size firms cannot afford downtime when projects are on critical timelines. The Aurora 14 includes a self-healing BIOS to protect against firmware corruption and a TPM 2.0 chip for hardware-based security. Authentication options include both a fingerprint reader and an IR camera for flexible deployment across different security policies. The standard warranty provides 3-year on-site, next-business-day service, which is extendable to 5 years for long-term planning. Starting price sits at $2,899 for the base configuration. Windows 11 Pro ships pre-installed to align with existing enterprise management tools. The aluminum chassis and 86 Wh battery support up to 11 hours of local video playback measured at 150 nits with Wi-Fi off, ensuring all-day operation during site visits or off-grid work.\n\n**Portability That Does Not Sacrifice Connectivity**\n\nField engineers and designers require a device that fits in a backpack but connects to every peripheral they already use. At 1.65 kg (3.64 lb), the Aurora 14 balances mobility with build quality. The 14-inch OLED display delivers 2880 \u00d7 1800 resolution at 120 Hz with 500 nits peak brightness and 100% DCI-P3 color gamut coverage. Connectivity includes two Thunderbolt 5 ports, one USB-A 3.2 port, HDMI 2.1, an SD card reader, and a 3.5 mm headphone jack. This port selection eliminates the need for dongles when connecting to external monitors, storage devices, or presentation equipment.\n\n**Next Steps**\n\nThe Aurora 14 becomes available in Q4. Contact your sales representative to discuss configuration options that match your team's specific memory and storage requirements. Request a demo unit to evaluate local AI model performance with your own workflows before committing to a fleet deployment.", "tokens": {"input": 4384, "output": 664, "total": 5048, "cache_read": 0, "cache_write": 0}, "duration_ms": 10646, "timestamp": 1790803714812}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The post covers the requested benefits for IT decision-makers and keeps its product claims grounded in the spec sheet. The appended notes are outside the requested blog post, and repeated references to \u201claunch documentation\u201d would benefit from a light edit.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011299
+}

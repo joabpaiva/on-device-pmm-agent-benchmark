@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 3,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "Windows 11 Pro integrates with Morgan\u2019s existing fleet management tools; neither those tools nor compatibility with them is specified.",
+    "The self-healing BIOS protects against firmware attacks; the spec sheet does not make that claim.",
+    "The service warranty ensures uptime; no uptime guarantee is provided.",
+    "The laptops will ensure productivity on-site; the source does not guarantee that outcome."
+  ],
+  "notes": "The sequence includes three emails and addresses the Q1 deadline, but email 2 focuses on management rather than directly answering why a cloud-first team should also buy powerful laptops. All three emails exceed 120 words, and email 3 has two meeting calls to action.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011176
+}

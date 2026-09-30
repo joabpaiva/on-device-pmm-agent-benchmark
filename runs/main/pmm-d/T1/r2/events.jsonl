@@ -1,0 +1,795 @@
+{"type": "system", "subtype": "init", "model": "qwen3.5-9b-q8_0", "session_id": "20260930_154607_d3fadf", "timestamp": 1790808367903}
+{"type": "text", "text": "#", "timestamp": 1790808372844}
+{"type": "text", "text": " The", "timestamp": 1790808372942}
+{"type": "text", "text": " Aurora", "timestamp": 1790808373043}
+{"type": "text", "text": " ", "timestamp": 1790808373141}
+{"type": "text", "text": "1", "timestamp": 1790808373244}
+{"type": "text", "text": "4", "timestamp": 1790808373348}
+{"type": "text", "text": ":", "timestamp": 1790808375136}
+{"type": "text", "text": " Your", "timestamp": 1790808375137}
+{"type": "text", "text": " AI", "timestamp": 1790808375137}
+{"type": "text", "text": "-", "timestamp": 1790808375137}
+{"type": "text", "text": "Ready", "timestamp": 1790808375137}
+{"type": "text", "text": " Work", "timestamp": 1790808375137}
+{"type": "text", "text": "station", "timestamp": 1790808375137}
+{"type": "text", "text": " in", "timestamp": 1790808375137}
+{"type": "text", "text": " a", "timestamp": 1790808375137}
+{"type": "text", "text": " ", "timestamp": 1790808375137}
+{"type": "text", "text": "1", "timestamp": 1790808375137}
+{"type": "text", "text": "4", "timestamp": 1790808375137}
+{"type": "text", "text": "-inch", "timestamp": 1790808375138}
+{"type": "text", "text": " Ch", "timestamp": 1790808375138}
+{"type": "text", "text": "assis", "timestamp": 1790808375138}
+{"type": "text", "text": "\n\n", "timestamp": 1790808375138}
+{"type": "text", "text": "For", "timestamp": 1790808375138}
+{"type": "text", "text": " mid", "timestamp": 1790808375239}
+{"type": "text", "text": "-size", "timestamp": 1790808375346}
+{"type": "text", "text": " engineering", "timestamp": 1790808375455}
+{"type": "text", "text": " firms", "timestamp": 1790808375561}
+{"type": "text", "text": ",", "timestamp": 1790808375667}
+{"type": "text", "text": " the", "timestamp": 1790808375773}
+{"type": "text", "text": " pressure", "timestamp": 1790808375880}
+{"type": "text", "text": " is", "timestamp": 1790808375990}
+{"type": "text", "text": " on", "timestamp": 1790808376094}
+{"type": "text", "text": ".", "timestamp": 1790808376197}
+{"type": "text", "text": " You", "timestamp": 1790808376303}
+{"type": "text", "text": " need", "timestamp": 1790808376410}
+{"type": "text", "text": " to", "timestamp": 1790808376517}
+{"type": "text", "text": " deliver", "timestamp": 1790808376624}
+{"type": "text", "text": " complex", "timestamp": 1790808376728}
+{"type": "text", "text": " simulations", "timestamp": 1790808376835}
+{"type": "text", "text": " and", "timestamp": 1790808376941}
+{"type": "text", "text": " AI", "timestamp": 1790808377047}
+{"type": "text", "text": "-driven", "timestamp": 1790808377152}
+{"type": "text", "text": " designs", "timestamp": 1790808377253}
+{"type": "text", "text": " without", "timestamp": 1790808377360}
+{"type": "text", "text": " the", "timestamp": 1790808377467}
+{"type": "text", "text": " overhead", "timestamp": 1790808377574}
+{"type": "text", "text": " of", "timestamp": 1790808377681}
+{"type": "text", "text": " massive", "timestamp": 1790808377790}
+{"type": "text", "text": " data", "timestamp": 1790808378008}
+{"type": "text", "text": " center", "timestamp": 1790808378008}
+{"type": "text", "text": " infrastructure", "timestamp": 1790808378112}
+{"type": "text", "text": ".", "timestamp": 1790808378214}
+{"type": "text", "text": " The", "timestamp": 1790808378316}
+{"type": "text", "text": " Aurora", "timestamp": 1790808378423}
+{"type": "text", "text": " ", "timestamp": 1790808378529}
+{"type": "text", "text": "1", "timestamp": 1790808378636}
+{"type": "text", "text": "4", "timestamp": 1790808378742}
+{"type": "text", "text": " arrives", "timestamp": 1790808378848}
+{"type": "text", "text": " in", "timestamp": 1790808378959}
+{"type": "text", "text": " Q", "timestamp": 1790808379065}
+{"type": "text", "text": "4", "timestamp": 1790808379171}
+{"type": "text", "text": " to", "timestamp": 1790808379273}
+{"type": "text", "text": " solve", "timestamp": 1790808379376}
+{"type": "text", "text": " that", "timestamp": 1790808379481}
+{"type": "text", "text": " exact", "timestamp": 1790808379585}
+{"type": "text", "text": " problem", "timestamp": 1790808379689}
+{"type": "text", "text": ":", "timestamp": 1790808382587}
+{"type": "text", "text": " a", "timestamp": 1790808382587}
+{"type": "text", "text": " ", "timestamp": 1790808382587}
+{"type": "text", "text": "1", "timestamp": 1790808382587}
+{"type": "text", "text": "4", "timestamp": 1790808382587}
+{"type": "text", "text": "-inch", "timestamp": 1790808382588}
+{"type": "text", "text": " mobile", "timestamp": 1790808382588}
+{"type": "text", "text": " workstation", "timestamp": 1790808382588}
+{"type": "text", "text": " that", "timestamp": 1790808382588}
+{"type": "text", "text": " delivers", "timestamp": 1790808382588}
+{"type": "text", "text": " the", "timestamp": 1790808382588}
+{"type": "text", "text": " power", "timestamp": 1790808382588}
+{"type": "text", "text": " of", "timestamp": 1790808382588}
+{"type": "text", "text": " a", "timestamp": 1790808382588}
+{"type": "text", "text": " desktop", "timestamp": 1790808382588}
+{"type": "text", "text": " in", "timestamp": 1790808382588}
+{"type": "text", "text": " a", "timestamp": 1790808382589}
+{"type": "text", "text": " chassis", "timestamp": 1790808382589}
+{"type": "text", "text": " you", "timestamp": 1790808382589}
+{"type": "text", "text": " can", "timestamp": 1790808382589}
+{"type": "text", "text": " actually", "timestamp": 1790808382589}
+{"type": "text", "text": " carry", "timestamp": 1790808382589}
+{"type": "text", "text": " into", "timestamp": 1790808382589}
+{"type": "text", "text": " client", "timestamp": 1790808382589}
+{"type": "text", "text": " meetings", "timestamp": 1790808382589}
+{"type": "text", "text": ".", "timestamp": 1790808382589}
+{"type": "text", "text": "\n\n", "timestamp": 1790808382589}
+{"type": "text", "text": "It", "timestamp": 1790808382590}
+{"type": "text", "text": " is", "timestamp": 1790808382689}
+{"type": "text", "text": " not", "timestamp": 1790808382788}
+{"type": "text", "text": " about", "timestamp": 1790808382889}
+{"type": "text", "text": " chasing", "timestamp": 1790808382988}
+{"type": "text", "text": " every", "timestamp": 1790808383090}
+{"type": "text", "text": " trend", "timestamp": 1790808383190}
+{"type": "text", "text": ";", "timestamp": 1790808383292}
+{"type": "text", "text": " it", "timestamp": 1790808383393}
+{"type": "text", "text": " is", "timestamp": 1790808383495}
+{"type": "text", "text": " about", "timestamp": 1790808383597}
+{"type": "text", "text": " giving", "timestamp": 1790808383698}
+{"type": "text", "text": " your", "timestamp": 1790808383807}
+{"type": "text", "text": " engineering", "timestamp": 1790808383934}
+{"type": "text", "text": " teams", "timestamp": 1790808384069}
+{"type": "text", "text": " the", "timestamp": 1790808384202}
+{"type": "text", "text": " tools", "timestamp": 1790808384332}
+{"type": "text", "text": " they", "timestamp": 1790808384457}
+{"type": "text", "text": " need", "timestamp": 1790808384579}
+{"type": "text", "text": " to", "timestamp": 1790808384695}
+{"type": "text", "text": " work", "timestamp": 1790808384807}
+{"type": "text", "text": " faster", "timestamp": 1790808384916}
+{"type": "text", "text": ",", "timestamp": 1790808385021}
+{"type": "text", "text": " more", "timestamp": 1790808385125}
+{"type": "text", "text": " securely", "timestamp": 1790808385228}
+{"type": "text", "text": ",", "timestamp": 1790808385331}
+{"type": "text", "text": " and", "timestamp": 1790808385433}
+{"type": "text", "text": " more", "timestamp": 1790808385536}
+{"type": "text", "text": " efficiently", "timestamp": 1790808385638}
+{"type": "text", "text": ".", "timestamp": 1790808385739}
+{"type": "text", "text": " The", "timestamp": 1790808385840}
+{"type": "text", "text": " Aurora", "timestamp": 1790808385941}
+{"type": "text", "text": " ", "timestamp": 1790808386041}
+{"type": "text", "text": "1", "timestamp": 1790808386141}
+{"type": "text", "text": "4", "timestamp": 1790808386241}
+{"type": "text", "text": " is", "timestamp": 1790808386342}
+{"type": "text", "text": " designed", "timestamp": 1790808386443}
+{"type": "text", "text": " for", "timestamp": 1790808386545}
+{"type": "text", "text": " the", "timestamp": 1790808386645}
+{"type": "text", "text": " professionals", "timestamp": 1790808386745}
+{"type": "text", "text": " who", "timestamp": 1790808386845}
+{"type": "text", "text": " need", "timestamp": 1790808386945}
+{"type": "text", "text": " to", "timestamp": 1790808387046}
+{"type": "text", "text": " run", "timestamp": 1790808387146}
+{"type": "text", "text": " heavy", "timestamp": 1790808387250}
+{"type": "text", "text": " work", "timestamp": 1790808387350}
+{"type": "text", "text": "loads", "timestamp": 1790808387450}
+{"type": "text", "text": " without", "timestamp": 1790808387550}
+{"type": "text", "text": " compromising", "timestamp": 1790808387652}
+{"type": "text", "text": " on", "timestamp": 1790808387752}
+{"type": "text", "text": " mobility", "timestamp": 1790808387852}
+{"type": "text", "text": " or", "timestamp": 1790808387952}
+{"type": "text", "text": " design", "timestamp": 1790808388053}
+{"type": "text", "text": " integrity", "timestamp": 1790808388153}
+{"type": "text", "text": ".", "timestamp": 1790808388254}
+{"type": "text", "text": "\n\n", "timestamp": 1790808388354}
+{"type": "text", "text": "###", "timestamp": 1790808388454}
+{"type": "text", "text": " AI", "timestamp": 1790808388555}
+{"type": "text", "text": " Processing", "timestamp": 1790808388658}
+{"type": "text", "text": " at", "timestamp": 1790808388759}
+{"type": "text", "text": " Your", "timestamp": 1790808388860}
+{"type": "text", "text": " F", "timestamp": 1790808388963}
+{"type": "text", "text": "ing", "timestamp": 1790808389067}
+{"type": "text", "text": "ert", "timestamp": 1790808389171}
+{"type": "text", "text": "ips", "timestamp": 1790808389272}
+{"type": "text", "text": "\n\n", "timestamp": 1790808389374}
+{"type": "text", "text": "The", "timestamp": 1790808389476}
+{"type": "text", "text": " Hel", "timestamp": 1790808389578}
+{"type": "text", "text": "ix", "timestamp": 1790808389680}
+{"type": "text", "text": " H", "timestamp": 1790808389782}
+{"type": "text", "text": "9", "timestamp": 1790808389884}
+{"type": "text", "text": " AI", "timestamp": 1790808389985}
+{"type": "text", "text": " processor", "timestamp": 1790808390087}
+{"type": "text", "text": " is", "timestamp": 1790808390189}
+{"type": "text", "text": " the", "timestamp": 1790808390290}
+{"type": "text", "text": " heart", "timestamp": 1790808390393}
+{"type": "text", "text": " of", "timestamp": 1790808390496}
+{"type": "text", "text": " this", "timestamp": 1790808390597}
+{"type": "text", "text": " machine", "timestamp": 1790808390701}
+{"type": "text", "text": ".", "timestamp": 1790808390802}
+{"type": "text", "text": " With", "timestamp": 1790808390904}
+{"type": "text", "text": " ", "timestamp": 1790808391006}
+{"type": "text", "text": "1", "timestamp": 1790808391108}
+{"type": "text", "text": "6", "timestamp": 1790808391209}
+{"type": "text", "text": " cores", "timestamp": 1790808391311}
+{"type": "text", "text": " split", "timestamp": 1790808391413}
+{"type": "text", "text": " between", "timestamp": 1790808391513}
+{"type": "text", "text": " performance", "timestamp": 1790808391617}
+{"type": "text", "text": " and", "timestamp": 1790808391721}
+{"type": "text", "text": " efficiency", "timestamp": 1790808391822}
+{"type": "text", "text": ",", "timestamp": 1790808391923}
+{"type": "text", "text": " it", "timestamp": 1790808392031}
+{"type": "text", "text": " handles", "timestamp": 1790808392138}
+{"type": "text", "text": " demanding", "timestamp": 1790808392247}
+{"type": "text", "text": " engineering", "timestamp": 1790808392354}
+{"type": "text", "text": " tasks", "timestamp": 1790808392461}
+{"type": "text", "text": " without", "timestamp": 1790808392568}
+{"type": "text", "text": " draining", "timestamp": 1790808392673}
+{"type": "text", "text": " the", "timestamp": 1790808392776}
+{"type": "text", "text": " battery", "timestamp": 1790808392880}
+{"type": "text", "text": ".", "timestamp": 1790808392987}
+{"type": "text", "text": " The", "timestamp": 1790808393093}
+{"type": "text", "text": " integrated", "timestamp": 1790808393198}
+{"type": "text", "text": " N", "timestamp": 1790808393303}
+{"type": "text", "text": "PU", "timestamp": 1790808393408}
+{"type": "text", "text": ",", "timestamp": 1790808393514}
+{"type": "text", "text": " rated", "timestamp": 1790808393619}
+{"type": "text", "text": " at", "timestamp": 1790808393726}
+{"type": "text", "text": " ", "timestamp": 1790808393829}
+{"type": "text", "text": "6", "timestamp": 1790808393940}
+{"type": "text", "text": "0", "timestamp": 1790808394039}
+{"type": "text", "text": " TOP", "timestamp": 1790808394139}
+{"type": "text", "text": "S", "timestamp": 1790808394238}
+{"type": "text", "text": ",", "timestamp": 1790808394337}
+{"type": "text", "text": " brings", "timestamp": 1790808394437}
+{"type": "text", "text": " artificial", "timestamp": 1790808394537}
+{"type": "text", "text": " intelligence", "timestamp": 1790808394637}
+{"type": "text", "text": " directly", "timestamp": 1790808394736}
+{"type": "text", "text": " to", "timestamp": 1790808394837}
+{"type": "text", "text": " the", "timestamp": 1790808394937}
+{"type": "text", "text": " device", "timestamp": 1790808395038}
+{"type": "text", "text": ".", "timestamp": 1790808395138}
+{"type": "text", "text": " Your", "timestamp": 1790808395237}
+{"type": "text", "text": " team", "timestamp": 1790808395337}
+{"type": "text", "text": " can", "timestamp": 1790808395437}
+{"type": "text", "text": " run", "timestamp": 1790808395537}
+{"type": "text", "text": " open", "timestamp": 1790808395637}
+{"type": "text", "text": "-weight", "timestamp": 1790808395737}
+{"type": "text", "text": " language", "timestamp": 1790808395839}
+{"type": "text", "text": " models", "timestamp": 1790808395939}
+{"type": "text", "text": " up", "timestamp": 1790808396039}
+{"type": "text", "text": " to", "timestamp": 1790808396139}
+{"type": "text", "text": " about", "timestamp": 1790808396241}
+{"type": "text", "text": " ", "timestamp": 1790808396342}
+{"type": "text", "text": "3", "timestamp": 1790808396442}
+{"type": "text", "text": "0", "timestamp": 1790808396543}
+{"type": "text", "text": " billion", "timestamp": 1790808396643}
+{"type": "text", "text": " parameters", "timestamp": 1790808396744}
+{"type": "text", "text": " locally", "timestamp": 1790808396844}
+{"type": "text", "text": ",", "timestamp": 1790808396946}
+{"type": "text", "text": " provided", "timestamp": 1790808397048}
+{"type": "text", "text": " the", "timestamp": 1790808397149}
+{"type": "text", "text": " system", "timestamp": 1790808397251}
+{"type": "text", "text": " has", "timestamp": 1790808397352}
+{"type": "text", "text": " ", "timestamp": 1790808397453}
+{"type": "text", "text": "6", "timestamp": 1790808397553}
+{"type": "text", "text": "4", "timestamp": 1790808397654}
+{"type": "text", "text": " GB", "timestamp": 1790808397755}
+{"type": "text", "text": " of", "timestamp": 1790808397856}
+{"type": "text", "text": " memory", "timestamp": 1790808397959}
+{"type": "text", "text": " or", "timestamp": 1790808398065}
+{"type": "text", "text": " more", "timestamp": 1790808398172}
+{"type": "text", "text": ".", "timestamp": 1790808398279}
+{"type": "text", "text": " This", "timestamp": 1790808398385}
+{"type": "text", "text": " means", "timestamp": 1790808398489}
+{"type": "text", "text": " sensitive", "timestamp": 1790808398600}
+{"type": "text", "text": " data", "timestamp": 1790808398813}
+{"type": "text", "text": " stays", "timestamp": 1790808398813}
+{"type": "text", "text": " on", "timestamp": 1790808398918}
+{"type": "text", "text": " the", "timestamp": 1790808399021}
+{"type": "text", "text": " device", "timestamp": 1790808399128}
+{"type": "text", "text": ",", "timestamp": 1790808399234}
+{"type": "text", "text": " and", "timestamp": 1790808399340}
+{"type": "text", "text": " your", "timestamp": 1790808399445}
+{"type": "text", "text": " engineers", "timestamp": 1790808399564}
+{"type": "text", "text": " do", "timestamp": 1790808399662}
+{"type": "text", "text": " not", "timestamp": 1790808399763}
+{"type": "text", "text": " need", "timestamp": 1790808399868}
+{"type": "text", "text": " to", "timestamp": 1790808399973}
+{"type": "text", "text": " rely", "timestamp": 1790808400075}
+{"type": "text", "text": " on", "timestamp": 1790808400179}
+{"type": "text", "text": " cloud", "timestamp": 1790808400285}
+{"type": "text", "text": " connections", "timestamp": 1790808400391}
+{"type": "text", "text": " for", "timestamp": 1790808400499}
+{"type": "text", "text": " local", "timestamp": 1790808400614}
+{"type": "text", "text": " inference", "timestamp": 1790808400721}
+{"type": "text", "text": " tasks", "timestamp": 1790808400829}
+{"type": "text", "text": ".", "timestamp": 1790808400934}
+{"type": "text", "text": "\n\n", "timestamp": 1790808401036}
+{"type": "text", "text": "###", "timestamp": 1790808401136}
+{"type": "text", "text": " Graphics", "timestamp": 1790808401240}
+{"type": "text", "text": " That", "timestamp": 1790808401346}
+{"type": "text", "text": " Get", "timestamp": 1790808401452}
+{"type": "text", "text": " the", "timestamp": 1790808401557}
+{"type": "text", "text": " Job", "timestamp": 1790808401667}
+{"type": "text", "text": " Done", "timestamp": 1790808401773}
+{"type": "text", "text": "\n\n", "timestamp": 1790808401878}
+{"type": "text", "text": "Professional", "timestamp": 1790808401983}
+{"type": "text", "text": " applications", "timestamp": 1790808402085}
+{"type": "text", "text": " demand", "timestamp": 1790808402188}
+{"type": "text", "text": " professional", "timestamp": 1790808402291}
+{"type": "text", "text": "-grade", "timestamp": 1790808402400}
+{"type": "text", "text": " graphics", "timestamp": 1790808402505}
+{"type": "text", "text": ".", "timestamp": 1790808402610}
+{"type": "text", "text": " The", "timestamp": 1790808402715}
+{"type": "text", "text": " V", "timestamp": 1790808402820}
+{"type": "text", "text": "ire", "timestamp": 1790808402925}
+{"type": "text", "text": "o", "timestamp": 1790808403034}
+{"type": "text", "text": " V", "timestamp": 1790808403136}
+{"type": "text", "text": "8", "timestamp": 1790808403236}
+{"type": "text", "text": "0", "timestamp": 1790808403340}
+{"type": "text", "text": "0", "timestamp": 1790808403446}
+{"type": "text", "text": "0", "timestamp": 1790808403552}
+{"type": "text", "text": " Pro", "timestamp": 1790808403657}
+{"type": "text", "text": " discrete", "timestamp": 1790808403763}
+{"type": "text", "text": " GPU", "timestamp": 1790808403867}
+{"type": "text", "text": " provides", "timestamp": 1790808403974}
+{"type": "text", "text": " the", "timestamp": 1790808404085}
+{"type": "text", "text": " raw", "timestamp": 1790808404185}
+{"type": "text", "text": " horsepower", "timestamp": 1790808404286}
+{"type": "text", "text": " needed", "timestamp": 1790808404391}
+{"type": "text", "text": " for", "timestamp": 1790808404500}
+{"type": "text", "text": " rendering", "timestamp": 1790808404603}
+{"type": "text", "text": " complex", "timestamp": 1790808404709}
+{"type": "text", "text": " simulations", "timestamp": 1790808404815}
+{"type": "text", "text": " and", "timestamp": 1790808404920}
+{"type": "text", "text": " ", "timestamp": 1790808405030}
+{"type": "text", "text": "3", "timestamp": 1790808405135}
+{"type": "text", "text": "D", "timestamp": 1790808405340}
+{"type": "text", "text": " models", "timestamp": 1790808405341}
+{"type": "text", "text": ".", "timestamp": 1790808405444}
+{"type": "text", "text": " With", "timestamp": 1790808405550}
+{"type": "text", "text": " ", "timestamp": 1790808405655}
+{"type": "text", "text": "1", "timestamp": 1790808405763}
+{"type": "text", "text": "6", "timestamp": 1790808405869}
+{"type": "text", "text": " GB", "timestamp": 1790808405974}
+{"type": "text", "text": " of", "timestamp": 1790808406081}
+{"type": "text", "text": " dedicated", "timestamp": 1790808406186}
+{"type": "text", "text": " graphics", "timestamp": 1790808406288}
+{"type": "text", "text": " memory", "timestamp": 1790808406389}
+{"type": "text", "text": ",", "timestamp": 1790808406497}
+{"type": "text", "text": " the", "timestamp": 1790808406602}
+{"type": "text", "text": " system", "timestamp": 1790808406708}
+{"type": "text", "text": " can", "timestamp": 1790808406814}
+{"type": "text", "text": " handle", "timestamp": 1790808406921}
+{"type": "text", "text": " large", "timestamp": 1790808407029}
+{"type": "text", "text": " datasets", "timestamp": 1790808407135}
+{"type": "text", "text": " and", "timestamp": 1790808407241}
+{"type": "text", "text": " high", "timestamp": 1790808407343}
+{"type": "text", "text": "-resolution", "timestamp": 1790808407446}
+{"type": "text", "text": " textures", "timestamp": 1790808407550}
+{"type": "text", "text": " without", "timestamp": 1790808407656}
+{"type": "text", "text": " stutter", "timestamp": 1790808407763}
+{"type": "text", "text": "ing", "timestamp": 1790808407868}
+{"type": "text", "text": ".", "timestamp": 1790808407974}
+{"type": "text", "text": " For", "timestamp": 1790808408079}
+{"type": "text", "text": " teams", "timestamp": 1790808408182}
+{"type": "text", "text": " running", "timestamp": 1790808408289}
+{"type": "text", "text": " CAD", "timestamp": 1790808408390}
+{"type": "text", "text": " software", "timestamp": 1790808408493}
+{"type": "text", "text": ",", "timestamp": 1790808408597}
+{"type": "text", "text": " simulation", "timestamp": 1790808408708}
+{"type": "text", "text": " tools", "timestamp": 1790808408815}
+{"type": "text", "text": ",", "timestamp": 1790808408922}
+{"type": "text", "text": " or", "timestamp": 1790808409030}
+{"type": "text", "text": " video", "timestamp": 1790808409136}
+{"type": "text", "text": " editing", "timestamp": 1790808409240}
+{"type": "text", "text": " applications", "timestamp": 1790808409345}
+{"type": "text", "text": ",", "timestamp": 1790808409447}
+{"type": "text", "text": " this", "timestamp": 1790808409550}
+{"type": "text", "text": " ensures", "timestamp": 1790808409654}
+{"type": "text", "text": " that", "timestamp": 1790808409760}
+{"type": "text", "text": " the", "timestamp": 1790808409868}
+{"type": "text", "text": " hardware", "timestamp": 1790808409974}
+{"type": "text", "text": " does", "timestamp": 1790808410081}
+{"type": "text", "text": " not", "timestamp": 1790808410187}
+{"type": "text", "text": " become", "timestamp": 1790808410292}
+{"type": "text", "text": " a", "timestamp": 1790808410398}
+{"type": "text", "text": " bottleneck", "timestamp": 1790808410499}
+{"type": "text", "text": " in", "timestamp": 1790808410603}
+{"type": "text", "text": " your", "timestamp": 1790808410714}
+{"type": "text", "text": " workflow", "timestamp": 1790808410819}
+{"type": "text", "text": ".", "timestamp": 1790808410925}
+{"type": "text", "text": "\n\n", "timestamp": 1790808411031}
+{"type": "text", "text": "###", "timestamp": 1790808411137}
+{"type": "text", "text": " Mobility", "timestamp": 1790808411241}
+{"type": "text", "text": " Without", "timestamp": 1790808411349}
+{"type": "text", "text": " Comp", "timestamp": 1790808411454}
+{"type": "text", "text": "romise", "timestamp": 1790808411556}
+{"type": "text", "text": "\n\n", "timestamp": 1790808411659}
+{"type": "text", "text": "The", "timestamp": 1790808411763}
+{"type": "text", "text": " Aurora", "timestamp": 1790808411869}
+{"type": "text", "text": " ", "timestamp": 1790808411977}
+{"type": "text", "text": "1", "timestamp": 1790808412085}
+{"type": "text", "text": "4", "timestamp": 1790808412191}
+{"type": "text", "text": " maintains", "timestamp": 1790808412296}
+{"type": "text", "text": " a", "timestamp": 1790808412402}
+{"type": "text", "text": " professional", "timestamp": 1790808412508}
+{"type": "text", "text": " footprint", "timestamp": 1790808412610}
+{"type": "text", "text": " at", "timestamp": 1790808412714}
+{"type": "text", "text": " ", "timestamp": 1790808412820}
+{"type": "text", "text": "1", "timestamp": 1790808412925}
+{"type": "text", "text": ".", "timestamp": 1790808413031}
+{"type": "text", "text": "6", "timestamp": 1790808413136}
+{"type": "text", "text": "5", "timestamp": 1790808413241}
+{"type": "text", "text": " kg", "timestamp": 1790808413350}
+{"type": "text", "text": " (", "timestamp": 1790808413456}
+{"type": "text", "text": "3", "timestamp": 1790808413561}
+{"type": "text", "text": ".", "timestamp": 1790808413663}
+{"type": "text", "text": "6", "timestamp": 1790808413768}
+{"type": "text", "text": "4", "timestamp": 1790808413872}
+{"type": "text", "text": " lb", "timestamp": 1790808413982}
+{"type": "text", "text": ").", "timestamp": 1790808414088}
+{"type": "text", "text": " It", "timestamp": 1790808414193}
+{"type": "text", "text": " features", "timestamp": 1790808414298}
+{"type": "text", "text": " a", "timestamp": 1790808414404}
+{"type": "text", "text": " ", "timestamp": 1790808414510}
+{"type": "text", "text": "1", "timestamp": 1790808414620}
+{"type": "text", "text": "4", "timestamp": 1790808414723}
+{"type": "text", "text": "-inch", "timestamp": 1790808414822}
+{"type": "text", "text": " OLED", "timestamp": 1790808414927}
+{"type": "text", "text": " display", "timestamp": 1790808415036}
+{"type": "text", "text": " with", "timestamp": 1790808415149}
+{"type": "text", "text": " ", "timestamp": 1790808415254}
+{"type": "text", "text": "2", "timestamp": 1790808415360}
+{"type": "text", "text": "8", "timestamp": 1790808415466}
+{"type": "text", "text": "8", "timestamp": 1790808415571}
+{"type": "text", "text": "0", "timestamp": 1790808415677}
+{"type": "text", "text": " \u00d7", "timestamp": 1790808415782}
+{"type": "text", "text": " ", "timestamp": 1790808415882}
+{"type": "text", "text": "1", "timestamp": 1790808415985}
+{"type": "text", "text": "8", "timestamp": 1790808416092}
+{"type": "text", "text": "0", "timestamp": 1790808416198}
+{"type": "text", "text": "0", "timestamp": 1790808416307}
+{"type": "text", "text": " resolution", "timestamp": 1790808416415}
+{"type": "text", "text": " and", "timestamp": 1790808416521}
+{"type": "text", "text": " ", "timestamp": 1790808416626}
+{"type": "text", "text": "1", "timestamp": 1790808416731}
+{"type": "text", "text": "2", "timestamp": 1790808416833}
+{"type": "text", "text": "0", "timestamp": 1790808416933}
+{"type": "text", "text": " Hz", "timestamp": 1790808417038}
+{"type": "text", "text": " refresh", "timestamp": 1790808417147}
+{"type": "text", "text": " rates", "timestamp": 1790808417253}
+{"type": "text", "text": " for", "timestamp": 1790808417359}
+{"type": "text", "text": " smooth", "timestamp": 1790808417465}
+{"type": "text", "text": " scrolling", "timestamp": 1790808417571}
+{"type": "text", "text": " through", "timestamp": 1790808417676}
+{"type": "text", "text": " dense", "timestamp": 1790808417783}
+{"type": "text", "text": " data", "timestamp": 1790808417990}
+{"type": "text", "text": ".", "timestamp": 1790808417990}
+{"type": "text", "text": " The", "timestamp": 1790808418091}
+{"type": "text", "text": " screen", "timestamp": 1790808418191}
+{"type": "text", "text": " reaches", "timestamp": 1790808418291}
+{"type": "text", "text": " ", "timestamp": 1790808418391}
+{"type": "text", "text": "5", "timestamp": 1790808418491}
+{"type": "text", "text": "0", "timestamp": 1790808418591}
+{"type": "text", "text": "0", "timestamp": 1790808418691}
+{"type": "text", "text": " n", "timestamp": 1790808418792}
+{"type": "text", "text": "its", "timestamp": 1790808418893}
+{"type": "text", "text": " peak", "timestamp": 1790808418994}
+{"type": "text", "text": " brightness", "timestamp": 1790808419095}
+{"type": "text", "text": " and", "timestamp": 1790808419196}
+{"type": "text", "text": " covers", "timestamp": 1790808419296}
+{"type": "text", "text": " ", "timestamp": 1790808419397}
+{"type": "text", "text": "1", "timestamp": 1790808419498}
+{"type": "text", "text": "0", "timestamp": 1790808419599}
+{"type": "text", "text": "0", "timestamp": 1790808419699}
+{"type": "text", "text": "%", "timestamp": 1790808419800}
+{"type": "text", "text": " of", "timestamp": 1790808419901}
+{"type": "text", "text": " the", "timestamp": 1790808420004}
+{"type": "text", "text": " DC", "timestamp": 1790808420110}
+{"type": "text", "text": "I", "timestamp": 1790808420325}
+{"type": "text", "text": "-P", "timestamp": 1790808420325}
+{"type": "text", "text": "3", "timestamp": 1790808420431}
+{"type": "text", "text": " color", "timestamp": 1790808420538}
+{"type": "text", "text": " gam", "timestamp": 1790808420650}
+{"type": "text", "text": "ut", "timestamp": 1790808420756}
+{"type": "text", "text": ",", "timestamp": 1790808420869}
+{"type": "text", "text": " ensuring", "timestamp": 1790808420969}
+{"type": "text", "text": " accurate", "timestamp": 1790808421073}
+{"type": "text", "text": " color", "timestamp": 1790808421183}
+{"type": "text", "text": " representation", "timestamp": 1790808421290}
+{"type": "text", "text": " for", "timestamp": 1790808421395}
+{"type": "text", "text": " design", "timestamp": 1790808421502}
+{"type": "text", "text": " teams", "timestamp": 1790808421608}
+{"type": "text", "text": ".", "timestamp": 1790808421718}
+{"type": "text", "text": " The", "timestamp": 1790808421824}
+{"type": "text", "text": " ", "timestamp": 1790808421930}
+{"type": "text", "text": "8", "timestamp": 1790808422032}
+{"type": "text", "text": "6", "timestamp": 1790808422135}
+{"type": "text", "text": " Wh", "timestamp": 1790808422241}
+{"type": "text", "text": " battery", "timestamp": 1790808422352}
+{"type": "text", "text": " supports", "timestamp": 1790808422458}
+{"type": "text", "text": " up", "timestamp": 1790808422563}
+{"type": "text", "text": " to", "timestamp": 1790808422669}
+{"type": "text", "text": " ", "timestamp": 1790808422775}
+{"type": "text", "text": "1", "timestamp": 1790808422882}
+{"type": "text", "text": "1", "timestamp": 1790808422984}
+{"type": "text", "text": " hours", "timestamp": 1790808423093}
+{"type": "text", "text": " of", "timestamp": 1790808423196}
+{"type": "text", "text": " local", "timestamp": 1790808423297}
+{"type": "text", "text": " video", "timestamp": 1790808423396}
+{"type": "text", "text": " playback", "timestamp": 1790808423496}
+{"type": "text", "text": ".", "timestamp": 1790808423597}
+{"type": "text", "text": " The", "timestamp": 1790808423697}
+{"type": "text", "text": " device", "timestamp": 1790808423797}
+{"type": "text", "text": " connects", "timestamp": 1790808423897}
+{"type": "text", "text": " to", "timestamp": 1790808423998}
+{"type": "text", "text": " the", "timestamp": 1790808424099}
+{"type": "text", "text": " outside", "timestamp": 1790808424200}
+{"type": "text", "text": " world", "timestamp": 1790808424301}
+{"type": "text", "text": " through", "timestamp": 1790808424401}
+{"type": "text", "text": " two", "timestamp": 1790808424502}
+{"type": "text", "text": " Thunder", "timestamp": 1790808424603}
+{"type": "text", "text": "bolt", "timestamp": 1790808424703}
+{"type": "text", "text": " ", "timestamp": 1790808424804}
+{"type": "text", "text": "5", "timestamp": 1790808424905}
+{"type": "text", "text": " ports", "timestamp": 1790808425006}
+{"type": "text", "text": ",", "timestamp": 1790808425108}
+{"type": "text", "text": " a", "timestamp": 1790808425210}
+{"type": "text", "text": " USB", "timestamp": 1790808425312}
+{"type": "text", "text": "-A", "timestamp": 1790808425414}
+{"type": "text", "text": " ", "timestamp": 1790808425516}
+{"type": "text", "text": "3", "timestamp": 1790808425618}
+{"type": "text", "text": ".", "timestamp": 1790808425720}
+{"type": "text", "text": "2", "timestamp": 1790808425821}
+{"type": "text", "text": " port", "timestamp": 1790808425923}
+{"type": "text", "text": ",", "timestamp": 1790808426025}
+{"type": "text", "text": " an", "timestamp": 1790808426128}
+{"type": "text", "text": " HDMI", "timestamp": 1790808426232}
+{"type": "text", "text": " ", "timestamp": 1790808426340}
+{"type": "text", "text": "2", "timestamp": 1790808426446}
+{"type": "text", "text": ".", "timestamp": 1790808426556}
+{"type": "text", "text": "1", "timestamp": 1790808426663}
+{"type": "text", "text": " output", "timestamp": 1790808426770}
+{"type": "text", "text": ",", "timestamp": 1790808426878}
+{"type": "text", "text": " and", "timestamp": 1790808426986}
+{"type": "text", "text": " an", "timestamp": 1790808427094}
+{"type": "text", "text": " SD", "timestamp": 1790808427198}
+{"type": "text", "text": " card", "timestamp": 1790808427302}
+{"type": "text", "text": " reader", "timestamp": 1790808427410}
+{"type": "text", "text": ".", "timestamp": 1790808427520}
+{"type": "text", "text": "\n\n", "timestamp": 1790808427625}
+{"type": "text", "text": "Memory", "timestamp": 1790808427734}
+{"type": "text", "text": " and", "timestamp": 1790808427841}
+{"type": "text", "text": " storage", "timestamp": 1790808427947}
+{"type": "text", "text": " are", "timestamp": 1790808428056}
+{"type": "text", "text": " user", "timestamp": 1790808428163}
+{"type": "text", "text": "-up", "timestamp": 1790808428266}
+{"type": "text", "text": "grade", "timestamp": 1790808428369}
+{"type": "text", "text": "able", "timestamp": 1790808428483}
+{"type": "text", "text": ".", "timestamp": 1790808428588}
+{"type": "text", "text": " The", "timestamp": 1790808428694}
+{"type": "text", "text": " system", "timestamp": 1790808428800}
+{"type": "text", "text": " ships", "timestamp": 1790808428908}
+{"type": "text", "text": " with", "timestamp": 1790808429019}
+{"type": "text", "text": " ", "timestamp": 1790808429124}
+{"type": "text", "text": "3", "timestamp": 1790808429231}
+{"type": "text", "text": "2", "timestamp": 1790808429334}
+{"type": "text", "text": " GB", "timestamp": 1790808429437}
+{"type": "text", "text": " of", "timestamp": 1790808429543}
+{"type": "text", "text": " memory", "timestamp": 1790808429651}
+{"type": "text", "text": " in", "timestamp": 1790808429756}
+{"type": "text", "text": " two", "timestamp": 1790808429861}
+{"type": "text", "text": " SO", "timestamp": 1790808429966}
+{"type": "text", "text": "-D", "timestamp": 1790808430072}
+{"type": "text", "text": "IM", "timestamp": 1790808430178}
+{"type": "text", "text": "M", "timestamp": 1790808430284}
+{"type": "text", "text": " slots", "timestamp": 1790808430387}
+{"type": "text", "text": ",", "timestamp": 1790808430490}
+{"type": "text", "text": " expand", "timestamp": 1790808430596}
+{"type": "text", "text": "able", "timestamp": 1790808430714}
+{"type": "text", "text": " up", "timestamp": 1790808430822}
+{"type": "text", "text": " to", "timestamp": 1790808430928}
+{"type": "text", "text": " ", "timestamp": 1790808431033}
+{"type": "text", "text": "1", "timestamp": 1790808431139}
+{"type": "text", "text": "2", "timestamp": 1790808431245}
+{"type": "text", "text": "8", "timestamp": 1790808431352}
+{"type": "text", "text": " GB", "timestamp": 1790808431455}
+{"type": "text", "text": ".", "timestamp": 1790808431558}
+{"type": "text", "text": " Storage", "timestamp": 1790808431664}
+{"type": "text", "text": " begins", "timestamp": 1790808431770}
+{"type": "text", "text": " at", "timestamp": 1790808431875}
+{"type": "text", "text": " ", "timestamp": 1790808431984}
+{"type": "text", "text": "1", "timestamp": 1790808432091}
+{"type": "text", "text": " TB", "timestamp": 1790808432198}
+{"type": "text", "text": " of", "timestamp": 1790808432305}
+{"type": "text", "text": " NV", "timestamp": 1790808432412}
+{"type": "text", "text": "Me", "timestamp": 1790808432514}
+{"type": "text", "text": " SSD", "timestamp": 1790808432619}
+{"type": "text", "text": " space", "timestamp": 1790808432723}
+{"type": "text", "text": " and", "timestamp": 1790808432831}
+{"type": "text", "text": " can", "timestamp": 1790808432936}
+{"type": "text", "text": " be", "timestamp": 1790808433042}
+{"type": "text", "text": " configured", "timestamp": 1790808433148}
+{"type": "text", "text": " up", "timestamp": 1790808433256}
+{"type": "text", "text": " to", "timestamp": 1790808433361}
+{"type": "text", "text": " ", "timestamp": 1790808433467}
+{"type": "text", "text": "4", "timestamp": 1790808433570}
+{"type": "text", "text": " TB", "timestamp": 1790808433673}
+{"type": "text", "text": " across", "timestamp": 1790808433775}
+{"type": "text", "text": " two", "timestamp": 1790808433874}
+{"type": "text", "text": " M", "timestamp": 1790808433974}
+{"type": "text", "text": ".", "timestamp": 1790808434075}
+{"type": "text", "text": "2", "timestamp": 1790808434175}
+{"type": "text", "text": " slots", "timestamp": 1790808434275}
+{"type": "text", "text": ".", "timestamp": 1790808434377}
+{"type": "text", "text": " This", "timestamp": 1790808434477}
+{"type": "text", "text": " flexibility", "timestamp": 1790808434579}
+{"type": "text", "text": " ensures", "timestamp": 1790808434680}
+{"type": "text", "text": " that", "timestamp": 1790808434781}
+{"type": "text", "text": " the", "timestamp": 1790808434882}
+{"type": "text", "text": " hardware", "timestamp": 1790808434983}
+{"type": "text", "text": " can", "timestamp": 1790808435085}
+{"type": "text", "text": " grow", "timestamp": 1790808435186}
+{"type": "text", "text": " alongside", "timestamp": 1790808435287}
+{"type": "text", "text": " your", "timestamp": 1790808435390}
+{"type": "text", "text": " firm", "timestamp": 1790808435492}
+{"type": "text", "text": "'s", "timestamp": 1790808435596}
+{"type": "text", "text": " expanding", "timestamp": 1790808435698}
+{"type": "text", "text": " projects", "timestamp": 1790808435800}
+{"type": "text", "text": ".", "timestamp": 1790808435903}
+{"type": "text", "text": "\n\n", "timestamp": 1790808436005}
+{"type": "text", "text": "###", "timestamp": 1790808436108}
+{"type": "text", "text": " Security", "timestamp": 1790808436211}
+{"type": "text", "text": " and", "timestamp": 1790808436314}
+{"type": "text", "text": " Rel", "timestamp": 1790808436417}
+{"type": "text", "text": "iability", "timestamp": 1790808436520}
+{"type": "text", "text": "\n\n", "timestamp": 1790808436624}
+{"type": "text", "text": "In", "timestamp": 1790808436727}
+{"type": "text", "text": " an", "timestamp": 1790808436830}
+{"type": "text", "text": " engineering", "timestamp": 1790808436933}
+{"type": "text", "text": " environment", "timestamp": 1790808437036}
+{"type": "text", "text": ",", "timestamp": 1790808437140}
+{"type": "text", "text": " data", "timestamp": 1790808437347}
+{"type": "text", "text": " integrity", "timestamp": 1790808437347}
+{"type": "text", "text": " and", "timestamp": 1790808437450}
+{"type": "text", "text": " security", "timestamp": 1790808437553}
+{"type": "text", "text": " are", "timestamp": 1790808437658}
+{"type": "text", "text": " paramount", "timestamp": 1790808437761}
+{"type": "text", "text": ".", "timestamp": 1790808437864}
+{"type": "text", "text": " The", "timestamp": 1790808437967}
+{"type": "text", "text": " device", "timestamp": 1790808438070}
+{"type": "text", "text": " includes", "timestamp": 1790808438173}
+{"type": "text", "text": " a", "timestamp": 1790808438276}
+{"type": "text", "text": " fingerprint", "timestamp": 1790808438379}
+{"type": "text", "text": " reader", "timestamp": 1790808438482}
+{"type": "text", "text": ",", "timestamp": 1790808438585}
+{"type": "text", "text": " an", "timestamp": 1790808438690}
+{"type": "text", "text": " IR", "timestamp": 1790808438793}
+{"type": "text", "text": " camera", "timestamp": 1790808438896}
+{"type": "text", "text": ",", "timestamp": 1790808438999}
+{"type": "text", "text": " and", "timestamp": 1790808439102}
+{"type": "text", "text": " TPM", "timestamp": 1790808439205}
+{"type": "text", "text": " ", "timestamp": 1790808439307}
+{"type": "text", "text": "2", "timestamp": 1790808439411}
+{"type": "text", "text": ".", "timestamp": 1790808439514}
+{"type": "text", "text": "0", "timestamp": 1790808439616}
+{"type": "text", "text": " for", "timestamp": 1790808439720}
+{"type": "text", "text": " hardware", "timestamp": 1790808439823}
+{"type": "text", "text": "-based", "timestamp": 1790808439926}
+{"type": "text", "text": " security", "timestamp": 1790808440029}
+{"type": "text", "text": ".", "timestamp": 1790808440132}
+{"type": "text", "text": " The", "timestamp": 1790808440235}
+{"type": "text", "text": " self", "timestamp": 1790808440338}
+{"type": "text", "text": "-he", "timestamp": 1790808440440}
+{"type": "text", "text": "aling", "timestamp": 1790808440543}
+{"type": "text", "text": " BIOS", "timestamp": 1790808440646}
+{"type": "text", "text": " adds", "timestamp": 1790808440751}
+{"type": "text", "text": " another", "timestamp": 1790808440855}
+{"type": "text", "text": " layer", "timestamp": 1790808440957}
+{"type": "text", "text": " of", "timestamp": 1790808441060}
+{"type": "text", "text": " protection", "timestamp": 1790808441163}
+{"type": "text", "text": " against", "timestamp": 1790808441266}
+{"type": "text", "text": " firmware", "timestamp": 1790808441369}
+{"type": "text", "text": " corruption", "timestamp": 1790808441472}
+{"type": "text", "text": ".", "timestamp": 1790808441576}
+{"type": "text", "text": " The", "timestamp": 1790808441678}
+{"type": "text", "text": " ", "timestamp": 1790808441783}
+{"type": "text", "text": "3", "timestamp": 1790808441886}
+{"type": "text", "text": "-year", "timestamp": 1790808441989}
+{"type": "text", "text": " on", "timestamp": 1790808442092}
+{"type": "text", "text": "-site", "timestamp": 1790808442195}
+{"type": "text", "text": " warranty", "timestamp": 1790808442298}
+{"type": "text", "text": " with", "timestamp": 1790808442402}
+{"type": "text", "text": " next", "timestamp": 1790808442505}
+{"type": "text", "text": "-business", "timestamp": 1790808442608}
+{"type": "text", "text": "-day", "timestamp": 1790808442711}
+{"type": "text", "text": " service", "timestamp": 1790808442816}
+{"type": "text", "text": " standard", "timestamp": 1790808442919}
+{"type": "text", "text": " reduces", "timestamp": 1790808443022}
+{"type": "text", "text": " downtime", "timestamp": 1790808443126}
+{"type": "text", "text": ".", "timestamp": 1790808443229}
+{"type": "text", "text": " This", "timestamp": 1790808443332}
+{"type": "text", "text": " warranty", "timestamp": 1790808443436}
+{"type": "text", "text": " can", "timestamp": 1790808443539}
+{"type": "text", "text": " be", "timestamp": 1790808443642}
+{"type": "text", "text": " extended", "timestamp": 1790808443745}
+{"type": "text", "text": " to", "timestamp": 1790808443850}
+{"type": "text", "text": " ", "timestamp": 1790808443953}
+{"type": "text", "text": "5", "timestamp": 1790808444057}
+{"type": "text", "text": " years", "timestamp": 1790808444160}
+{"type": "text", "text": " for", "timestamp": 1790808444263}
+{"type": "text", "text": " long", "timestamp": 1790808444366}
+{"type": "text", "text": "-term", "timestamp": 1790808444470}
+{"type": "text", "text": " peace", "timestamp": 1790808444573}
+{"type": "text", "text": " of", "timestamp": 1790808444677}
+{"type": "text", "text": " mind", "timestamp": 1790808444780}
+{"type": "text", "text": ".", "timestamp": 1790808444885}
+{"type": "text", "text": "\n\n", "timestamp": 1790808444988}
+{"type": "text", "text": "The", "timestamp": 1790808445092}
+{"type": "text", "text": " system", "timestamp": 1790808445195}
+{"type": "text", "text": " ships", "timestamp": 1790808445298}
+{"type": "text", "text": " with", "timestamp": 1790808445402}
+{"type": "text", "text": " Windows", "timestamp": 1790808445505}
+{"type": "text", "text": " ", "timestamp": 1790808445609}
+{"type": "text", "text": "1", "timestamp": 1790808445712}
+{"type": "text", "text": "1", "timestamp": 1790808445815}
+{"type": "text", "text": " Pro", "timestamp": 1790808445919}
+{"type": "text", "text": ",", "timestamp": 1790808446028}
+{"type": "text", "text": " providing", "timestamp": 1790808446139}
+{"type": "text", "text": " a", "timestamp": 1790808446250}
+{"type": "text", "text": " familiar", "timestamp": 1790808446358}
+{"type": "text", "text": " and", "timestamp": 1790808446466}
+{"type": "text", "text": " robust", "timestamp": 1790808446575}
+{"type": "text", "text": " operating", "timestamp": 1790808446683}
+{"type": "text", "text": " environment", "timestamp": 1790808446792}
+{"type": "text", "text": ".", "timestamp": 1790808446898}
+{"type": "text", "text": " Starting", "timestamp": 1790808447006}
+{"type": "text", "text": " at", "timestamp": 1790808447112}
+{"type": "text", "text": " $", "timestamp": 1790808447224}
+{"type": "text", "text": "2", "timestamp": 1790808447331}
+{"type": "text", "text": ",", "timestamp": 1790808447443}
+{"type": "text", "text": "8", "timestamp": 1790808447550}
+{"type": "text", "text": "9", "timestamp": 1790808447657}
+{"type": "text", "text": "9", "timestamp": 1790808447765}
+{"type": "text", "text": " for", "timestamp": 1790808447871}
+{"type": "text", "text": " the", "timestamp": 1790808447974}
+{"type": "text", "text": " base", "timestamp": 1790808448078}
+{"type": "text", "text": " configuration", "timestamp": 1790808448185}
+{"type": "text", "text": ",", "timestamp": 1790808448295}
+{"type": "text", "text": " the", "timestamp": 1790808448401}
+{"type": "text", "text": " Aurora", "timestamp": 1790808448516}
+{"type": "text", "text": " ", "timestamp": 1790808448623}
+{"type": "text", "text": "1", "timestamp": 1790808448735}
+{"type": "text", "text": "4", "timestamp": 1790808448840}
+{"type": "text", "text": " offers", "timestamp": 1790808448950}
+{"type": "text", "text": " a", "timestamp": 1790808449054}
+{"type": "text", "text": " competitive", "timestamp": 1790808449157}
+{"type": "text", "text": " entry", "timestamp": 1790808449263}
+{"type": "text", "text": " point", "timestamp": 1790808449370}
+{"type": "text", "text": " for", "timestamp": 1790808449476}
+{"type": "text", "text": " high", "timestamp": 1790808449583}
+{"type": "text", "text": "-performance", "timestamp": 1790808449685}
+{"type": "text", "text": " work", "timestamp": 1790808449797}
+{"type": "text", "text": "stations", "timestamp": 1790808449901}
+{"type": "text", "text": ".", "timestamp": 1790808450009}
+{"type": "text", "text": "\n\n", "timestamp": 1790808450112}
+{"type": "text", "text": "###", "timestamp": 1790808450218}
+{"type": "text", "text": " Ready", "timestamp": 1790808450328}
+{"type": "text", "text": " to", "timestamp": 1790808450434}
+{"type": "text", "text": " Upgrade", "timestamp": 1790808450541}
+{"type": "text", "text": "?", "timestamp": 1790808450646}
+{"type": "text", "text": "\n\n", "timestamp": 1790808450755}
+{"type": "text", "text": "The", "timestamp": 1790808450863}
+{"type": "text", "text": " Aurora", "timestamp": 1790808450968}
+{"type": "text", "text": " ", "timestamp": 1790808451072}
+{"type": "text", "text": "1", "timestamp": 1790808451174}
+{"type": "text", "text": "4", "timestamp": 1790808451279}
+{"type": "text", "text": " is", "timestamp": 1790808451384}
+{"type": "text", "text": " available", "timestamp": 1790808451495}
+{"type": "text", "text": " starting", "timestamp": 1790808451602}
+{"type": "text", "text": " in", "timestamp": 1790808451708}
+{"type": "text", "text": " Q", "timestamp": 1790808451815}
+{"type": "text", "text": "4", "timestamp": 1790808451923}
+{"type": "text", "text": ".", "timestamp": 1790808452032}
+{"type": "text", "text": " Contact", "timestamp": 1790808452134}
+{"type": "text", "text": " our", "timestamp": 1790808452240}
+{"type": "text", "text": " sales", "timestamp": 1790808452347}
+{"type": "text", "text": " team", "timestamp": 1790808452455}
+{"type": "text", "text": " today", "timestamp": 1790808452565}
+{"type": "text", "text": " to", "timestamp": 1790808452679}
+{"type": "text", "text": " discuss", "timestamp": 1790808452786}
+{"type": "text", "text": " configurations", "timestamp": 1790808452894}
+{"type": "text", "text": " tailored", "timestamp": 1790808453006}
+{"type": "text", "text": " to", "timestamp": 1790808453112}
+{"type": "text", "text": " your", "timestamp": 1790808453216}
+{"type": "text", "text": " engineering", "timestamp": 1790808453317}
+{"type": "text", "text": " firm", "timestamp": 1790808453426}
+{"type": "text", "text": "'s", "timestamp": 1790808453534}
+{"type": "text", "text": " specific", "timestamp": 1790808453641}
+{"type": "text", "text": " needs", "timestamp": 1790808453748}
+{"type": "text", "text": ".", "timestamp": 1790808453857}
+{"type": "text", "text": " Let", "timestamp": 1790808453964}
+{"type": "text", "text": " us", "timestamp": 1790808454072}
+{"type": "text", "text": " help", "timestamp": 1790808454180}
+{"type": "text", "text": " you", "timestamp": 1790808454287}
+{"type": "text", "text": " build", "timestamp": 1790808454392}
+{"type": "text", "text": " a", "timestamp": 1790808454501}
+{"type": "text", "text": " fleet", "timestamp": 1790808454608}
+{"type": "text", "text": " of", "timestamp": 1790808454718}
+{"type": "text", "text": " work", "timestamp": 1790808454825}
+{"type": "text", "text": "stations", "timestamp": 1790808454933}
+{"type": "text", "text": " that", "timestamp": 1790808455040}
+{"type": "text", "text": " keep", "timestamp": 1790808455147}
+{"type": "text", "text": " your", "timestamp": 1790808455256}
+{"type": "text", "text": " team", "timestamp": 1790808455360}
+{"type": "text", "text": " moving", "timestamp": 1790808455464}
+{"type": "text", "text": " forward", "timestamp": 1790808455572}
+{"type": "text", "text": ".", "timestamp": 1790808455679}
+{"type": "result", "session_id": "20260930_154607_d3fadf", "exit_code": 0, "text": "# The Aurora 14: Your AI-Ready Workstation in a 14-inch Chassis\n\nFor mid-size engineering firms, the pressure is on. You need to deliver complex simulations and AI-driven designs without the overhead of massive data center infrastructure. The Aurora 14 arrives in Q4 to solve that exact problem: a 14-inch mobile workstation that delivers the power of a desktop in a chassis you can actually carry into client meetings.\n\nIt is not about chasing every trend; it is about giving your engineering teams the tools they need to work faster, more securely, and more efficiently. The Aurora 14 is designed for the professionals who need to run heavy workloads without compromising on mobility or design integrity.\n\n### AI Processing at Your Fingertips\n\nThe Helix H9 AI processor is the heart of this machine. With 16 cores split between performance and efficiency, it handles demanding engineering tasks without draining the battery. The integrated NPU, rated at 60 TOPS, brings artificial intelligence directly to the device. Your team can run open-weight language models up to about 30 billion parameters locally, provided the system has 64 GB of memory or more. This means sensitive data stays on the device, and your engineers do not need to rely on cloud connections for local inference tasks.\n\n### Graphics That Get the Job Done\n\nProfessional applications demand professional-grade graphics. The Vireo V8000 Pro discrete GPU provides the raw horsepower needed for rendering complex simulations and 3D models. With 16 GB of dedicated graphics memory, the system can handle large datasets and high-resolution textures without stuttering. For teams running CAD software, simulation tools, or video editing applications, this ensures that the hardware does not become a bottleneck in your workflow.\n\n### Mobility Without Compromise\n\nThe Aurora 14 maintains a professional footprint at 1.65 kg (3.64 lb). It features a 14-inch OLED display with 2880 \u00d7 1800 resolution and 120 Hz refresh rates for smooth scrolling through dense data. The screen reaches 500 nits peak brightness and covers 100% of the DCI-P3 color gamut, ensuring accurate color representation for design teams. The 86 Wh battery supports up to 11 hours of local video playback. The device connects to the outside world through two Thunderbolt 5 ports, a USB-A 3.2 port, an HDMI 2.1 output, and an SD card reader.\n\nMemory and storage are user-upgradeable. The system ships with 32 GB of memory in two SO-DIMM slots, expandable up to 128 GB. Storage begins at 1 TB of NVMe SSD space and can be configured up to 4 TB across two M.2 slots. This flexibility ensures that the hardware can grow alongside your firm's expanding projects.\n\n### Security and Reliability\n\nIn an engineering environment, data integrity and security are paramount. The device includes a fingerprint reader, an IR camera, and TPM 2.0 for hardware-based security. The self-healing BIOS adds another layer of protection against firmware corruption. The 3-year on-site warranty with next-business-day service standard reduces downtime. This warranty can be extended to 5 years for long-term peace of mind.\n\nThe system ships with Windows 11 Pro, providing a familiar and robust operating environment. Starting at $2,899 for the base configuration, the Aurora 14 offers a competitive entry point for high-performance workstations.\n\n### Ready to Upgrade?\n\nThe Aurora 14 is available starting in Q4. Contact our sales team today to discuss configurations tailored to your engineering firm's specific needs. Let us help you build a fleet of workstations that keep your team moving forward.", "tokens": {"input": 565, "output": 794, "total": 5178, "cache_read": 3819, "cache_write": 0}, "duration_ms": 87917, "timestamp": 1790808455820}

@@ -1,0 +1,10 @@
+Measure,pmm-a hosted,pmm-d laptop,Matches or differs?,Why
+Average quality (of 25),15.6,17.0,,
+Latency per task (s),14.69,72.15,,
+Tokens per second,65.23,8.09,,
+Works with Wi-Fi off,No,6 of 6 runs completed,,
+Connections off-device during runs,All task data (by design),none observed,,
+Energy per task (Wh),Not measurable,0.1116,,
+Peak model memory (GB),N/A,11.87,,
+"Speed, first vs last runs",N/A,8.3 -> 7.7 tok/s,,
+Cost per task ($),0.001007,4.5e-05,,

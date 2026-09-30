@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [],
+  "notes": "The summary is well over 250 words, though it includes the requested three bullets. It preserves the major caveats but omits test conditions, including the room setup and power mode, image count and resolution, and the shared inference runtime.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011739
+}

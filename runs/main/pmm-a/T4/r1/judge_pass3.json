@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered using the documentation, with section citations where applicable and a support contact suggestion for Q5. Q3\u2019s final sentence is slightly confusing because it follows the mention of an additional display via HDMI.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006341
+}

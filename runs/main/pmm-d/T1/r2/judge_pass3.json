@@ -1,0 +1,17 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "The Aurora 14 delivers 'the power of a desktop.'",
+    "The processor handles demanding engineering tasks 'without draining the battery.'",
+    "The GPU can render complex simulations and 3D models, and handle large datasets and high-resolution textures 'without stuttering.'",
+    "The hardware will not become a bottleneck for CAD, simulation, or video-editing workflows.",
+    "Storage is user-upgradeable; the sheet specifies two M.2 slots but does not state that storage is user-upgradeable."
+  ],
+  "notes": "The post addresses IT decision-makers but makes unsupported performance assurances. It also exceeds the 500\u2013600 word limit, has more than a two-sentence intro, and uses four benefit sections rather than three.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007259
+}

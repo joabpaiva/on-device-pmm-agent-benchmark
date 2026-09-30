@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 3,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The summary preserves the six highlighted caveats and the Vantage\u2019s image-generation advantage, but omits other stated conditions and qualifications, including the hard, flat desk, time-to-first-token test, and the possibility of wider unit-to-unit variation. The summary itself is under 250 words and has three bullets; the unnecessary closing word-count note makes the response less send-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.015674
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The summary is useful for a VP audience but exceeds 250 words and omits required caveats, including the three-unit sample and the single Vantage configuration. It also leaves out test conditions such as the power mode, room temperature, and AC setup.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008848
+}

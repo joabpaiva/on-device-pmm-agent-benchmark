@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [
+    "The weight difference partly reflects Aurora 14's smaller screen; the sources do not establish that causal link.",
+    "Vantage Pro 16 has the largest battery; Summit X15's battery capacity is not stated, so this cannot be determined.",
+    "Aurora 14 has the newest Thunderbolt generation; Vantage Pro 16's ports are not stated, so this comparison cannot cover all three products."
+  ],
+  "notes": "The file contains the requested eight-attribute table and three differentiators, with missing values marked correctly. Unsupported claims need editing, and the reply includes substantial commentary rather than only the requested file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010781
+}

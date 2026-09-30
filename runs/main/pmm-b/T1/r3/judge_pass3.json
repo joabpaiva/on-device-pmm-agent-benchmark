@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Engineering teams spend significant time waiting for cloud-based AI tools, and the Aurora 14 will produce faster iteration cycles.",
+    "The workstation can render CAD assemblies and train computer vision models; these workload capabilities are not specified.",
+    "Storage is user-upgradeable; the sheet explicitly confirms user upgradeability only for memory.",
+    "Thunderbolt 5 ports support external GPU configurations.",
+    "The display ensures accurate color representation; color-gamut coverage alone does not establish accuracy.",
+    "The warranty provides predictable service costs; the sheet does not state service costs."
+  ],
+  "notes": "The post includes the requested headline, two-sentence intro, three benefit sections, and call to action, and it fits the stated word range. It addresses IT decision-makers well, but several unsupported claims need revision, and the extra status commentary prevents it from being exactly the requested blog post.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009112
+}

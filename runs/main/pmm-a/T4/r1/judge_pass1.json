@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered with appropriate section citations, and Q5 avoids claiming Ubuntu certification. Q3\u2019s final sentence is slightly confusing because the HDMI port can support an additional display beyond those connected through the dock.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004222
+}

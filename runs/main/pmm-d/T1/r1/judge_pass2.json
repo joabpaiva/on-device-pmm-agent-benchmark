@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [
+    "The NPU and GPU can handle AI inference and graphics-intensive rendering simultaneously.",
+    "Up to 11 hours of local video playback provides all-day runtime for users working away from power outlets.",
+    "The listed ports ensure compatibility with existing peripherals and field equipment.",
+    "The warranty reduces downtime costs."
+  ],
+  "notes": "The post addresses IT decision-makers and includes a headline, two-sentence intro, and call to action. It has four benefit sections rather than the requested three, and several performance and runtime claims go beyond the spec sheet.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006178
+}

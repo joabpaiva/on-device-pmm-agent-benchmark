@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The post meets the requested length and structure, and its product claims are supported by the spec sheet. The extra notes after the post should be removed before publication; repeated caveats about unspecified details also make the launch message less polished.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.025403
+}

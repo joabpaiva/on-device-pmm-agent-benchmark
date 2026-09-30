@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "\u201cBest-in-class port speed and port variety\u201d is unsupported because Vantage Pro 16\u2019s ports are not stated.",
+    "The claim that Aurora 14\u2019s Thunderbolt 5 ports are faster than Summit X15\u2019s Thunderbolt 4 ports is not stated in the source material."
+  ],
+  "notes": "The table includes all three products and eight requested attributes, with missing values marked correctly. Two claims in the first differentiator should be narrowed to what the table establishes.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003768
+}

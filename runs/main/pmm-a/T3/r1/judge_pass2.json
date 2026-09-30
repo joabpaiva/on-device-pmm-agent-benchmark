@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "The output says one Vantage Pro 16 unit was tested; the paper says three units of each configuration were tested.",
+    "It attributes the 38 tokens/second 8B result to both Aurora 14 configurations; the paper reports that figure for the base configuration only."
+  ],
+  "notes": "The summary preserves several major results and caveats, including Vantage\u2019s image-generation advantage, but omits test conditions such as the environment and the 2,000-token prompt. It provides six findings bullets rather than the requested three key messages.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011539
+}

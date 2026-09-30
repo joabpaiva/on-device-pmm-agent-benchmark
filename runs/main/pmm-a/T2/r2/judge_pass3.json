@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Aurora\u2019s NPU is \u201c50% more powerful\u201d; the brief establishes a 50% higher TOPS rating, not overall performance.",
+    "Aurora\u2019s NPU \u201cwill perform better on AI locally\u201d and on \u201cAI-accelerated application loads\u201d; the brief does not substantiate those performance outcomes.",
+    "One Thunderbolt 4 port \u201cis not enough for dual docks or hubs\u201d; the brief makes no such claim.",
+    "Aurora\u2019s ports provide an \u201ceasier setup\u201d; the brief does not support this benefit."
+  ],
+  "notes": "All requested sections and item counts are present, and the battlecard is under 350 words. The VRAM response does not address the stated need for 24 GB, while the third objection describes a Vantage limitation rather than a likely objection to Aurora.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005894
+}

@@ -1,0 +1,22 @@
+Q1. Can I upgrade from 32 GB to 128 GB myself later?
+Yes. Aurora 14 has two SO-DIMM memory slots and supports up to 128 GB. You may upgrade the memory yourself. Doing so does not void the warranty if you use qualified modules from the Aurora compatibility list.
+Caveat: the documentation doesn't say how the base model's 32 GB is configured. It doesn't say whether you would need to replace the existing modules to reach 128 GB. Confirm that with Aurora sales or support before you buy.
+Source: Section 2, Memory and Storage Upgrades.
+
+Q2. What warranty comes standard, and can I extend it?
+Every Aurora 14 includes a 3-year on-site, next-business-day warranty. A technician comes to your location after remote diagnosis confirms a hardware fault. You can extend coverage to 4 or 5 years, either at purchase or within 90 days of purchase. Accidental damage protection is not included. It is sold separately.
+Source: Section 1, Warranty and Support.
+
+Q3. How many external monitors can I run from one dock?
+Through a single Thunderbolt 5 dock, Aurora 14 supports either of these setups:
+- Up to three external 4K displays at 60 Hz.
+- Two external displays at up to 8K 60 Hz.
+The HDMI 2.1 port on the device supports one additional display at up to 4K 120 Hz. That display is in addition to the dock.
+Source: Section 3, Docking and External Displays.
+
+Q4. What happens if the BIOS is attacked?
+Aurora 14 has a self-healing BIOS that continuously checks firmware integrity. If the BIOS is corrupted or attacked, the system automatically restores a protected copy at the next boot.
+Source: Section 4, Security Features.
+
+Q5. Is Aurora 14 certified for Ubuntu 24.04?
+Not covered in the provided documentation. Please contact Aurora technical support or your Aurora sales representative or reseller. They can confirm operating system certification.

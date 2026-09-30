@@ -1,0 +1,17 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "Aurora has '30 months more supported'; the stated warranties differ by 24 months.",
+    "Aurora's OLED panel offers superior contrast and color accuracy; the brief does not establish either comparison.",
+    "Vantage is $300 less 'at launch'; no launch timing is provided.",
+    "Volume discounts or rebates may be available and could offset the price difference; the brief provides no such information.",
+    "Aurora's display is preferable 'for most owners'; the brief does not support that broad claim."
+  ],
+  "notes": "The requested sections are present and under the word limit, but the affordability objections largely repeat each other, and the discovery section asks two questions rather than one. Unsupported sales claims and the warranty arithmetic error prevent this from being ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006651
+}

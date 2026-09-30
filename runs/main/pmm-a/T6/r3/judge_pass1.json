@@ -1,0 +1,16 @@
+{
+  "facts": 1,
+  "complete": 2,
+  "reader": 2,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "Thunderbolt 5 is the latest interface and enables faster data transfer and future-proofing for peripherals.",
+    "Aurora 14 has the smallest or most compact chassis; display size and weight do not establish chassis dimensions.",
+    "Aurora 14 has the highest GPU clock potential.",
+    "The Vireo V6000 is entry-level, the Vireo V9000 is high-end, and the Vireo V8000 Pro delivers strong mid-range GPU performance."
+  ],
+  "notes": "The table covers all three products and eight attributes, with missing values correctly marked. The differentiators include unsupported claims, and the reply adds commentary instead of giving only the requested file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004409
+}

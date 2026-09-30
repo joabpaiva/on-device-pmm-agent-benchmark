@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 5,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "The VP-level summary is concise, preserves the six highlighted caveats, and acknowledges Vantage\u2019s image-generation advantage. It does not keep every test condition as requested: it omits the 22 \u00b0C desk and power-mode setup, image-generation sample and resolution, and several workload-protocol details.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010416
+}

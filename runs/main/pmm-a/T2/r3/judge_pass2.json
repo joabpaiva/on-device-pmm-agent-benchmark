@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Vantage\u2019s 40 TOPS NPU cannot support ~30B-parameter local models.",
+    "Aurora has DDR5 memory; the brief does not specify the memory type.",
+    "Aurora\u2019s connectivity and warranty reduce downtime.",
+    "Upgradeable memory avoids locked-in costs and extends the device\u2019s useful life.",
+    "Both laptops run approximately 11\u201313 hours; the brief gives only rated video-playback figures.",
+    "AI inference is trending faster than raw rendering workloads."
+  ],
+  "notes": "All requested sections and item counts are present, and the comparison acknowledges genuine Vantage advantages. Several unsupported claims, particularly in the objection responses, need correction before this is customer-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004399
+}

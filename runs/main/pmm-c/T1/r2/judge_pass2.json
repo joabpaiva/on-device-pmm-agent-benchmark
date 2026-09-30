@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [
+    "Engineers and data scientists can work \u201cwithout waiting on a shared server\u201d; the spec sheet does not establish shared-server use or wait times."
+  ],
+  "notes": "The post covers the requested benefits and speaks directly to IT decision-makers, but the shared-server claim needs removal. The appended drafting notes are not part of a sendable launch post and put the full response outside the requested format.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009977
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The key message implies the Vantage Pro 16 has a demonstrated advantage for 3D-heavy work; the paper did not test 3D performance."
+  ],
+  "notes": "The summary exceeds 250 words, though it has the requested three bullets. It retains the main findings and major caveats but omits test conditions including the room temperature, desk and power setup, image-generation settings, and details of the scripted design session.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008099
+}

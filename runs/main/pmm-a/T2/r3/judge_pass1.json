@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Aurora has DDR5 memory; the brief does not specify memory type.",
+    "Vantage\u2019s 40 TOPS NPU cannot run ~30B-parameter local models; the brief makes no such claim.",
+    "AI inference is trending faster than raw render workloads; the brief provides no support for this trend.",
+    "Both laptops run 11\u201313 hours; the brief gives only *up to* video-playback ratings."
+  ],
+  "notes": "The battlecard includes every requested section and stays within the word limit. Several unsupported or overstated claims, especially about Vantage\u2019s local-model capability, need revision before it is customer-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008886
+}

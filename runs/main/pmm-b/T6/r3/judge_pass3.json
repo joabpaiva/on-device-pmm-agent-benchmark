@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "\u201cFastest connectivity with Thunderbolt 5\u201d is not established across all three products because Vantage Pro 16\u2019s ports are not stated."
+  ],
+  "notes": "The table covers all eight attributes and correctly marks missing values, and it provides three differentiators. The connectivity claim needs qualification; the response also includes the document contents rather than replying with just the file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007158
+}

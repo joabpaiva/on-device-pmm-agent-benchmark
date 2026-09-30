@@ -1,0 +1,19 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The Aurora 14 can reduce cloud workstation costs without losing capability; no cost or capability comparison is provided.",
+    "The cloud model requires data to stay in the office, and its monthly bill applies to every seat.",
+    "Engineers can access client files offline and process drawings and project files with on-device language models; the spec does not establish those workflows.",
+    "Email 1 omits the required 64 GB-or-more configuration when claiming support for models up to about 30 billion parameters.",
+    "Client drawings and project files never leave the device unless authorized; no such security guarantee is specified.",
+    "Storage is user-upgradeable; the spec confirms two M.2 slots but explicitly identifies only memory as user-upgradeable.",
+    "Ordering now positions the buyer for deployment when the new budget cycle opens; the sources do not establish that timing."
+  ],
+  "notes": "All three emails have subjects and one explicit CTA, and they follow the requested sequence. Emails 1 and 2 exceed 120 words; unsupported cost, workflow, security and timing claims require more than light edits.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.016741
+}

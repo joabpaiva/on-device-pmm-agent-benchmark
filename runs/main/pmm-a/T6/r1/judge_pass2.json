@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 1,
+  "format": 4,
+  "invented_facts": [
+    "Aurora 14 has the \u201cmost powerful GPU\u201d; the sources provide no GPU performance comparison.",
+    "Aurora 14 beats Summit X15 on storage; Summit\u2019s maximum storage is not stated.",
+    "Aurora 14 is 180 g lighter than Summit X15; the stated weights differ by 300 g.",
+    "Neither competitor offers an SD card reader; Vantage Pro 16\u2019s ports are not stated, and Summit X15\u2019s notes do not establish that it lacks one."
+  ],
+  "notes": "The table covers all three products and eight attributes, but unsupported claims and a weight-calculation error make the differentiators unsuitable to send. The reply also includes more than the requested file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006935
+}

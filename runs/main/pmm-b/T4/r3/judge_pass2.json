@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "The suggestion to check an official Aurora support website implies that such a website exists; the documentation does not identify one."
+  ],
+  "notes": "All five questions are answered, and Q1\u2013Q4 cite the relevant sections. Q5 correctly states that certification is not covered and suggests contacting a sales representative, but the additional website suggestion is unsupported.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008159
+}

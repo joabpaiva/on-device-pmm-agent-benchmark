@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "The workstation removes dependency on cloud infrastructure for core development tasks.",
+    "The 11-hour local-video-playback rating ensures all-day operation during site visits or off-grid work.",
+    "The port selection eliminates the need for dongles.",
+    "A demo unit can be requested."
+  ],
+  "notes": "The post meets the requested structure and length and addresses IT decision-makers. Several operational promises go beyond the spec sheet, so it needs more than light edits before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006034
+}

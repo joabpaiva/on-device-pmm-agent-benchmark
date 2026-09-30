@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "The response claims Aurora\u2019s memory headroom and NPU matter more than Vantage\u2019s extra GPU memory for local AI models; the brief does not establish that general comparison.",
+    "The closing note repeats an unverified Vantage price-cut rumor that the brief explicitly bars from customer-facing material."
+  ],
+  "notes": "All requested sections are present and the card is under 350 words, but the positioning summary has three sentences rather than two. The unsupported workload comparison and the closing note need removal before a marketer could send it.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.013019
+}

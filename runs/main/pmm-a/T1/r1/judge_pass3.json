@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The GPU ensures sufficient resources for rendering complex simulations.",
+    "The display provides industry-standard color accuracy in large, sunlit meeting spaces.",
+    "The workstation fits easily into tight overhead luggage compartments.",
+    "The service plan ensures minimal downtime throughout the device\u2019s lifespan.",
+    "A technical demonstration with product specialists can be scheduled.",
+    "The website offers a configuration tool and a full enterprise evaluation kit."
+  ],
+  "notes": "The post includes the requested headline, two-sentence intro, three benefit sections and call to action, and it meets the word limit. It addresses IT concerns, but several performance, display and purchasing claims exceed what the spec sheet supports.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.00527
+}

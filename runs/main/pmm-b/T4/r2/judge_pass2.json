@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "The response implies that an official Aurora support website exists and provides operating-system certification details; the documentation does not establish either point."
+  ],
+  "notes": "Q1\u2013Q4 are supported and cite the relevant sections. Q5 correctly says the certification is not covered and suggests contacting a sales representative, but adds an unsupported website recommendation.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004348
+}

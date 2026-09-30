@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The battlecard includes every requested element and its product comparisons are supported by the brief. The closing note nevertheless exposes unverified field intelligence that the brief explicitly says not to use in customer-facing material; remove it before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.0063
+}

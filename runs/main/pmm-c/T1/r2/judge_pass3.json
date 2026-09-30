@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [
+    "The intro says engineers and data scientists want to avoid waiting on a shared server; the spec sheet does not establish that this is their current workflow or concern.",
+    "The post says configurations can be adjusted later. The sheet explicitly confirms later user upgrades for memory, but not for storage or other configuration choices."
+  ],
+  "notes": "The post has the requested headline, two-sentence intro, three benefit sections and call to action, and it fits the IT decision-maker audience. The appended writer\u2019s notes are not part of a send-ready blog post and put the full submission beyond the requested word range.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.024176
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "An official Aurora support website exists; the documentation does not mention one."
+  ],
+  "notes": "The answers address all five questions and cite the relevant sections where documentation is available. For Q5, contacting a sales representative is an appropriate suggestion, but directing the customer to an undocumented website needs verification.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004878
+}

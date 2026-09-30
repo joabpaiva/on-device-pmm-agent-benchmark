@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 4,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All claims are supported, and the answers follow the requested structure. Q1 omits the useful qualification that a self-upgrade does not void the warranty when qualified modules are used.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002791
+}

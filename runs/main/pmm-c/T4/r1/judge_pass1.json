@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered using the cited sections. The Ubuntu certification question is correctly identified as not covered, with a suggested contact.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002657
+}

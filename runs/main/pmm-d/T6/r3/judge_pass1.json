@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 2,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 weighs 630 g less than Vantage Pro 16; the stated weights differ by 650 g.",
+    "Aurora 14 has the fastest GPU memory bandwidth potential; bandwidth is not stated in the source.",
+    "Aurora 14 has more GPU memory than Vantage Pro 16; it has 16 GB versus Vantage's 24 GB."
+  ],
+  "notes": "The table covers all eight attributes and correctly marks missing values as not stated. The second differentiator is unsupported and contradicts the table, so the result needs more than light edits before use.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007118
+}

@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The 30B model required 128 GB for meaningful performance; the tested 64 GB Vantage Pro 16 reached 15 tokens per second.",
+    "The prose reports sustained throughput as roughly 10\u201312% below peak, but the paper reports about 12% for Aurora 14 and 9% for Vantage Pro 16."
+  ],
+  "notes": "The summary is concise and VP-oriented, and it preserves Vantage's image-generation advantage. It omits three required caveats: only one Vantage configuration was tested, the language models used 4-bit quantization, and output quality was not evaluated.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005573
+}

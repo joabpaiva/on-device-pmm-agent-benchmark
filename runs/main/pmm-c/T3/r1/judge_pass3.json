@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The closing claim that the output is about 235 words including bullets is inaccurate; it is substantially longer."
+  ],
+  "notes": "The summary retains the six highlighted caveats and acknowledges Vantage\u2019s image-generation advantage, but omits test conditions including the hard, flat desk, shared inference runtime, 2,000-token prompt, and image count and resolution. The summary itself is under 250 words, but the full response exceeds 250 words and adds an unnecessary word-count comment after the bullets.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.021889
+}

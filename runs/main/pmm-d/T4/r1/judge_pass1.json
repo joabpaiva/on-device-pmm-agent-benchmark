@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All substantive product claims are supported, and the answers cite the relevant sections. Q5 correctly avoids claiming certification and suggests contacting support, but adds explanation beyond the requested exact fallback response.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007848
+}

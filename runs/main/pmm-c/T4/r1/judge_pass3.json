@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five answers follow the documentation, cite the relevant sections where available, and direct the customer to an appropriate contact for the unanswered certification question.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002647
+}

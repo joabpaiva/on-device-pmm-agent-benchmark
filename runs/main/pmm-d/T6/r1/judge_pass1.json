@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 has 'best-in-class port speed and port variety'; Vantage Pro 16's ports are not stated, so this comparison is unsupported.",
+    "Thunderbolt 5 is faster than Summit X15's Thunderbolt 4; the source lists port types but provides no speed comparison."
+  ],
+  "notes": "The table covers all eight attributes for all three products and correctly marks missing values. Two claims in the first differentiator go beyond what the source establishes.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005966
+}

@@ -1,0 +1,91 @@
+Write a 3-email nurture sequence for the buyer in the attached persona (it_director_persona.md): an IT director whose team is cloud-first and whose budget cycle closes in Q1. Each email: a subject line, 120 words maximum, exactly one call to action. Email 1 builds awareness, email 2 answers the cloud-first objection with facts from the attached spec sheet, email 3 asks for a meeting. Use no statistics that are not in the attachments.
+
+---
+Attached file: it_director_persona.md
+---
+# Buyer Persona: IT Director, Mid-Size Engineering Firm
+
+*Fictional persona created for benchmark testing.*
+
+**Name:** Morgan Lee
+**Role:** IT Director
+**Company:** A 400-person civil engineering firm with three offices
+
+## Situation
+- The IT team is cloud-first. Engineers use cloud-hosted virtual workstations for CAD and simulation work.
+- The hardware and software budget cycle closes at the end of Q1. Anything not approved by then waits a year.
+- Engineers increasingly want to use AI tools on client drawings and project files.
+
+## What Morgan cares about
+- Total cost across the fleet, including the monthly cloud workstation bill.
+- Security and keeping client project data under the firm's control.
+- Fleet manageability: fewer device types, easy upgrades, predictable service.
+- Engineer productivity on site visits, where connectivity is unreliable.
+
+## Likely objections
+- "We already pay for cloud workstations. Why buy powerful laptops too?"
+- "Laptops are harder to manage and secure than cloud desktops."
+- "Our budget is locked until the end of Q1."
+
+## Preferred communication
+- Short, direct emails. No hype. Facts over adjectives.
+
+
+---
+Attached file: aurora14_spec.md
+---
+# Aurora 14 AI Workstation: Product Specification Sheet
+
+*Fictional product created for benchmark testing. Not a real device.*
+
+**Positioning:** A 14-inch mobile workstation built for engineers, designers and data scientists who need to run AI models and professional applications on the device.
+
+**Starting price:** $2,899 (base configuration)
+**Availability:** Q4
+
+## Processor and AI
+- Helix H9 AI processor, 16 cores (6 performance, 10 efficiency)
+- Integrated NPU rated at 60 TOPS
+- Runs open-weight language models up to about 30 billion parameters on the device in configurations with 64 GB of memory or more
+
+## Graphics
+- Vireo V8000 Pro discrete GPU with 16 GB of dedicated graphics memory
+
+## Memory
+- 32 GB standard, configurable up to 128 GB
+- Two SO-DIMM slots; memory is user-upgradeable
+
+## Storage
+- 1 TB NVMe SSD standard, configurable up to 4 TB
+- Two M.2 slots
+
+## Display
+- 14-inch OLED, 2880 × 1800, 120 Hz
+- 500 nits peak brightness, 100% DCI-P3 color gamut
+
+## Design
+- Weight: starting at 1.65 kg (3.64 lb)
+- Aluminum chassis
+
+## Battery
+- 86 Wh battery
+- Up to 11 hours of local video playback (measured at 150 nits, Wi-Fi off)
+
+## Ports
+- 2 × Thunderbolt 5
+- 1 × USB-A 3.2
+- 1 × HDMI 2.1
+- SD card reader
+- 3.5 mm headphone jack
+
+## Security
+- Fingerprint reader and IR camera
+- TPM 2.0
+- Self-healing BIOS
+
+## Software
+- Ships with Windows 11 Pro
+
+## Warranty
+- 3-year on-site, next-business-day service standard
+- Extendable to 5 years

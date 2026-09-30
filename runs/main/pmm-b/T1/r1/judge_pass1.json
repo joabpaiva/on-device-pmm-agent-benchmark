@@ -1,0 +1,19 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The workstation removes dependency on cloud infrastructure for core development tasks.",
+    "Local workloads reduce latency and bandwidth costs and accelerate iteration cycles.",
+    "The GPU supports demanding training tasks that traditionally required desktop-class hardware.",
+    "Mid-size firms cannot afford to refresh workstations every two years.",
+    "Firms can deploy base configurations today, despite the stated Q4 availability.",
+    "The battery provides all-day runtime for typical office workflows; the source measures only local video playback under specified conditions.",
+    "Demo units and volume deployment options are available."
+  ],
+  "notes": "The post meets the requested length and structure and addresses IT decision-makers. Several operational benefits are presented as established facts without support from the spec sheet, so it needs more than light edits before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006629
+}

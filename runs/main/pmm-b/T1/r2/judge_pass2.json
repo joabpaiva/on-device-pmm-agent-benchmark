@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [
+    "The workstation removes the need for cloud infrastructure for core development tasks.",
+    "The battery rating ensures all-day operation during site visits or off-grid work; the sheet specifies only local video playback under particular test conditions.",
+    "The port selection eliminates the need for dongles.",
+    "A demo unit is available to request."
+  ],
+  "notes": "The post has the requested headline, two-sentence intro, three benefit sections and call to action, and it addresses IT decision-makers. It is approximately 470 words, below the 500\u2013600-word limit, and several claims go beyond the spec sheet.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.022654
+}

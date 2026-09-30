@@ -1,0 +1,19 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "Aurora 14 can reduce the firm's recurring cloud workstation costs; the source provides no cost comparison or savings estimate.",
+    "The 30-billion-parameter model claim in Email 1 omits the required configuration of at least 64 GB of memory.",
+    "Aurora 14 will simplify fleet management or result in fewer device types; these are buyer priorities, not established product outcomes.",
+    "The GPU handles CAD and simulation locally; the spec does not establish support or performance for those specific workloads.",
+    "Storage is user-upgradeable; the spec confirms two M.2 slots but explicitly calls only memory user-upgradeable.",
+    "Engineers can work offline on client drawings and sync them when connectivity returns; that workflow is not specified.",
+    "Cloud workstations would remain for peak loads while daily tasks shift locally; no workload allocation is supported by the source."
+  ],
+  "notes": "All three emails have subjects and one CTA each, but Email 2 exceeds 120 words. The sequence addresses Morgan's priorities, yet several promised outcomes need evidence or more cautious wording before it is ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.014951
+}

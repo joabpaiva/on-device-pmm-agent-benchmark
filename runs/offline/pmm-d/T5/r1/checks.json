@@ -1,0 +1,10 @@
+{
+  "emails_found": 3,
+  "email_count_ok": true,
+  "words_per_email": [
+    100,
+    108,
+    89
+  ],
+  "length_ok": true
+}

@@ -1,0 +1,656 @@
+{"type": "system", "subtype": "init", "model": "qwen3.5-9b-q8_0", "session_id": "20260930_162408_d0c518", "timestamp": 1790810648719}
+{"type": "text", "text": "**", "timestamp": 1790810661640}
+{"type": "text", "text": "On", "timestamp": 1790810661743}
+{"type": "text", "text": "-", "timestamp": 1790810661847}
+{"type": "text", "text": "Device", "timestamp": 1790810661956}
+{"type": "text", "text": " AI", "timestamp": 1790810662067}
+{"type": "text", "text": " Work", "timestamp": 1790810662178}
+{"type": "text", "text": "load", "timestamp": 1790810662286}
+{"type": "text", "text": " Performance", "timestamp": 1790810662397}
+{"type": "text", "text": ":", "timestamp": 1790810663982}
+{"type": "text", "text": " An", "timestamp": 1790810663983}
+{"type": "text", "text": " Evaluation", "timestamp": 1790810663983}
+{"type": "text", "text": " of", "timestamp": 1790810663983}
+{"type": "text", "text": " the", "timestamp": 1790810663983}
+{"type": "text", "text": " Aurora", "timestamp": 1790810663983}
+{"type": "text", "text": " ", "timestamp": 1790810663983}
+{"type": "text", "text": "1", "timestamp": 1790810663983}
+{"type": "text", "text": "4", "timestamp": 1790810663983}
+{"type": "text", "text": " AI", "timestamp": 1790810663984}
+{"type": "text", "text": " Work", "timestamp": 1790810663984}
+{"type": "text", "text": "station", "timestamp": 1790810663984}
+{"type": "text", "text": "**", "timestamp": 1790810663984}
+{"type": "text", "text": "\n\n", "timestamp": 1790810663984}
+{"type": "text", "text": "Engineering", "timestamp": 1790810663984}
+{"type": "text", "text": " and", "timestamp": 1790810664087}
+{"type": "text", "text": " design", "timestamp": 1790810664190}
+{"type": "text", "text": " teams", "timestamp": 1790810664294}
+{"type": "text", "text": " are", "timestamp": 1790810664397}
+{"type": "text", "text": " increasingly", "timestamp": 1790810664509}
+{"type": "text", "text": " running", "timestamp": 1790810664631}
+{"type": "text", "text": " AI", "timestamp": 1790810664746}
+{"type": "text", "text": " models", "timestamp": 1790810664856}
+{"type": "text", "text": " locally", "timestamp": 1790810664969}
+{"type": "text", "text": " to", "timestamp": 1790810665078}
+{"type": "text", "text": " protect", "timestamp": 1790810665187}
+{"type": "text", "text": " sensitive", "timestamp": 1790810665304}
+{"type": "text", "text": " files", "timestamp": 1790810665411}
+{"type": "text", "text": ",", "timestamp": 1790810665527}
+{"type": "text", "text": " ensure", "timestamp": 1790810665636}
+{"type": "text", "text": " offline", "timestamp": 1790810665757}
+{"type": "text", "text": " access", "timestamp": 1790810665863}
+{"type": "text", "text": ",", "timestamp": 1790810665982}
+{"type": "text", "text": " and", "timestamp": 1790810666098}
+{"type": "text", "text": " avoid", "timestamp": 1790810666210}
+{"type": "text", "text": " cloud", "timestamp": 1790810666320}
+{"type": "text", "text": " charges", "timestamp": 1790810666429}
+{"type": "text", "text": ".", "timestamp": 1790810666539}
+{"type": "text", "text": " This", "timestamp": 1790810666647}
+{"type": "text", "text": " paper", "timestamp": 1790810666749}
+{"type": "text", "text": " evaluates", "timestamp": 1790810666852}
+{"type": "text", "text": " the", "timestamp": 1790810666956}
+{"type": "text", "text": " Aurora", "timestamp": 1790810667058}
+{"type": "text", "text": " ", "timestamp": 1790810667161}
+{"type": "text", "text": "1", "timestamp": 1790810667264}
+{"type": "text", "text": "4", "timestamp": 1790810667370}
+{"type": "text", "text": " AI", "timestamp": 1790810667485}
+{"type": "text", "text": " Work", "timestamp": 1790810667592}
+{"type": "text", "text": "station", "timestamp": 1790810667698}
+{"type": "text", "text": " on", "timestamp": 1790810667803}
+{"type": "text", "text": " three", "timestamp": 1790810667908}
+{"type": "text", "text": " work", "timestamp": 1790810668016}
+{"type": "text", "text": "loads", "timestamp": 1790810668122}
+{"type": "text", "text": ":", "timestamp": 1790810670017}
+{"type": "text", "text": " language", "timestamp": 1790810670017}
+{"type": "text", "text": " model", "timestamp": 1790810670017}
+{"type": "text", "text": " inference", "timestamp": 1790810670017}
+{"type": "text", "text": ",", "timestamp": 1790810670017}
+{"type": "text", "text": " image", "timestamp": 1790810670018}
+{"type": "text", "text": " generation", "timestamp": 1790810670018}
+{"type": "text", "text": ",", "timestamp": 1790810670018}
+{"type": "text", "text": " and", "timestamp": 1790810670018}
+{"type": "text", "text": " an", "timestamp": 1790810670018}
+{"type": "text", "text": " AI", "timestamp": 1790810670018}
+{"type": "text", "text": "-ass", "timestamp": 1790810670018}
+{"type": "text", "text": "isted", "timestamp": 1790810670018}
+{"type": "text", "text": " design", "timestamp": 1790810670018}
+{"type": "text", "text": " session", "timestamp": 1790810670018}
+{"type": "text", "text": ".", "timestamp": 1790810670019}
+{"type": "text", "text": "\n\n", "timestamp": 1790810670019}
+{"type": "text", "text": "Testing", "timestamp": 1790810670019}
+{"type": "text", "text": " was", "timestamp": 1790810670133}
+{"type": "text", "text": " performed", "timestamp": 1790810670240}
+{"type": "text", "text": " on", "timestamp": 1790810670343}
+{"type": "text", "text": " pre", "timestamp": 1790810670449}
+{"type": "text", "text": "-production", "timestamp": 1790810670557}
+{"type": "text", "text": " units", "timestamp": 1790810670672}
+{"type": "text", "text": " of", "timestamp": 1790810670783}
+{"type": "text", "text": " the", "timestamp": 1790810670891}
+{"type": "text", "text": " Aurora", "timestamp": 1790810670998}
+{"type": "text", "text": " ", "timestamp": 1790810671101}
+{"type": "text", "text": "1", "timestamp": 1790810671209}
+{"type": "text", "text": "4", "timestamp": 1790810671314}
+{"type": "text", "text": " (", "timestamp": 1790810671417}
+{"type": "text", "text": "3", "timestamp": 1790810671522}
+{"type": "text", "text": "2", "timestamp": 1790810671623}
+{"type": "text", "text": " GB", "timestamp": 1790810671723}
+{"type": "text", "text": " and", "timestamp": 1790810671824}
+{"type": "text", "text": " ", "timestamp": 1790810671924}
+{"type": "text", "text": "1", "timestamp": 1790810672025}
+{"type": "text", "text": "2", "timestamp": 1790810672126}
+{"type": "text", "text": "8", "timestamp": 1790810672225}
+{"type": "text", "text": " GB", "timestamp": 1790810672329}
+{"type": "text", "text": " configurations", "timestamp": 1790810672429}
+{"type": "text", "text": ")", "timestamp": 1790810672529}
+{"type": "text", "text": " against", "timestamp": 1790810672629}
+{"type": "text", "text": " a", "timestamp": 1790810672729}
+{"type": "text", "text": " single", "timestamp": 1790810672830}
+{"type": "text", "text": " V", "timestamp": 1790810672931}
+{"type": "text", "text": "antage", "timestamp": 1790810673032}
+{"type": "text", "text": " Pro", "timestamp": 1790810673133}
+{"type": "text", "text": " ", "timestamp": 1790810673234}
+{"type": "text", "text": "1", "timestamp": 1790810673337}
+{"type": "text", "text": "6", "timestamp": 1790810673440}
+{"type": "text", "text": " configuration", "timestamp": 1790810673542}
+{"type": "text", "text": " (", "timestamp": 1790810673646}
+{"type": "text", "text": "6", "timestamp": 1790810673749}
+{"type": "text", "text": "4", "timestamp": 1790810673852}
+{"type": "text", "text": " GB", "timestamp": 1790810673955}
+{"type": "text", "text": ",", "timestamp": 1790810674060}
+{"type": "text", "text": " V", "timestamp": 1790810674164}
+{"type": "text", "text": "ire", "timestamp": 1790810674268}
+{"type": "text", "text": "o", "timestamp": 1790810674374}
+{"type": "text", "text": " V", "timestamp": 1790810674479}
+{"type": "text", "text": "9", "timestamp": 1790810674584}
+{"type": "text", "text": "0", "timestamp": 1790810674689}
+{"type": "text", "text": "0", "timestamp": 1790810674793}
+{"type": "text", "text": "0", "timestamp": 1790810674897}
+{"type": "text", "text": " GPU", "timestamp": 1790810675002}
+{"type": "text", "text": ").", "timestamp": 1790810675106}
+{"type": "text", "text": " We", "timestamp": 1790810675210}
+{"type": "text", "text": " tested", "timestamp": 1790810675314}
+{"type": "text", "text": " three", "timestamp": 1790810675420}
+{"type": "text", "text": " units", "timestamp": 1790810675524}
+{"type": "text", "text": " per", "timestamp": 1790810675636}
+{"type": "text", "text": " configuration", "timestamp": 1790810675747}
+{"type": "text", "text": " and", "timestamp": 1790810675856}
+{"type": "text", "text": " report", "timestamp": 1790810675963}
+{"type": "text", "text": " median", "timestamp": 1790810676072}
+{"type": "text", "text": " results", "timestamp": 1790810676181}
+{"type": "text", "text": ".", "timestamp": 1790810676290}
+{"type": "text", "text": "\n\n", "timestamp": 1790810676397}
+{"type": "text", "text": "**", "timestamp": 1790810676502}
+{"type": "text", "text": "Language", "timestamp": 1790810676609}
+{"type": "text", "text": " Model", "timestamp": 1790810676722}
+{"type": "text", "text": " In", "timestamp": 1790810676828}
+{"type": "text", "text": "ference", "timestamp": 1790810676935}
+{"type": "text", "text": ":**", "timestamp": 1790810689153}
+{"type": "text", "text": " With", "timestamp": 1790810689154}
+{"type": "text", "text": " an", "timestamp": 1790810689154}
+{"type": "text", "text": " ", "timestamp": 1790810689154}
+{"type": "text", "text": "8", "timestamp": 1790810689154}
+{"type": "text", "text": "B", "timestamp": 1790810689154}
+{"type": "text", "text": " model", "timestamp": 1790810689154}
+{"type": "text", "text": ",", "timestamp": 1790810689154}
+{"type": "text", "text": " the", "timestamp": 1790810689154}
+{"type": "text", "text": " Aurora", "timestamp": 1790810689154}
+{"type": "text", "text": " ", "timestamp": 1790810689155}
+{"type": "text", "text": "1", "timestamp": 1790810689155}
+{"type": "text", "text": "4", "timestamp": 1790810689155}
+{"type": "text", "text": " base", "timestamp": 1790810689155}
+{"type": "text", "text": " (", "timestamp": 1790810689155}
+{"type": "text", "text": "3", "timestamp": 1790810689155}
+{"type": "text", "text": "2", "timestamp": 1790810689155}
+{"type": "text", "text": " GB", "timestamp": 1790810689155}
+{"type": "text", "text": ")", "timestamp": 1790810689155}
+{"type": "text", "text": " matched", "timestamp": 1790810689155}
+{"type": "text", "text": " the", "timestamp": 1790810689155}
+{"type": "text", "text": " V", "timestamp": 1790810689155}
+{"type": "text", "text": "antage", "timestamp": 1790810689155}
+{"type": "text", "text": " Pro", "timestamp": 1790810689156}
+{"type": "text", "text": " ", "timestamp": 1790810689156}
+{"type": "text", "text": "1", "timestamp": 1790810689156}
+{"type": "text", "text": "6", "timestamp": 1790810689156}
+{"type": "text", "text": " at", "timestamp": 1790810689156}
+{"type": "text", "text": " ", "timestamp": 1790810689156}
+{"type": "text", "text": "3", "timestamp": 1790810689156}
+{"type": "text", "text": "8", "timestamp": 1790810689156}
+{"type": "text", "text": " vs", "timestamp": 1790810689156}
+{"type": "text", "text": ".", "timestamp": 1790810689156}
+{"type": "text", "text": " ", "timestamp": 1790810689156}
+{"type": "text", "text": "4", "timestamp": 1790810689156}
+{"type": "text", "text": "1", "timestamp": 1790810689156}
+{"type": "text", "text": " tokens", "timestamp": 1790810689157}
+{"type": "text", "text": " per", "timestamp": 1790810689157}
+{"type": "text", "text": " second", "timestamp": 1790810689157}
+{"type": "text", "text": ".", "timestamp": 1790810689157}
+{"type": "text", "text": " With", "timestamp": 1790810689157}
+{"type": "text", "text": " a", "timestamp": 1790810689157}
+{"type": "text", "text": " ", "timestamp": 1790810689157}
+{"type": "text", "text": "3", "timestamp": 1790810689157}
+{"type": "text", "text": "0", "timestamp": 1790810689157}
+{"type": "text", "text": "B", "timestamp": 1790810689157}
+{"type": "text", "text": " model", "timestamp": 1790810689157}
+{"type": "text", "text": ",", "timestamp": 1790810689157}
+{"type": "text", "text": " memory", "timestamp": 1790810689157}
+{"type": "text", "text": " capacity", "timestamp": 1790810689158}
+{"type": "text", "text": " drove", "timestamp": 1790810689158}
+{"type": "text", "text": " performance", "timestamp": 1790810689158}
+{"type": "text", "text": ".", "timestamp": 1790810689158}
+{"type": "text", "text": " The", "timestamp": 1790810689158}
+{"type": "text", "text": " Aurora", "timestamp": 1790810689158}
+{"type": "text", "text": " ", "timestamp": 1790810689158}
+{"type": "text", "text": "1", "timestamp": 1790810689158}
+{"type": "text", "text": "4", "timestamp": 1790810689158}
+{"type": "text", "text": " base", "timestamp": 1790810689158}
+{"type": "text", "text": " (", "timestamp": 1790810689158}
+{"type": "text", "text": "3", "timestamp": 1790810689158}
+{"type": "text", "text": "2", "timestamp": 1790810689158}
+{"type": "text", "text": " GB", "timestamp": 1790810689158}
+{"type": "text", "text": ")", "timestamp": 1790810689159}
+{"type": "text", "text": " reached", "timestamp": 1790810689159}
+{"type": "text", "text": " only", "timestamp": 1790810689159}
+{"type": "text", "text": " ", "timestamp": 1790810689159}
+{"type": "text", "text": "6", "timestamp": 1790810689159}
+{"type": "text", "text": " tokens", "timestamp": 1790810689159}
+{"type": "text", "text": " per", "timestamp": 1790810689159}
+{"type": "text", "text": " second", "timestamp": 1790810689159}
+{"type": "text", "text": " due", "timestamp": 1790810689159}
+{"type": "text", "text": " to", "timestamp": 1790810689159}
+{"type": "text", "text": " slower", "timestamp": 1790810689159}
+{"type": "text", "text": " memory", "timestamp": 1790810689159}
+{"type": "text", "text": " paths", "timestamp": 1790810689160}
+{"type": "text", "text": ",", "timestamp": 1790810689160}
+{"type": "text", "text": " while", "timestamp": 1790810689160}
+{"type": "text", "text": " the", "timestamp": 1790810689160}
+{"type": "text", "text": " high", "timestamp": 1790810689160}
+{"type": "text", "text": "-memory", "timestamp": 1790810689160}
+{"type": "text", "text": " configuration", "timestamp": 1790810689160}
+{"type": "text", "text": " (", "timestamp": 1790810689160}
+{"type": "text", "text": "1", "timestamp": 1790810689160}
+{"type": "text", "text": "2", "timestamp": 1790810689160}
+{"type": "text", "text": "8", "timestamp": 1790810689160}
+{"type": "text", "text": " GB", "timestamp": 1790810689160}
+{"type": "text", "text": ")", "timestamp": 1790810689160}
+{"type": "text", "text": " reached", "timestamp": 1790810689160}
+{"type": "text", "text": " ", "timestamp": 1790810689161}
+{"type": "text", "text": "1", "timestamp": 1790810689161}
+{"type": "text", "text": "7", "timestamp": 1790810689161}
+{"type": "text", "text": " tokens", "timestamp": 1790810689161}
+{"type": "text", "text": " per", "timestamp": 1790810689161}
+{"type": "text", "text": " second", "timestamp": 1790810689161}
+{"type": "text", "text": ",", "timestamp": 1790810689161}
+{"type": "text", "text": " out", "timestamp": 1790810689161}
+{"type": "text", "text": "perform", "timestamp": 1790810689161}
+{"type": "text", "text": "ing", "timestamp": 1790810689161}
+{"type": "text", "text": " the", "timestamp": 1790810689161}
+{"type": "text", "text": " V", "timestamp": 1790810689161}
+{"type": "text", "text": "antage", "timestamp": 1790810689161}
+{"type": "text", "text": " Pro", "timestamp": 1790810689162}
+{"type": "text", "text": " ", "timestamp": 1790810689162}
+{"type": "text", "text": "1", "timestamp": 1790810689162}
+{"type": "text", "text": "6", "timestamp": 1790810689162}
+{"type": "text", "text": " at", "timestamp": 1790810689162}
+{"type": "text", "text": " ", "timestamp": 1790810689162}
+{"type": "text", "text": "1", "timestamp": 1790810689162}
+{"type": "text", "text": "5", "timestamp": 1790810689162}
+{"type": "text", "text": " tokens", "timestamp": 1790810689162}
+{"type": "text", "text": " per", "timestamp": 1790810689162}
+{"type": "text", "text": " second", "timestamp": 1790810689162}
+{"type": "text", "text": ".", "timestamp": 1790810689162}
+{"type": "text", "text": "\n\n", "timestamp": 1790810689162}
+{"type": "text", "text": "**", "timestamp": 1790810689162}
+{"type": "text", "text": "Image", "timestamp": 1790810689264}
+{"type": "text", "text": " Generation", "timestamp": 1790810689371}
+{"type": "text", "text": ":**", "timestamp": 1790810694707}
+{"type": "text", "text": " The", "timestamp": 1790810694707}
+{"type": "text", "text": " V", "timestamp": 1790810694707}
+{"type": "text", "text": "antage", "timestamp": 1790810694707}
+{"type": "text", "text": " Pro", "timestamp": 1790810694707}
+{"type": "text", "text": " ", "timestamp": 1790810694707}
+{"type": "text", "text": "1", "timestamp": 1790810694708}
+{"type": "text", "text": "6", "timestamp": 1790810694708}
+{"type": "text", "text": " averaged", "timestamp": 1790810694708}
+{"type": "text", "text": " ", "timestamp": 1790810694708}
+{"type": "text", "text": "4", "timestamp": 1790810694708}
+{"type": "text", "text": ".", "timestamp": 1790810694708}
+{"type": "text", "text": "1", "timestamp": 1790810694708}
+{"type": "text", "text": " seconds", "timestamp": 1790810694708}
+{"type": "text", "text": " per", "timestamp": 1790810694708}
+{"type": "text", "text": " ", "timestamp": 1790810694708}
+{"type": "text", "text": "1", "timestamp": 1790810694708}
+{"type": "text", "text": "0", "timestamp": 1790810694708}
+{"type": "text", "text": "2", "timestamp": 1790810694708}
+{"type": "text", "text": "4", "timestamp": 1790810694708}
+{"type": "text", "text": " \u00d7", "timestamp": 1790810694708}
+{"type": "text", "text": " ", "timestamp": 1790810694708}
+{"type": "text", "text": "1", "timestamp": 1790810694708}
+{"type": "text", "text": "0", "timestamp": 1790810694708}
+{"type": "text", "text": "2", "timestamp": 1790810694708}
+{"type": "text", "text": "4", "timestamp": 1790810694708}
+{"type": "text", "text": " image", "timestamp": 1790810694708}
+{"type": "text", "text": " versus", "timestamp": 1790810694708}
+{"type": "text", "text": " ", "timestamp": 1790810694708}
+{"type": "text", "text": "5", "timestamp": 1790810694708}
+{"type": "text", "text": ".", "timestamp": 1790810694708}
+{"type": "text", "text": "3", "timestamp": 1790810694708}
+{"type": "text", "text": " seconds", "timestamp": 1790810694708}
+{"type": "text", "text": " for", "timestamp": 1790810694708}
+{"type": "text", "text": " the", "timestamp": 1790810694708}
+{"type": "text", "text": " Aurora", "timestamp": 1790810694708}
+{"type": "text", "text": " ", "timestamp": 1790810694708}
+{"type": "text", "text": "1", "timestamp": 1790810694708}
+{"type": "text", "text": "4", "timestamp": 1790810694708}
+{"type": "text", "text": ",", "timestamp": 1790810694708}
+{"type": "text", "text": " attributed", "timestamp": 1790810694708}
+{"type": "text", "text": " to", "timestamp": 1790810694708}
+{"type": "text", "text": " the", "timestamp": 1790810694708}
+{"type": "text", "text": " competitor", "timestamp": 1790810694708}
+{"type": "text", "text": "'s", "timestamp": 1790810694708}
+{"type": "text", "text": " larger", "timestamp": 1790810694708}
+{"type": "text", "text": " and", "timestamp": 1790810694708}
+{"type": "text", "text": " faster", "timestamp": 1790810694708}
+{"type": "text", "text": " GPU", "timestamp": 1790810694709}
+{"type": "text", "text": ".", "timestamp": 1790810694709}
+{"type": "text", "text": "\n\n", "timestamp": 1790810694709}
+{"type": "text", "text": "**", "timestamp": 1790810694709}
+{"type": "text", "text": "S", "timestamp": 1790810694810}
+{"type": "text", "text": "ust", "timestamp": 1790810694911}
+{"type": "text", "text": "ained", "timestamp": 1790810695012}
+{"type": "text", "text": " Performance", "timestamp": 1790810695114}
+{"type": "text", "text": ":**", "timestamp": 1790810699772}
+{"type": "text", "text": " Continuous", "timestamp": 1790810699772}
+{"type": "text", "text": " ", "timestamp": 1790810699772}
+{"type": "text", "text": "4", "timestamp": 1790810699772}
+{"type": "text", "text": "0", "timestamp": 1790810699772}
+{"type": "text", "text": "-minute", "timestamp": 1790810699773}
+{"type": "text", "text": " runs", "timestamp": 1790810699773}
+{"type": "text", "text": " showed", "timestamp": 1790810699773}
+{"type": "text", "text": " thermal", "timestamp": 1790810699773}
+{"type": "text", "text": " thrott", "timestamp": 1790810699773}
+{"type": "text", "text": "ling", "timestamp": 1790810699773}
+{"type": "text", "text": " for", "timestamp": 1790810699773}
+{"type": "text", "text": " both", "timestamp": 1790810699773}
+{"type": "text", "text": " systems", "timestamp": 1790810699773}
+{"type": "text", "text": ".", "timestamp": 1790810699773}
+{"type": "text", "text": " The", "timestamp": 1790810699773}
+{"type": "text", "text": " Aurora", "timestamp": 1790810699774}
+{"type": "text", "text": " ", "timestamp": 1790810699774}
+{"type": "text", "text": "1", "timestamp": 1790810699774}
+{"type": "text", "text": "4", "timestamp": 1790810699774}
+{"type": "text", "text": " settled", "timestamp": 1790810699774}
+{"type": "text", "text": " at", "timestamp": 1790810699774}
+{"type": "text", "text": " ", "timestamp": 1790810699774}
+{"type": "text", "text": "1", "timestamp": 1790810699774}
+{"type": "text", "text": "2", "timestamp": 1790810699774}
+{"type": "text", "text": "%", "timestamp": 1790810699774}
+{"type": "text", "text": " below", "timestamp": 1790810699774}
+{"type": "text", "text": " initial", "timestamp": 1790810699774}
+{"type": "text", "text": " throughput", "timestamp": 1790810699775}
+{"type": "text", "text": ",", "timestamp": 1790810699775}
+{"type": "text", "text": " while", "timestamp": 1790810699775}
+{"type": "text", "text": " the", "timestamp": 1790810699775}
+{"type": "text", "text": " V", "timestamp": 1790810699775}
+{"type": "text", "text": "antage", "timestamp": 1790810699775}
+{"type": "text", "text": " Pro", "timestamp": 1790810699775}
+{"type": "text", "text": " ", "timestamp": 1790810699775}
+{"type": "text", "text": "1", "timestamp": 1790810699775}
+{"type": "text", "text": "6", "timestamp": 1790810699775}
+{"type": "text", "text": " settled", "timestamp": 1790810699775}
+{"type": "text", "text": " at", "timestamp": 1790810699775}
+{"type": "text", "text": " ", "timestamp": 1790810699776}
+{"type": "text", "text": "9", "timestamp": 1790810699776}
+{"type": "text", "text": "%.", "timestamp": 1790810699776}
+{"type": "text", "text": "\n\n", "timestamp": 1790810699776}
+{"type": "text", "text": "**", "timestamp": 1790810699776}
+{"type": "text", "text": "AI", "timestamp": 1790810699884}
+{"type": "text", "text": "-Ass", "timestamp": 1790810699989}
+{"type": "text", "text": "isted", "timestamp": 1790810700096}
+{"type": "text", "text": " Design", "timestamp": 1790810700202}
+{"type": "text", "text": ":**", "timestamp": 1790810704223}
+{"type": "text", "text": " The", "timestamp": 1790810704223}
+{"type": "text", "text": " high", "timestamp": 1790810704223}
+{"type": "text", "text": "-memory", "timestamp": 1790810704223}
+{"type": "text", "text": " Aurora", "timestamp": 1790810704224}
+{"type": "text", "text": " ", "timestamp": 1790810704224}
+{"type": "text", "text": "1", "timestamp": 1790810704224}
+{"type": "text", "text": "4", "timestamp": 1790810704224}
+{"type": "text", "text": " configuration", "timestamp": 1790810704224}
+{"type": "text", "text": " sustained", "timestamp": 1790810704224}
+{"type": "text", "text": " a", "timestamp": 1790810704224}
+{"type": "text", "text": " CAD", "timestamp": 1790810704224}
+{"type": "text", "text": " and", "timestamp": 1790810704224}
+{"type": "text", "text": " AI", "timestamp": 1790810704224}
+{"type": "text", "text": " assistant", "timestamp": 1790810704224}
+{"type": "text", "text": " workflow", "timestamp": 1790810704225}
+{"type": "text", "text": " without", "timestamp": 1790810704225}
+{"type": "text", "text": " un", "timestamp": 1790810704225}
+{"type": "text", "text": "loading", "timestamp": 1790810704225}
+{"type": "text", "text": " the", "timestamp": 1790810704225}
+{"type": "text", "text": " assistant", "timestamp": 1790810704225}
+{"type": "text", "text": ".", "timestamp": 1790810704225}
+{"type": "text", "text": " The", "timestamp": 1790810704225}
+{"type": "text", "text": " base", "timestamp": 1790810704225}
+{"type": "text", "text": " configuration", "timestamp": 1790810704225}
+{"type": "text", "text": " unloaded", "timestamp": 1790810704226}
+{"type": "text", "text": " the", "timestamp": 1790810704226}
+{"type": "text", "text": " assistant", "timestamp": 1790810704226}
+{"type": "text", "text": " twice", "timestamp": 1790810704226}
+{"type": "text", "text": ",", "timestamp": 1790810704226}
+{"type": "text", "text": " adding", "timestamp": 1790810704226}
+{"type": "text", "text": " eight", "timestamp": 1790810704226}
+{"type": "text", "text": "-second", "timestamp": 1790810704226}
+{"type": "text", "text": " reload", "timestamp": 1790810704226}
+{"type": "text", "text": " delays", "timestamp": 1790810704226}
+{"type": "text", "text": ".", "timestamp": 1790810704226}
+{"type": "text", "text": "\n\n", "timestamp": 1790810704227}
+{"type": "text", "text": "**", "timestamp": 1790810704227}
+{"type": "text", "text": "Battery", "timestamp": 1790810704332}
+{"type": "text", "text": " Behavior", "timestamp": 1790810704438}
+{"type": "text", "text": ":**", "timestamp": 1790810708880}
+{"type": "text", "text": " Under", "timestamp": 1790810708881}
+{"type": "text", "text": " continuous", "timestamp": 1790810708881}
+{"type": "text", "text": " local", "timestamp": 1790810708881}
+{"type": "text", "text": " language", "timestamp": 1790810708881}
+{"type": "text", "text": " model", "timestamp": 1790810708881}
+{"type": "text", "text": " inference", "timestamp": 1790810708881}
+{"type": "text", "text": " on", "timestamp": 1790810708881}
+{"type": "text", "text": " battery", "timestamp": 1790810708881}
+{"type": "text", "text": ",", "timestamp": 1790810708881}
+{"type": "text", "text": " the", "timestamp": 1790810708881}
+{"type": "text", "text": " Aurora", "timestamp": 1790810708881}
+{"type": "text", "text": " ", "timestamp": 1790810708882}
+{"type": "text", "text": "1", "timestamp": 1790810708882}
+{"type": "text", "text": "4", "timestamp": 1790810708882}
+{"type": "text", "text": " ran", "timestamp": 1790810708882}
+{"type": "text", "text": " for", "timestamp": 1790810708882}
+{"type": "text", "text": " ", "timestamp": 1790810708882}
+{"type": "text", "text": "2", "timestamp": 1790810708882}
+{"type": "text", "text": " hours", "timestamp": 1790810708882}
+{"type": "text", "text": " and", "timestamp": 1790810708882}
+{"type": "text", "text": " ", "timestamp": 1790810708882}
+{"type": "text", "text": "4", "timestamp": 1790810708882}
+{"type": "text", "text": "0", "timestamp": 1790810708882}
+{"type": "text", "text": " minutes", "timestamp": 1790810708882}
+{"type": "text", "text": ".", "timestamp": 1790810708882}
+{"type": "text", "text": " This", "timestamp": 1790810708882}
+{"type": "text", "text": " differs", "timestamp": 1790810708883}
+{"type": "text", "text": " from", "timestamp": 1790810708883}
+{"type": "text", "text": " the", "timestamp": 1790810708883}
+{"type": "text", "text": " manufacturer", "timestamp": 1790810708883}
+{"type": "text", "text": "'s", "timestamp": 1790810708883}
+{"type": "text", "text": " ", "timestamp": 1790810708883}
+{"type": "text", "text": "1", "timestamp": 1790810708883}
+{"type": "text", "text": "1", "timestamp": 1790810708883}
+{"type": "text", "text": "-hour", "timestamp": 1790810708883}
+{"type": "text", "text": " video", "timestamp": 1790810708883}
+{"type": "text", "text": " playback", "timestamp": 1790810708883}
+{"type": "text", "text": " rating", "timestamp": 1790810708883}
+{"type": "text", "text": ".", "timestamp": 1790810708883}
+{"type": "text", "text": "\n\n", "timestamp": 1790810708883}
+{"type": "text", "text": "**", "timestamp": 1790810708883}
+{"type": "text", "text": "Conclusion", "timestamp": 1790810708985}
+{"type": "text", "text": ":**", "timestamp": 1790810714025}
+{"type": "text", "text": " The", "timestamp": 1790810714025}
+{"type": "text", "text": " Aurora", "timestamp": 1790810714025}
+{"type": "text", "text": " ", "timestamp": 1790810714025}
+{"type": "text", "text": "1", "timestamp": 1790810714025}
+{"type": "text", "text": "4", "timestamp": 1790810714025}
+{"type": "text", "text": " high", "timestamp": 1790810714025}
+{"type": "text", "text": "-memory", "timestamp": 1790810714025}
+{"type": "text", "text": " configuration", "timestamp": 1790810714026}
+{"type": "text", "text": " is", "timestamp": 1790810714026}
+{"type": "text", "text": " capable", "timestamp": 1790810714026}
+{"type": "text", "text": " for", "timestamp": 1790810714026}
+{"type": "text", "text": " on", "timestamp": 1790810714026}
+{"type": "text", "text": "-device", "timestamp": 1790810714026}
+{"type": "text", "text": " AI", "timestamp": 1790810714026}
+{"type": "text", "text": ",", "timestamp": 1790810714026}
+{"type": "text", "text": " running", "timestamp": 1790810714026}
+{"type": "text", "text": " large", "timestamp": 1790810714026}
+{"type": "text", "text": " models", "timestamp": 1790810714026}
+{"type": "text", "text": " faster", "timestamp": 1790810714026}
+{"type": "text", "text": " than", "timestamp": 1790810714026}
+{"type": "text", "text": " the", "timestamp": 1790810714026}
+{"type": "text", "text": " tested", "timestamp": 1790810714026}
+{"type": "text", "text": " competitor", "timestamp": 1790810714027}
+{"type": "text", "text": ".", "timestamp": 1790810714027}
+{"type": "text", "text": " However", "timestamp": 1790810714027}
+{"type": "text", "text": ",", "timestamp": 1790810714027}
+{"type": "text", "text": " buyers", "timestamp": 1790810714027}
+{"type": "text", "text": " focused", "timestamp": 1790810714027}
+{"type": "text", "text": " primarily", "timestamp": 1790810714027}
+{"type": "text", "text": " on", "timestamp": 1790810714027}
+{"type": "text", "text": " image", "timestamp": 1790810714027}
+{"type": "text", "text": " generation", "timestamp": 1790810714027}
+{"type": "text", "text": " may", "timestamp": 1790810714027}
+{"type": "text", "text": " prefer", "timestamp": 1790810714027}
+{"type": "text", "text": " the", "timestamp": 1790810714027}
+{"type": "text", "text": " V", "timestamp": 1790810714027}
+{"type": "text", "text": "antage", "timestamp": 1790810714027}
+{"type": "text", "text": " Pro", "timestamp": 1790810714028}
+{"type": "text", "text": " ", "timestamp": 1790810714028}
+{"type": "text", "text": "1", "timestamp": 1790810714028}
+{"type": "text", "text": "6", "timestamp": 1790810714028}
+{"type": "text", "text": "'s", "timestamp": 1790810714028}
+{"type": "text", "text": " superior", "timestamp": 1790810714028}
+{"type": "text", "text": " GPU", "timestamp": 1790810714028}
+{"type": "text", "text": ".", "timestamp": 1790810714028}
+{"type": "text", "text": "\n\n", "timestamp": 1790810714028}
+{"type": "text", "text": "***", "timestamp": 1790810714028}
+{"type": "text", "text": "\n\n", "timestamp": 1790810714126}
+{"type": "text", "text": "**", "timestamp": 1790810714228}
+{"type": "text", "text": "Key", "timestamp": 1790810714330}
+{"type": "text", "text": " Messages", "timestamp": 1790810714431}
+{"type": "text", "text": "**", "timestamp": 1790810714532}
+{"type": "text", "text": "\n", "timestamp": 1790810714634}
+{"type": "text", "text": "*", "timestamp": 1790810714735}
+{"type": "text", "text": "  ", "timestamp": 1790810714839}
+{"type": "text", "text": " Memory", "timestamp": 1790810714942}
+{"type": "text", "text": " capacity", "timestamp": 1790810715044}
+{"type": "text", "text": ",", "timestamp": 1790810715148}
+{"type": "text", "text": " more", "timestamp": 1790810715255}
+{"type": "text", "text": " than", "timestamp": 1790810715362}
+{"type": "text", "text": " raw", "timestamp": 1790810715474}
+{"type": "text", "text": " processor", "timestamp": 1790810715581}
+{"type": "text", "text": " speed", "timestamp": 1790810715688}
+{"type": "text", "text": ",", "timestamp": 1790810715796}
+{"type": "text", "text": " determines", "timestamp": 1790810715901}
+{"type": "text", "text": " which", "timestamp": 1790810716012}
+{"type": "text", "text": " AI", "timestamp": 1790810716117}
+{"type": "text", "text": " models", "timestamp": 1790810716221}
+{"type": "text", "text": " the", "timestamp": 1790810716329}
+{"type": "text", "text": " Aurora", "timestamp": 1790810716439}
+{"type": "text", "text": " ", "timestamp": 1790810716546}
+{"type": "text", "text": "1", "timestamp": 1790810716655}
+{"type": "text", "text": "4", "timestamp": 1790810716762}
+{"type": "text", "text": " can", "timestamp": 1790810716868}
+{"type": "text", "text": " run", "timestamp": 1790810716977}
+{"type": "text", "text": " efficiently", "timestamp": 1790810717084}
+{"type": "text", "text": ";", "timestamp": 1790810717188}
+{"type": "text", "text": " the", "timestamp": 1790810717292}
+{"type": "text", "text": " ", "timestamp": 1790810717394}
+{"type": "text", "text": "3", "timestamp": 1790810717495}
+{"type": "text", "text": "2", "timestamp": 1790810717596}
+{"type": "text", "text": " GB", "timestamp": 1790810717697}
+{"type": "text", "text": " base", "timestamp": 1790810717798}
+{"type": "text", "text": " configuration", "timestamp": 1790810717900}
+{"type": "text", "text": " could", "timestamp": 1790810718001}
+{"type": "text", "text": " not", "timestamp": 1790810718103}
+{"type": "text", "text": " run", "timestamp": 1790810718206}
+{"type": "text", "text": " a", "timestamp": 1790810718308}
+{"type": "text", "text": " ", "timestamp": 1790810718414}
+{"type": "text", "text": "3", "timestamp": 1790810718522}
+{"type": "text", "text": "0", "timestamp": 1790810718629}
+{"type": "text", "text": "B", "timestamp": 1790810718739}
+{"type": "text", "text": " model", "timestamp": 1790810718845}
+{"type": "text", "text": " effectively", "timestamp": 1790810718952}
+{"type": "text", "text": ",", "timestamp": 1790810719059}
+{"type": "text", "text": " while", "timestamp": 1790810719166}
+{"type": "text", "text": " the", "timestamp": 1790810719270}
+{"type": "text", "text": " ", "timestamp": 1790810719377}
+{"type": "text", "text": "1", "timestamp": 1790810719484}
+{"type": "text", "text": "2", "timestamp": 1790810719591}
+{"type": "text", "text": "8", "timestamp": 1790810719698}
+{"type": "text", "text": " GB", "timestamp": 1790810719806}
+{"type": "text", "text": " high", "timestamp": 1790810719912}
+{"type": "text", "text": "-memory", "timestamp": 1790810720022}
+{"type": "text", "text": " configuration", "timestamp": 1790810720129}
+{"type": "text", "text": " performed", "timestamp": 1790810720239}
+{"type": "text", "text": " best", "timestamp": 1790810720343}
+{"type": "text", "text": " on", "timestamp": 1790810720448}
+{"type": "text", "text": " that", "timestamp": 1790810720555}
+{"type": "text", "text": " workload", "timestamp": 1790810720661}
+{"type": "text", "text": ".", "timestamp": 1790810720773}
+{"type": "text", "text": "\n", "timestamp": 1790810720880}
+{"type": "text", "text": "*", "timestamp": 1790810720986}
+{"type": "text", "text": "  ", "timestamp": 1790810721093}
+{"type": "text", "text": " For", "timestamp": 1790810721200}
+{"type": "text", "text": " image", "timestamp": 1790810721306}
+{"type": "text", "text": " generation", "timestamp": 1790810721410}
+{"type": "text", "text": ",", "timestamp": 1790810721516}
+{"type": "text", "text": " GPU", "timestamp": 1790810721623}
+{"type": "text", "text": " capability", "timestamp": 1790810721730}
+{"type": "text", "text": " dominates", "timestamp": 1790810721838}
+{"type": "text", "text": " performance", "timestamp": 1790810721950}
+{"type": "text", "text": ",", "timestamp": 1790810722057}
+{"type": "text", "text": " with", "timestamp": 1790810722164}
+{"type": "text", "text": " the", "timestamp": 1790810722272}
+{"type": "text", "text": " tested", "timestamp": 1790810722376}
+{"type": "text", "text": " V", "timestamp": 1790810722480}
+{"type": "text", "text": "antage", "timestamp": 1790810722587}
+{"type": "text", "text": " Pro", "timestamp": 1790810722695}
+{"type": "text", "text": " ", "timestamp": 1790810722802}
+{"type": "text", "text": "1", "timestamp": 1790810722910}
+{"type": "text", "text": "6", "timestamp": 1790810723017}
+{"type": "text", "text": " configuration", "timestamp": 1790810723125}
+{"type": "text", "text": " (", "timestamp": 1790810723232}
+{"type": "text", "text": "4", "timestamp": 1790810723340}
+{"type": "text", "text": ".", "timestamp": 1790810723443}
+{"type": "text", "text": "1", "timestamp": 1790810723546}
+{"type": "text", "text": " seconds", "timestamp": 1790810723654}
+{"type": "text", "text": " per", "timestamp": 1790810723761}
+{"type": "text", "text": " image", "timestamp": 1790810723867}
+{"type": "text", "text": ")", "timestamp": 1790810723974}
+{"type": "text", "text": " out", "timestamp": 1790810724080}
+{"type": "text", "text": "perform", "timestamp": 1790810724187}
+{"type": "text", "text": "ing", "timestamp": 1790810724293}
+{"type": "text", "text": " the", "timestamp": 1790810724400}
+{"type": "text", "text": " Aurora", "timestamp": 1790810724505}
+{"type": "text", "text": " ", "timestamp": 1790810724609}
+{"type": "text", "text": "1", "timestamp": 1790810724716}
+{"type": "text", "text": "4", "timestamp": 1790810724823}
+{"type": "text", "text": " (", "timestamp": 1790810724931}
+{"type": "text", "text": "5", "timestamp": 1790810725041}
+{"type": "text", "text": ".", "timestamp": 1790810725147}
+{"type": "text", "text": "3", "timestamp": 1790810725254}
+{"type": "text", "text": " seconds", "timestamp": 1790810725361}
+{"type": "text", "text": " per", "timestamp": 1790810725468}
+{"type": "text", "text": " image", "timestamp": 1790810725572}
+{"type": "text", "text": ").", "timestamp": 1790810725677}
+{"type": "text", "text": "\n", "timestamp": 1790810725785}
+{"type": "text", "text": "*", "timestamp": 1790810725892}
+{"type": "text", "text": "  ", "timestamp": 1790810725999}
+{"type": "text", "text": " Sust", "timestamp": 1790810726109}
+{"type": "text", "text": "ained", "timestamp": 1790810726216}
+{"type": "text", "text": " AI", "timestamp": 1790810726323}
+{"type": "text", "text": " work", "timestamp": 1790810726430}
+{"type": "text", "text": "loads", "timestamp": 1790810726541}
+{"type": "text", "text": " for", "timestamp": 1790810726644}
+{"type": "text", "text": " both", "timestamp": 1790810726750}
+{"type": "text", "text": " systems", "timestamp": 1790810726857}
+{"type": "text", "text": " run", "timestamp": 1790810726964}
+{"type": "text", "text": " slower", "timestamp": 1790810727074}
+{"type": "text", "text": " than", "timestamp": 1790810727180}
+{"type": "text", "text": " peak", "timestamp": 1790810727287}
+{"type": "text", "text": " results", "timestamp": 1790810727394}
+{"type": "text", "text": " due", "timestamp": 1790810727501}
+{"type": "text", "text": " to", "timestamp": 1790810727604}
+{"type": "text", "text": " thermal", "timestamp": 1790810727706}
+{"type": "text", "text": " limits", "timestamp": 1790810727813}
+{"type": "text", "text": ",", "timestamp": 1790810727920}
+{"type": "text", "text": " with", "timestamp": 1790810728028}
+{"type": "text", "text": " the", "timestamp": 1790810728136}
+{"type": "text", "text": " Aurora", "timestamp": 1790810728246}
+{"type": "text", "text": " ", "timestamp": 1790810728353}
+{"type": "text", "text": "1", "timestamp": 1790810728460}
+{"type": "text", "text": "4", "timestamp": 1790810728568}
+{"type": "text", "text": " settling", "timestamp": 1790810728671}
+{"type": "text", "text": " at", "timestamp": 1790810728775}
+{"type": "text", "text": " ", "timestamp": 1790810728883}
+{"type": "text", "text": "1", "timestamp": 1790810728990}
+{"type": "text", "text": "2", "timestamp": 1790810729096}
+{"type": "text", "text": "%", "timestamp": 1790810729203}
+{"type": "text", "text": " below", "timestamp": 1790810729313}
+{"type": "text", "text": " initial", "timestamp": 1790810729422}
+{"type": "text", "text": " throughput", "timestamp": 1790810729529}
+{"type": "text", "text": " after", "timestamp": 1790810729636}
+{"type": "text", "text": " ", "timestamp": 1790810729740}
+{"type": "text", "text": "2", "timestamp": 1790810729844}
+{"type": "text", "text": "0", "timestamp": 1790810729952}
+{"type": "text", "text": " minutes", "timestamp": 1790810730059}
+{"type": "text", "text": " of", "timestamp": 1790810730166}
+{"type": "text", "text": " continuous", "timestamp": 1790810730274}
+{"type": "text", "text": " inference", "timestamp": 1790810730381}
+{"type": "text", "text": ".", "timestamp": 1790810730488}
+{"type": "result", "session_id": "20260930_162408_d0c518", "exit_code": 0, "text": "**On-Device AI Workload Performance: An Evaluation of the Aurora 14 AI Workstation**\n\nEngineering and design teams are increasingly running AI models locally to protect sensitive files, ensure offline access, and avoid cloud charges. This paper evaluates the Aurora 14 AI Workstation on three workloads: language model inference, image generation, and an AI-assisted design session.\n\nTesting was performed on pre-production units of the Aurora 14 (32 GB and 128 GB configurations) against a single Vantage Pro 16 configuration (64 GB, Vireo V9000 GPU). We tested three units per configuration and report median results.\n\n**Language Model Inference:** With an 8B model, the Aurora 14 base (32 GB) matched the Vantage Pro 16 at 38 vs. 41 tokens per second. With a 30B model, memory capacity drove performance. The Aurora 14 base (32 GB) reached only 6 tokens per second due to slower memory paths, while the high-memory configuration (128 GB) reached 17 tokens per second, outperforming the Vantage Pro 16 at 15 tokens per second.\n\n**Image Generation:** The Vantage Pro 16 averaged 4.1 seconds per 1024 \u00d7 1024 image versus 5.3 seconds for the Aurora 14, attributed to the competitor's larger and faster GPU.\n\n**Sustained Performance:** Continuous 40-minute runs showed thermal throttling for both systems. The Aurora 14 settled at 12% below initial throughput, while the Vantage Pro 16 settled at 9%.\n\n**AI-Assisted Design:** The high-memory Aurora 14 configuration sustained a CAD and AI assistant workflow without unloading the assistant. The base configuration unloaded the assistant twice, adding eight-second reload delays.\n\n**Battery Behavior:** Under continuous local language model inference on battery, the Aurora 14 ran for 2 hours and 40 minutes. This differs from the manufacturer's 11-hour video playback rating.\n\n**Conclusion:** The Aurora 14 high-memory configuration is capable for on-device AI, running large models faster than the tested competitor. However, buyers focused primarily on image generation may prefer the Vantage Pro 16's superior GPU.\n\n***\n\n**Key Messages**\n*   Memory capacity, more than raw processor speed, determines which AI models the Aurora 14 can run efficiently; the 32 GB base configuration could not run a 30B model effectively, while the 128 GB high-memory configuration performed best on that workload.\n*   For image generation, GPU capability dominates performance, with the tested Vantage Pro 16 configuration (4.1 seconds per image) outperforming the Aurora 14 (5.3 seconds per image).\n*   Sustained AI workloads for both systems run slower than peak results due to thermal limits, with the Aurora 14 settling at 12% below initial throughput after 20 minutes of continuous inference.", "tokens": {"input": 1581, "output": 655, "total": 6055, "cache_read": 3819, "cache_write": 0}, "duration_ms": 81908, "timestamp": 1790810730627}

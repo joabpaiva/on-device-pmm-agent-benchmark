@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [],
+  "notes": "The summary preserves the main results and the Vantage Pro 16\u2019s image-generation advantage, but omits required test conditions and caveats, including the three-unit sample, single Vantage configuration, and lack of a Vantage battery test. The prose summary exceeds 250 words, though it has exactly three key-message bullets.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009288
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "Q1\u2013Q4 accurately answer the questions and cite the relevant sections. Q5 correctly directs the customer to support, but adds unnecessary explanation after the required not-covered response.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006174
+}

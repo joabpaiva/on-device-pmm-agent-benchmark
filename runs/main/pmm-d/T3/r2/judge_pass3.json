@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The battery test used 8B inference; the paper does not specify the model used for that test.",
+    "Larger models require the 128 GB configuration; the tested 30B model also ran on the 32 GB and 64 GB configurations."
+  ],
+  "notes": "The summary fits the VP audience and requested format, but omits required caveats: only one Vantage configuration was tested; models were 4-bit quantized and output quality was not evaluated; and the video-playback rating was measured at 150 nits. It also leaves out several test conditions, including AC power for non-battery tests and Wi-Fi being off for the battery rating.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011619
+}

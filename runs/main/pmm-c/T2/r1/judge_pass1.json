@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The battlecard is factual, fair, under 350 words, and includes every requested element. Remove the final note before use: it introduces unverified field intelligence that does not belong in the battlecard.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.00549
+}

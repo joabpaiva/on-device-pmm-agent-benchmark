@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Cloud desktops give you central control and one environment to manage; the source does not establish either claim.",
+    "Email 2 says on-device AI models up to about 30 billion parameters, but the spec limits that capability to open-weight language models."
+  ],
+  "notes": "All three emails have subject lines, stay under 120 words, and have one CTA each. The sequence fits Morgan\u2019s concerns, but the unsupported claims need correction, and the extra commentary should be removed before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010009
+}

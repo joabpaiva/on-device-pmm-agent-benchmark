@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 1,
+  "reader": 3,
+  "ready": 1,
+  "format": 1,
+  "invented_facts": [
+    "The reference to 2026 is not supported by the attachments.",
+    "The claim about running models up to 30 billion parameters omits the required configuration of at least 64 GB of memory.",
+    "'No cloud dependency' is broader than the spec sheet supports.",
+    "The claim that productivity drops every time connectivity fails on site is not established by the source."
+  ],
+  "notes": "Only email 1 is present; the cloud-first objection email and meeting-request email are missing. The draft addresses Morgan\u2019s concerns, but it needs the unsupported claims corrected and a single, unambiguous call to action.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005387
+}

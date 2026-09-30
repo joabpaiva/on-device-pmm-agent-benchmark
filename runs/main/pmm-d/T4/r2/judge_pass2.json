@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 4,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All stated product claims are supported, and each question is answered in the requested structure. Q1 omits the qualified-module condition for preserving warranty coverage, and Q3 omits the additional display available through HDMI.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005671
+}

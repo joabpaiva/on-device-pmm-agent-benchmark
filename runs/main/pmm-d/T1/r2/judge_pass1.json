@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The Aurora 14 delivers desktop-level power.",
+    "The processor handles demanding engineering tasks without draining the battery.",
+    "The GPU can render complex simulations and 3D models without stuttering or becoming a workflow bottleneck.",
+    "The display ensures accurate color representation; the spec lists color-gamut coverage, not color accuracy.",
+    "Storage is user-upgradeable; the spec confirms this only for memory.",
+    "The starting price is a competitive entry point."
+  ],
+  "notes": "The post addresses IT decision-makers and includes a call to action, but it has a five-sentence intro instead of two, four benefit sections instead of three, and exceeds the 500\u2013600-word limit. Several performance and value claims need to be removed or qualified before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009679
+}

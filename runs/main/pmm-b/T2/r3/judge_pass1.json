@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora delivers superior long-term value; the brief provides no evidence for that comparison.",
+    "Upgradeable memory avoids replacing the entire system when memory needs grow; the brief does not establish that replacement would otherwise be necessary.",
+    "For most AI workflows, Aurora's NPU and memory provide better overall performance; the brief does not support this broad performance comparison."
+  ],
+  "notes": "The battlecard includes every requested element and stays within the word limit. Its core specifications are accurate, but several benefit claims go beyond what the brief establishes.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004026
+}

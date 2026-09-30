@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The file contains all eight attributes for all three products, uses \u201cnot stated\u201d where appropriate, and gives three supported differentiators. The reply does not follow the instruction to provide only the file path, and the file adds an unrequested competitor-strengths section.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004506
+}

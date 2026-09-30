@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Cloud desktops give you central control and one environment to manage."
+  ],
+  "notes": "All three emails have subject lines, stay under 120 words, and have one CTA each. The sequence addresses the requested stages, but the unsupported cloud-management claim needs removal, and the extensive commentary should be stripped before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006486
+}

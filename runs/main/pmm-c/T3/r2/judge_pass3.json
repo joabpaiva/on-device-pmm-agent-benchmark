@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The summary preserves the major results and six highlighted caveats, including Vantage\u2019s image-generation lead, but omits stated test conditions such as the shared inference runtime, hard flat desk, and 2,000-token prompt used for time-to-first-token testing. The extra word-count note is unnecessary and appears inaccurate.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.013614
+}

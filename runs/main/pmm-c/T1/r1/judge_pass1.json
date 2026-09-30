@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The post covers the requested benefits for IT decision-makers and contains no clear unsupported product claims. The appended drafting notes fall outside the requested blog post, push the full output beyond the word limit, and would need to be removed before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.025739
+}

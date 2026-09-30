@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "A local machine can handle the same workloads as the firm's cloud workstations.",
+    "TPM 2.0 and a self-healing BIOS keep local data encrypted.",
+    "The specified security features add protection beyond the firm's cloud credentials.",
+    "Up to 11 hours of local video playback means engineers can work all day on one charge at remote sites."
+  ],
+  "notes": "All three emails meet the requested structure, length and CTA limits. Email 2 gives security facts but does not directly answer why a cloud-first team would buy powerful laptops; several claims also need correction before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006375
+}

@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The battery test used the 8B model; the paper specifies only continuous local language model inference.",
+    "The Vantage Pro 16 was 22% faster at image generation; the reported times support about 23% less time per image, not 22% greater speed.",
+    "The 128 GB configuration outperformed the others on large language models generally; the paper reports that result for the 30B model only."
+  ],
+  "notes": "The summary exceeds 250 words and omits required caveats that only one Vantage configuration was tested and model output quality was not evaluated. It also leaves out several test conditions and does not explicitly say the video-playback battery rating does not represent AI-workload battery life.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011618
+}

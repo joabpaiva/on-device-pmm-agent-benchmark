@@ -1,0 +1,18 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "The monthly cloud bill often grows beyond expectations.",
+    "Many firms pay for both cloud resources and powerful local hardware without a clear view of total fleet cost.",
+    "Aurora reduces device count and service complexity.",
+    "A 15-minute conversation: the duration is not in the source.",
+    "Email 2 implies that the standard 32 GB configuration can run models up to 30 billion parameters; the spec requires at least 64 GB.",
+    "Aurora ships in Q4, and Morgan can approve it now and receive it when the budget opens. The source states only Q4 availability and gives no current approval or delivery timeline."
+  ],
+  "notes": "The sequence addresses the persona and includes a subject line and meeting ask, but email 1 has two calls to action. Unsupported cost and operational claims, plus the omitted memory requirement in email 2, need correction before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.010252
+}

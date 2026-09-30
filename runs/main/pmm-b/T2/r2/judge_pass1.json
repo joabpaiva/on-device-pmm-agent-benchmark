@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora delivers superior long-term value; the brief provides no value or ownership-cost comparison.",
+    "Aurora\u2019s upgradeability prevents costly replacements; the brief does not establish that replacements would otherwise be needed or costly."
+  ],
+  "notes": "All requested sections and counts are present, and the battlecard fits the word limit. The unsupported value and cost claims need revision before a seller could use it as a strictly factual comparison.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004311
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "Vantage Pro 16 has the largest battery among the three; Summit X15\u2019s battery capacity is not stated."
+  ],
+  "notes": "The file contains the requested eight-attribute table and three table-supported Aurora 14 differentiators. Qualify the battery comparison as Vantage versus Aurora, rather than claiming Vantage has the largest battery overall.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005636
+}

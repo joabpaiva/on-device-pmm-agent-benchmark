@@ -1,0 +1,17 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "Aurora 14 has the \u201cfastest Thunderbolt connectivity\u201d; Vantage Pro 16\u2019s ports are not stated.",
+    "Thunderbolt 5 enables faster data transfer and \u201cfuture-proofing for peripherals\u201d; these benefits are not stated in the source.",
+    "Aurora 14 has the \u201csmallest chassis\u201d or is the \u201cmost compact\u201d; only display size and weight are provided.",
+    "Aurora 14 has the \u201chighest GPU clock potential\u201d; no GPU clock speeds are provided.",
+    "The Vireo V6000 is \u201centry-level,\u201d the Vireo V9000 is \u201chigh-end,\u201d and the V8000 Pro offers \u201cstrong mid-range GPU performance\u201d; the source provides no performance rankings."
+  ],
+  "notes": "The table covers all three products and eight requested attributes, with missing values correctly marked. Several differentiators go beyond what the table supports, and the reply includes commentary rather than only the file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004019
+}

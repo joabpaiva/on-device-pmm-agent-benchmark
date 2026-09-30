@@ -1,0 +1,14 @@
+Metric,pmm-a 9B hosted,pmm-b 27B hosted,pmm-c Frontier,pmm-d 9B on laptop
+Cost per task ($),0.001007,0.002351,0.050046,4.5e-05
+Cost per usable output ($),0.00906,0.04232,0.12869,0.0004
+Latency per task (s),14.69,10.69,24.59,72.15
+Time to first output (s),4.68,3.07,19.94,7.91
+Tokens per second,65.23,56.91,135.3,8.09
+Hallucinations (total),61.7,54.7,10.3,52.7
+T4 Q5 declined correctly,3 of 3,3 of 3,3 of 3,3 of 3
+T6 cells correct (of 24),24,24,24,24
+T6 gaps marked (of 3),3,3,3,3
+T6 tool calls succeeded (%),91,100,100,100
+Score spread across runs (avg),4.11,2.67,3.11,5.78
+Energy per task (Wh),,,,0.1116
+Peak model memory (GB),,,,11.87

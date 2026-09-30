@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 offers media card support that the other models lack; Vantage Pro 16's ports are not stated.",
+    "Aurora 14 has the most versatile connectivity; Vantage Pro 16's ports are not stated, so this comparison is unsupported."
+  ],
+  "notes": "The table covers all three products and all eight attributes, with missing values marked correctly. The third differentiator needs revision because it draws conclusions about Vantage Pro 16's unstated ports.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007069
+}

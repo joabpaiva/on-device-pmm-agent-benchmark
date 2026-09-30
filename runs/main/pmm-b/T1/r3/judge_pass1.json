@@ -1,0 +1,20 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The workstation delivers faster iteration cycles and eliminates network latency for the described engineering workflows.",
+    "The processor maintains responsiveness during intensive workloads.",
+    "The GPU can train computer-vision models and accelerate machine-learning inference.",
+    "Storage is user-upgradeable; the sheet explicitly confirms this only for memory.",
+    "The warranty provides predictable service costs and reduces downtime.",
+    "The Thunderbolt 5 ports support external GPU configurations.",
+    "The display ensures accurate color representation and readability in various lighting conditions.",
+    "The listed connectivity eliminates the need for dongles."
+  ],
+  "notes": "The post has the requested length and structure and addresses IT decision-makers. Its specifications are largely sourced, but several workflow, performance, and compatibility claims go beyond the spec sheet and require revision before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011291
+}

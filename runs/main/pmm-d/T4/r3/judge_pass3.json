@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 4,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "The documentation lists Ubuntu 24.04 as a potential question.",
+    "An official Aurora 14 compatibility list can be checked for Ubuntu certification; the documented compatibility list concerns memory modules."
+  ],
+  "notes": "Q1 and Q3 omit useful documented details about warranty-safe memory upgrades and the additional HDMI display. Q5 appropriately suggests contacting support, but adds unsupported claims and does not use the required exact fallback wording.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006801
+}

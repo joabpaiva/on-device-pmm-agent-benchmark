@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five answers are supported by the documentation, and each documented answer cites the relevant section. The Ubuntu certification answer appropriately states that the documentation does not cover it and directs the customer to sales or support.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005456
+}

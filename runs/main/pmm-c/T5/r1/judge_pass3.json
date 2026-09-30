@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Email 3 says that models up to about 30 billion parameters run on the device; the spec sheet supports this only for open-weight language models in configurations with at least 64 GB of memory."
+  ],
+  "notes": "All three emails have a subject line, stay under 120 words and contain one CTA. The sequence fits the buyer, but the broader model claim needs correction, and the prefatory text and notes should be removed before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.00677
+}

@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora is described as \u201cfuture-proof,\u201d which the brief does not establish.",
+    "\u201cLeading AI performance\u201d and \u201coutperforming\u201d Vantage imply measured performance beyond the NPU specifications provided.",
+    "The claim that Aurora meets \u201ctypical mobile work requirements\u201d is not supported by the video-playback battery rating.",
+    "The discovery question assumes the customer's team has growing use of local AI models."
+  ],
+  "notes": "The battlecard includes every requested section, stays under 350 words, and fairly acknowledges Vantage's advantages. Several claims and customer assumptions need tightening before it is ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005013
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "\u201cFastest connectivity\u201d is not supported across all three products because Vantage Pro 16\u2019s ports are not stated."
+  ],
+  "notes": "The table includes all eight attributes for all three products and correctly marks missing values. The third differentiator needs a narrower claim, such as Aurora 14 having Thunderbolt 5 while Summit X15 lists Thunderbolt 4.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004338
+}

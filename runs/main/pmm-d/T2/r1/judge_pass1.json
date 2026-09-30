@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora has \u201csuperior AI performance\u201d; the brief establishes higher NPU TOPS, not superior overall AI performance.",
+    "Aurora offers \u201clong-term value\u201d or \u201cbetter long-term value for AI workflows\u201d; the brief provides no value assessment.",
+    "Aurora\u2019s higher starting price \u201creflects\u201d its NPU, warranty, and upgradeable RAM; the brief does not explain its pricing.",
+    "\u201cFuture-proof service\u201d is not established by the warranty information."
+  ],
+  "notes": "The battlecard includes every requested section, meets the word limit, and fairly acknowledges two Vantage strengths. Several comparative and pricing claims go beyond what the brief supports and should be narrowed before use.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005713
+}

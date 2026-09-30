@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The post covers the requested benefits for IT decision-makers, and its product claims are supported by the spec sheet. The appended notes are not part of the requested blog post and would need to be removed before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.012809
+}

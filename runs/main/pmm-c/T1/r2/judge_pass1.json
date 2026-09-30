@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 2,
+  "invented_facts": [
+    "Engineers and data scientists are waiting on a shared server to run AI models and professional applications; the spec sheet does not establish this."
+  ],
+  "notes": "The post covers the requested benefits for IT decision-makers and includes the required headline, intro, three sections and CTA. The unsupported shared-server premise lowers the facts score, while the appended notes would need to be removed before publication and break the requested post-only format.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006687
+}

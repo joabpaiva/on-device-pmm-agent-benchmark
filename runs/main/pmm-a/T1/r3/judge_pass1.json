@@ -1,0 +1,19 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 3,
+  "invented_facts": [
+    "The headline calls it a 15-pound workstation; the spec says it starts at 3.64 lb.",
+    "The claim that it can be carried for a full workday is not supported by the battery test, which covers local video playback at 150 nits with Wi-Fi off.",
+    "The '64-Bit Performance' heading is not supported by the spec sheet.",
+    "Local code generation, real-time translation, and immediate analysis are presented as capabilities but are not specified.",
+    "The fingerprint reader and IR camera are described as providing two-factor authentication; the spec does not establish that.",
+    "Windows 11 Pro is said to meet engineering teams' baseline security requirements, which the spec does not establish.",
+    "The claim that storage avoids workflow bottlenecks is unsupported."
+  ],
+  "notes": "The post addresses IT concerns and includes a CTA, but the intro has three sentences rather than two, and the extra 'Final Thoughts' heading departs from the requested three-section structure. The incorrect weight in the headline and unsupported security claim would require more than light edits.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007486
+}

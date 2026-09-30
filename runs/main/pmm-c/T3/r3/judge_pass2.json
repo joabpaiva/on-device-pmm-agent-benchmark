@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "The note claims the output is about 245 words in total, including the key messages; it is about 280 words before that note."
+  ],
+  "notes": "The summary fits the 250-word limit and has three bullets, but it omits test conditions and caveats, including the shared inference runtime, the hard, flat desk, and the possibility of wider unit-to-unit variation. The extra, inaccurate word-count note also prevents the format from being exactly as requested.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.021291
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered using the documentation, with section citations where applicable. Q1 should mention that a self-upgrade does not void the warranty when qualified modules from the Aurora compatibility list are used.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002971
+}

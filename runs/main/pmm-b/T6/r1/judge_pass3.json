@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 has the \u201cfastest connectivity\u201d; the files give no port-speed measurements or Vantage Pro 16 port specifications.",
+    "Aurora 14 offers \u201csuperior I/O options\u201d; Vantage Pro 16\u2019s ports are not stated."
+  ],
+  "notes": "The table covers all three products and eight attributes, with missing values marked correctly. The third differentiator should describe Aurora 14\u2019s stated ports without claiming overall connectivity superiority.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003231
+}

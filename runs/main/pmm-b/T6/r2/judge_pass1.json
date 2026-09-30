@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 offers the most versatile connectivity; Vantage Pro 16\u2019s ports are not stated, so this cannot be established.",
+    "The other models lack SD card support; Vantage Pro 16\u2019s ports are not stated.",
+    "Thunderbolt 5 is the latest interface standard; the source does not establish that claim."
+  ],
+  "notes": "The table covers all eight attributes for all three products and correctly marks missing values. The third differentiator needs revision because it draws conclusions about Vantage Pro 16\u2019s unstated ports.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003789
+}

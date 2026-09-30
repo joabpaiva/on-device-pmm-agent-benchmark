@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [
+    "The device supports engineers who require large in-context windows; the spec gives no context-window capability.",
+    "Self-healing BIOS reduces downtime from firmware corruption events; the spec does not establish that outcome.",
+    "Upgradable memory and storage eliminate the need to refresh devices when models outgrow their allocation.",
+    "Windows 11 Pro provides seamless integration with existing management and security infrastructure; the spec does not establish that compatibility."
+  ],
+  "notes": "The post has the requested headline, two-sentence intro, three benefit sections, and call to action, and it addresses IT decision-makers. At roughly 460 words, it falls short of the 500\u2013600-word requirement; several benefit claims also need qualification or removal.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.020044
+}

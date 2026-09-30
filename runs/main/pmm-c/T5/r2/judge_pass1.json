@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Cloud desktops give you central control and one environment to manage."
+  ],
+  "notes": "The three emails follow the requested sequence, stay under 120 words each, and have one CTA apiece. The unsupported claim about cloud desktops needs removal, and the unrequested commentary should be stripped before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006446
+}

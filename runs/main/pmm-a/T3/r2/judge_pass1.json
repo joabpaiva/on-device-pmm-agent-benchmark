@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The 128 GB configuration 'matched and exceeded competitor speeds on those same models': the paper reports its result for the 30B model, not the 8B model.",
+    "The base configuration was 'throttled' to 6 tokens per second: the paper attributes that result to the model not fitting entirely in fast memory, not throttling.",
+    "'Competitors with larger, faster GPUs dominate this workload' generalizes a result measured for one competing configuration."
+  ],
+  "notes": "The summary is within the word limit and has three bullets, but it omits required test conditions and caveats, including the three-unit sample, the single Vantage configuration, 4-bit quantization and unevaluated output quality. It also fails to distinguish the continuous 8B thermal test from the battery inference test and omits the video-playback conditions behind the battery rating.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007185
+}

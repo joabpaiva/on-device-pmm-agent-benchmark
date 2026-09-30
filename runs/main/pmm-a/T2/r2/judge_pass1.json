@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "A 60 TOPS NPU is '50% more powerful'\u2014the brief gives TOPS figures, not a measured performance comparison.",
+    "Aurora's NPU 'will perform better on AI locally' and on 'AI-accelerated application loads'\u2014the brief does not establish those performance outcomes.",
+    "One Thunderbolt 4 port 'is not enough for dual docks or hubs'\u2014the brief does not support this limitation."
+  ],
+  "notes": "All requested sections and counts are present, and the Vantage strengths are fair. The response to the 24 GB VRAM objection substitutes unsupported NPU performance claims rather than acknowledging Vantage's documented GPU-memory advantage.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008169
+}

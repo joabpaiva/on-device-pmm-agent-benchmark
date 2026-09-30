@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 2,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "Windows 11 Pro integrates with Morgan\u2019s existing fleet management tools; the attachments do not identify those tools or confirm compatibility.",
+    "The service warranty \u201censures uptime\u201d; the spec sheet makes no uptime guarantee.",
+    "\u201cYou mentioned the hesitation\u201d implies a prior conversation that is not in the source material."
+  ],
+  "notes": "All three emails are present, but each exceeds 120 words, and email 3 makes two meeting requests rather than one CTA. Email 2 lists useful management and security specs without directly resolving why a cloud-first team should also buy powerful laptops; the length and presumptive wording would need editing.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.016144
+}

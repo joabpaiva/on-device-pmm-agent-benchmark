@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Vantage Pro 16 has the largest battery; Summit X15\u2019s battery capacity is not stated, so this cannot be established.",
+    "The weight difference partly reflects Aurora 14\u2019s smaller screen; the sources do not establish a cause for the weight difference."
+  ],
+  "notes": "The file contains all eight requested attributes, uses \u201cnot stated\u201d for missing values, and provides three table-supported differentiators. The two unsupported claims need revision before the comparison is ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005367
+}

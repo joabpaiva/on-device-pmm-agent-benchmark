@@ -1,0 +1,16 @@
+{
+  "facts": 1,
+  "complete": 3,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Thunderbolt 5 enables faster data transfer and future-proofing for peripherals; the source provides no performance or future-proofing claims.",
+    "Aurora 14 has the smallest chassis; display size and weight do not establish chassis dimensions.",
+    "Aurora 14 has the highest GPU clock potential; no GPU clock speeds are provided.",
+    "The Vireo V6000 is entry-level, the Vireo V9000 is high-end, and the Vireo V8000 Pro offers strong mid-range GPU performance; none of these classifications or performance claims is supported."
+  ],
+  "notes": "The table covers all three products and eight attributes, with missing values marked correctly. The differentiators contain unsupported claims, so the file needs more than light edits before use.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006914
+}

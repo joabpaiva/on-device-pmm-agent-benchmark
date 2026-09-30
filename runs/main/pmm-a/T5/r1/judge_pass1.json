@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 1,
+  "reader": 1,
+  "ready": 1,
+  "format": 1,
+  "invented_facts": [],
+  "notes": "The output accurately restates the task and persona but does not deliver an email sequence. It has no email copy, subject lines, or calls to action.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.002001
+}

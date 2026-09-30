@@ -1,0 +1,15 @@
+{
+  "summary_words": 146,
+  "length_ok": true,
+  "bullets": 3,
+  "caveats_kept": 4,
+  "caveats_total": 6,
+  "caveat_detail": {
+    "pre_production_units": true,
+    "three_units_sample": true,
+    "single_competitor_config": false,
+    "quantized_quality_not_evaluated": false,
+    "sustained_slowdown": true,
+    "battery_video_not_ai": true
+  }
+}

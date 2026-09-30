@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All substantive answers are supported by the cited sections, and Q5 appropriately directs the customer to support or sales. The required exact Q5 reply has an added period.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006729
+}

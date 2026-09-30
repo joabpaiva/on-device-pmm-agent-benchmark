@@ -1,0 +1,18 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Removes dependency on cloud infrastructure for core development tasks.",
+    "Reduces latency and bandwidth costs and accelerates iteration cycles.",
+    "Supports demanding training tasks that traditionally required desktop-class hardware.",
+    "Mid-size firms cannot afford to refresh workstations every two years.",
+    "Up to 11 hours of local video playback provides all-day runtime for typical office workflows.",
+    "Volume deployment options and demo units are available."
+  ],
+  "notes": "The post has the requested structure and length and addresses IT decision-makers. Several performance, runtime, and sales-availability claims go beyond the spec sheet and would need revision before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009203
+}

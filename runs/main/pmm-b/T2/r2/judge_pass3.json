@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora delivers superior long-term value; the brief does not establish a value comparison.",
+    "Aurora's upgradeability prevents costly replacements; the brief does not establish replacement costs or outcomes.",
+    "Aurora has broadly superior performance headroom; the brief supports memory and NPU advantages, not an overall performance comparison."
+  ],
+  "notes": "The battlecard includes every requested section, meets the item counts and word limit, and treats Vantage\u2019s advantages fairly. Its unsupported value and replacement-cost claims need revision before it is sent.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008401
+}

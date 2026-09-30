@@ -43,6 +43,7 @@
   "runs_per_task": 3,
   "toolsets": "file",
   "reasoning_effort": "none",
-  "electricity_usd_per_kwh": null,
-  "run_timeout_seconds": 900
+  "electricity_usd_per_kwh": 0.403,
+  "run_timeout_seconds": 900,
+  "_electricity_note": "Blended PG&E + Pioneer Community Energy energy charges, Jul 27-Aug 25 2026 bill (E-ELEC TOU), excluding the fixed daily base charge. Peak-hour all-in is about 0.63."
 }

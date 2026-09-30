@@ -1,0 +1,16 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "\u201cWorld\u2019s Lightest 14-Inch Workstation\u201d is an unsupported superlative.",
+    "The spec says the device can run certain open-weight models locally; it does not say it can train or fine-tune them.",
+    "Claims that the GPU handles complex rendering and simulation tasks \u201cwith ease\u201d are not supported.",
+    "Claims of accelerated prototyping, color accuracy, and enterprise-grade management and stability are not established by the spec sheet."
+  ],
+  "notes": "The post addresses IT decision-makers and includes a two-sentence intro and a call to action. It has four benefit sections rather than the requested three, and several performance and capability claims need substantiation or removal.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007128
+}

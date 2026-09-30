@@ -1,0 +1,19 @@
+{
+  "facts": 1,
+  "complete": 3,
+  "reader": 2,
+  "ready": 1,
+  "format": 2,
+  "invented_facts": [
+    "A proposed demo of a Citrix/WVD session and on-device 7B inference for local redlines is not supported by the attachments.",
+    "The proposed purchase or review of 20 Aurora 14 units has no basis in the attachments.",
+    "Claims that the laptops can use the same Windows 11 Pro image, Azure AD join script, or Intune policy are unsupported.",
+    "The up-to-11-hour local video playback rating does not establish CAD or AI-model runtime on a job site.",
+    "The claim that no dongles are needed is unsupported.",
+    "A zero-impact migration test involving Amazon WorkSpaces, Datto 3DR, and Citrix Workspace, and a TCO delta, are unsupported.",
+    "The claim that one policy would cover all engineers across the firm's three offices is unsupported; the persona says the firm has 400 people, not 400 engineers."
+  ],
+  "notes": "All three emails and the requested progression are present, but email 2 exceeds 120 words. Numerous unsupported deployment, runtime, and fleet claims make the sequence unsuitable to send without substantial revision.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.014018
+}

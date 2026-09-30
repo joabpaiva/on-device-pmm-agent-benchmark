@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The battery test used the 8B model; the paper does not identify which language model was used.",
+    "The Vantage Pro 16 was 22% faster at image generation; the paper gives times per image, and that percentage does not express the speed difference correctly.",
+    "The base Aurora 14 required a high-memory configuration to keep AI assistants responsive alongside CAD workloads; the paper reports this behavior only for its scripted session."
+  ],
+  "notes": "The summary exceeds 250 words before the bullets. It omits required caveats that output quality was not evaluated and only one Vantage configuration was tested, as well as test conditions including the shared inference runtime and image-generation setup.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.012586
+}

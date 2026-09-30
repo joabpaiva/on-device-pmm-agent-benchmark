@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The claims are supported, and all six highlighted caveats survive. But the summary omits several stated test conditions, including the hard, flat desk, the image-generation sample and resolution, and the shared inference runtime; the word-count comment after the bullets also makes it less ready to send.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006576
+}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 5,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "The existence of an official Aurora support website is not established by the documentation."
+  ],
+  "notes": "The answers address all five questions and cite the relevant sections where documentation is available. Q5 correctly avoids claiming Ubuntu certification, but its suggested website is unsupported; recommending the sales representative alone would avoid that issue.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004988
+}

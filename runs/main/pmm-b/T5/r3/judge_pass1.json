@@ -1,0 +1,17 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 3,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [
+    "The Aurora 14 can reduce cloud workstation costs; no cost comparison or savings evidence is provided.",
+    "Engineers can access client files offline and process drawings and project files locally; the attachments do not establish those specific workflows.",
+    "Client drawings and project files never leave the device unless authorized; the spec sheet does not support this absolute security claim.",
+    "Storage is user-upgradeable; the spec sheet confirms two M.2 slots but explicitly calls only memory user-upgradeable.",
+    "Ordering now would position the buyer for deployment when a new budget cycle opens; ordering and deployment timing are not specified."
+  ],
+  "notes": "All three emails have subjects and one explicit CTA, but emails 1 and 2 exceed 120 words when the CTA is included. The sequence addresses the persona\u2019s concerns, yet unsupported cost and security claims make it unsuitable to send without substantive edits.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.013903
+}

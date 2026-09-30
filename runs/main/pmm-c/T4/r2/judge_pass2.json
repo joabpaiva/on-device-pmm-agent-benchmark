@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "All product claims are supported by the cited sections, and all five questions are answered. Q5 adds a period to the required exact phrase; the contact suggestion is appropriate.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003811
+}

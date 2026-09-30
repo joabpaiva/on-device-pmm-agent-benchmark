@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The post includes the requested headline, two-sentence intro, three benefit sections and call to action, with claims grounded in the spec sheet. The appended drafting notes fall outside the requested blog-post structure and push the full submission beyond the word limit; a few editorial asides in the post also need removal before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.01535
+}

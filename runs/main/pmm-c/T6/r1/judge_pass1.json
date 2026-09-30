@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 5,
+  "invented_facts": [
+    "\u201cNewest high-speed connectivity\u201d is not established by the files: they give no port speeds, and Vantage Pro 16\u2019s ports are not stated."
+  ],
+  "notes": "The file contains all eight requested attributes for all three products, uses \u201cnot stated\u201d appropriately, and provides three table-supported differentiators. The connectivity heading overstates what the sources establish.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006199
+}

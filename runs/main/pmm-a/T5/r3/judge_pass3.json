@@ -1,0 +1,17 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 3,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "The monthly cloud workstation bills \u201cadd up\u201d; the persona identifies the bill as a cost concern but gives no basis for that assessment.",
+    "Morgan \u201cmentioned\u201d a hesitation; the persona lists a likely objection, not a prior conversation.",
+    "Windows 11 Pro integrates with Morgan\u2019s existing fleet management tools.",
+    "Self-healing BIOS protects against firmware attacks.",
+    "The service warranty \u201censures uptime.\u201d"
+  ],
+  "notes": "All three emails are present, but each exceeds 120 words, and email 3 has two meeting calls to action. Email 2 emphasizes laptop management more than the requested question of why a cloud-first team should also buy powerful laptops.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009566
+}

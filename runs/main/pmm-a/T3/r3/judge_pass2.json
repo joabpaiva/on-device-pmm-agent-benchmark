@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 1,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The 30B model required 128 GB for meaningful performance; the tested 64 GB Vantage Pro 16 reached 15 tokens/second.",
+    "Image generation lagged behind 'competitors'; the paper tested only one Vantage Pro 16 configuration.",
+    "The body says sustained runs were approximately 10\u201312% slower, but the reported declines were about 12% for Aurora and 9% for Vantage."
+  ],
+  "notes": "The summary omits essential caveats, including the single Vantage configuration, 4-bit quantization and unevaluated output quality. It also leaves out numerous test conditions and does not clearly distinguish the video-playback battery rating from an AI-workload rating. The word limit and three-bullet structure are met.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007203
+}

@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 2,
+  "invented_facts": [],
+  "notes": "The summary is well framed for a VP and preserves the major findings and six highlighted caveats, including Vantage\u2019s image-generation lead. However, it exceeds 250 words and omits several stated test conditions, including the image count and resolution, the test environment and power mode, and the prompt used for time-to-first-token measurements.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006699
+}

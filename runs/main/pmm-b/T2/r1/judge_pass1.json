@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora is described as having \"leading AI performance\" and as \"outperforming\" Vantage; the brief compares NPU TOPS but does not establish overall AI performance.",
+    "Aurora's upgradeable memory is said to be \"protecting your investment,\" an outcome the brief does not substantiate.",
+    "Aurora is said to meet \"typical mobile work requirements\"; the brief provides no basis for that claim."
+  ],
+  "notes": "The battlecard includes every requested element, stays under 350 words, and treats Vantage's advantages fairly. Remove or qualify the unsupported performance and customer-outcome claims before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008921
+}

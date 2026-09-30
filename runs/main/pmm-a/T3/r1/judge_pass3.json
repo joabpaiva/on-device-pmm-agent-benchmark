@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "The comparison used one Vantage Pro 16 unit; the paper says three units of each configuration were tested.",
+    "Both Aurora 14 configurations achieved a median of 38 tokens per second on the 8B model; the paper reports that figure only for the base configuration."
+  ],
+  "notes": "The summary omits test conditions, including room temperature, desk placement, power mode, and the 2,000-token prompt, as well as the absence of a Vantage battery test. It also exceeds the requested structure: six bullets appear in the summary, with no three key-message bullets following it.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006825
+}

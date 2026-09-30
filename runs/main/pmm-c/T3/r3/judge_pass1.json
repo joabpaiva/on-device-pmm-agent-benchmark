@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "The note says the output is about 245 words in total, including the key messages; it is roughly 280 words."
+  ],
+  "notes": "The summary preserves all six highlighted caveats and acknowledges Vantage's image-generation advantage, but omits test conditions including the hard, flat desk, shared inference runtime and 2,000-token prompt used for first-token measurements. The summary itself is under 250 words and has three bullets; the inaccurate word-count note should be removed.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.017281
+}

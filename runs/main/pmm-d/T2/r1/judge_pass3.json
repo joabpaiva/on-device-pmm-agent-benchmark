@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora offers superior overall AI performance; the brief establishes a higher NPU TOPS rating, not overall performance.",
+    "Aurora provides better long-term value; the brief does not establish a value comparison.",
+    "Aurora\u2019s higher starting price reflects its NPU, warranty, and upgradeable RAM; the brief does not explain its pricing."
+  ],
+  "notes": "All requested sections and item counts are present, and the comparison generally fits a sales audience. Qualify the 11-hour battery figure as video playback and remove unsupported performance, value, and pricing claims before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009494
+}

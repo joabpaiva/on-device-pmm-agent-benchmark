@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 4,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The claims are supported, and the requested sections are present. The positioning summary has three sentences rather than two, and the closing note unnecessarily repeats unverified price-cut intelligence flagged as unsuitable for customer-facing material.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.008413
+}

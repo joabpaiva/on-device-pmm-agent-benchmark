@@ -1,0 +1,269 @@
+{"type": "system", "subtype": "init", "model": "qwen/qwen3.5-9b", "session_id": "20260930_142352_9294f9", "timestamp": 1790803433013}
+{"type": "text", "text": "The", "timestamp": 1790803435283}
+{"type": "text", "text": " Aurora", "timestamp": 1790803435285}
+{"type": "text", "text": " ", "timestamp": 1790803435285}
+{"type": "text", "text": "1", "timestamp": 1790803435286}
+{"type": "text", "text": "4", "timestamp": 1790803435287}
+{"type": "text", "text": " AI", "timestamp": 1790803435287}
+{"type": "text", "text": " Work", "timestamp": 1790803435288}
+{"type": "text", "text": "station", "timestamp": 1790803435289}
+{"type": "text", "text": "'s", "timestamp": 1790803435289}
+{"type": "text", "text": " performance", "timestamp": 1790803435289}
+{"type": "text", "text": " on", "timestamp": 1790803435290}
+{"type": "text", "text": " local", "timestamp": 1790803435290}
+{"type": "text", "text": " AI", "timestamp": 1790803435290}
+{"type": "text", "text": " work", "timestamp": 1790803435290}
+{"type": "text", "text": "loads", "timestamp": 1790803435291}
+{"type": "text", "text": " depends", "timestamp": 1790803435291}
+{"type": "text", "text": " heavily", "timestamp": 1790803435291}
+{"type": "text", "text": " on", "timestamp": 1790803435292}
+{"type": "text", "text": " memory", "timestamp": 1790803435292}
+{"type": "text", "text": " capacity", "timestamp": 1790803435292}
+{"type": "text", "text": ",", "timestamp": 1790803435292}
+{"type": "text", "text": " not", "timestamp": 1790803435293}
+{"type": "text", "text": " just", "timestamp": 1790803435293}
+{"type": "text", "text": " processor", "timestamp": 1790803435293}
+{"type": "text", "text": " speed", "timestamp": 1790803435293}
+{"type": "text", "text": ".", "timestamp": 1790803435294}
+{"type": "text", "text": " Testing", "timestamp": 1790803435294}
+{"type": "text", "text": " pre", "timestamp": 1790803435294}
+{"type": "text", "text": "-production", "timestamp": 1790803435294}
+{"type": "text", "text": " units", "timestamp": 1790803435295}
+{"type": "text", "text": " showed", "timestamp": 1790803435297}
+{"type": "text", "text": " the", "timestamp": 1790803435297}
+{"type": "text", "text": " base", "timestamp": 1790803435299}
+{"type": "text", "text": " ", "timestamp": 1790803435299}
+{"type": "text", "text": "3", "timestamp": 1790803435299}
+{"type": "text", "text": "2", "timestamp": 1790803435300}
+{"type": "text", "text": " GB", "timestamp": 1790803435304}
+{"type": "text", "text": " model", "timestamp": 1790803435305}
+{"type": "text", "text": " bottleneck", "timestamp": 1790803435305}
+{"type": "text", "text": "ed", "timestamp": 1790803435305}
+{"type": "text", "text": " on", "timestamp": 1790803435329}
+{"type": "text", "text": " larger", "timestamp": 1790803435330}
+{"type": "text", "text": " language", "timestamp": 1790803435331}
+{"type": "text", "text": " models", "timestamp": 1790803435331}
+{"type": "text", "text": ",", "timestamp": 1790803435361}
+{"type": "text", "text": " while", "timestamp": 1790803435362}
+{"type": "text", "text": " the", "timestamp": 1790803435363}
+{"type": "text", "text": " ", "timestamp": 1790803435364}
+{"type": "text", "text": "1", "timestamp": 1790803435376}
+{"type": "text", "text": "2", "timestamp": 1790803435376}
+{"type": "text", "text": "8", "timestamp": 1790803435377}
+{"type": "text", "text": " GB", "timestamp": 1790803435378}
+{"type": "text", "text": " high", "timestamp": 1790803435405}
+{"type": "text", "text": "-memory", "timestamp": 1790803435406}
+{"type": "text", "text": " configuration", "timestamp": 1790803435407}
+{"type": "text", "text": " matched", "timestamp": 1790803435407}
+{"type": "text", "text": " and", "timestamp": 1790803435543}
+{"type": "text", "text": " exceeded", "timestamp": 1790803435544}
+{"type": "text", "text": " competitor", "timestamp": 1790803435545}
+{"type": "text", "text": " speeds", "timestamp": 1790803435545}
+{"type": "text", "text": " on", "timestamp": 1790803435565}
+{"type": "text", "text": " those", "timestamp": 1790803435566}
+{"type": "text", "text": " same", "timestamp": 1790803435567}
+{"type": "text", "text": " models", "timestamp": 1790803435567}
+{"type": "text", "text": ".", "timestamp": 1790803435588}
+{"type": "text", "text": " However", "timestamp": 1790803435589}
+{"type": "text", "text": ",", "timestamp": 1790803435589}
+{"type": "text", "text": " the", "timestamp": 1790803435590}
+{"type": "text", "text": " Aurora", "timestamp": 1790803435612}
+{"type": "text", "text": " ", "timestamp": 1790803435613}
+{"type": "text", "text": "1", "timestamp": 1790803435614}
+{"type": "text", "text": "4", "timestamp": 1790803435614}
+{"type": "text", "text": " trailed", "timestamp": 1790803435637}
+{"type": "text", "text": " a", "timestamp": 1790803435638}
+{"type": "text", "text": " competitor", "timestamp": 1790803435639}
+{"type": "text", "text": " in", "timestamp": 1790803435639}
+{"type": "text", "text": " image", "timestamp": 1790803435894}
+{"type": "text", "text": " generation", "timestamp": 1790803435895}
+{"type": "text", "text": ",", "timestamp": 1790803435896}
+{"type": "text", "text": " which", "timestamp": 1790803436704}
+{"type": "text", "text": " heavily", "timestamp": 1790803437729}
+{"type": "text", "text": " favors", "timestamp": 1790803438037}
+{"type": "text", "text": " GPU", "timestamp": 1790803438078}
+{"type": "text", "text": " capability. After ", "timestamp": 1790803438124}
+{"type": "text", "text": "2", "timestamp": 1790803438126}
+{"type": "text", "text": "0", "timestamp": 1790803438126}
+{"type": "text", "text": " minutes", "timestamp": 1790803438127}
+{"type": "text", "text": " of", "timestamp": 1790803438139}
+{"type": "text", "text": " continuous", "timestamp": 1790803438139}
+{"type": "text", "text": " operation", "timestamp": 1790803438140}
+{"type": "text", "text": ",", "timestamp": 1790803438141}
+{"type": "text", "text": " both", "timestamp": 1790803438158}
+{"type": "text", "text": " systems", "timestamp": 1790803438159}
+{"type": "text", "text": " slowed", "timestamp": 1790803438160}
+{"type": "text", "text": " by", "timestamp": 1790803438160}
+{"type": "text", "text": " roughly", "timestamp": 1790803438161}
+{"type": "text", "text": " ", "timestamp": 1790803438201}
+{"type": "text", "text": "9", "timestamp": 1790803438202}
+{"type": "text", "text": "\u2013", "timestamp": 1790803438202}
+{"type": "text", "text": "1", "timestamp": 1790803438203}
+{"type": "text", "text": "2", "timestamp": 1790803438215}
+{"type": "text", "text": "%", "timestamp": 1790803438216}
+{"type": "text", "text": " due", "timestamp": 1790803438217}
+{"type": "text", "text": " to", "timestamp": 1790803438217}
+{"type": "text", "text": " thermal", "timestamp": 1790803438244}
+{"type": "text", "text": " limits", "timestamp": 1790803438245}
+{"type": "text", "text": ",", "timestamp": 1790803438246}
+{"type": "text", "text": " and", "timestamp": 1790803438247}
+{"type": "text", "text": " un", "timestamp": 1790803438312}
+{"type": "text", "text": "quant", "timestamp": 1790803438313}
+{"type": "text", "text": "ified", "timestamp": 1790803438314}
+{"type": "text", "text": " local", "timestamp": 1790803438315}
+{"type": "text", "text": " AI", "timestamp": 1790803438333}
+{"type": "text", "text": " work", "timestamp": 1790803438335}
+{"type": "text", "text": "loads", "timestamp": 1790803438335}
+{"type": "text", "text": " drained", "timestamp": 1790803438336}
+{"type": "text", "text": " the", "timestamp": 1790803438386}
+{"type": "text", "text": " Aurora", "timestamp": 1790803438387}
+{"type": "text", "text": " ", "timestamp": 1790803438393}
+{"type": "text", "text": "1", "timestamp": 1790803438393}
+{"type": "text", "text": "4", "timestamp": 1790803438394}
+{"type": "text", "text": "'s", "timestamp": 1790803438395}
+{"type": "text", "text": " battery", "timestamp": 1790803438396}
+{"type": "text", "text": " in", "timestamp": 1790803438396}
+{"type": "text", "text": " about", "timestamp": 1790803438420}
+{"type": "text", "text": " ", "timestamp": 1790803438422}
+{"type": "text", "text": "2", "timestamp": 1790803438422}
+{"type": "text", "text": " hours", "timestamp": 1790803438423}
+{"type": "text", "text": " ", "timestamp": 1790803438430}
+{"type": "text", "text": "4", "timestamp": 1790803438430}
+{"type": "text", "text": "0", "timestamp": 1790803438431}
+{"type": "text", "text": " minutes", "timestamp": 1790803438432}
+{"type": "text", "text": ".", "timestamp": 1790803438433}
+{"type": "text", "text": "\n\n", "timestamp": 1790803438433}
+{"type": "text", "text": "##", "timestamp": 1790803438434}
+{"type": "text", "text": " Key", "timestamp": 1790803438434}
+{"type": "text", "text": " Messages", "timestamp": 1790803438435}
+{"type": "text", "text": "\n\n", "timestamp": 1790803438436}
+{"type": "text", "text": "*", "timestamp": 1790803438436}
+{"type": "text", "text": "  ", "timestamp": 1790803438437}
+{"type": "text", "text": " Base", "timestamp": 1790803438503}
+{"type": "text", "text": " ", "timestamp": 1790803438504}
+{"type": "text", "text": "3", "timestamp": 1790803438505}
+{"type": "text", "text": "2", "timestamp": 1790803438506}
+{"type": "text", "text": " GB", "timestamp": 1790803438512}
+{"type": "text", "text": " cannot", "timestamp": 1790803438513}
+{"type": "text", "text": " run", "timestamp": 1790803438514}
+{"type": "text", "text": " ", "timestamp": 1790803438514}
+{"type": "text", "text": "3", "timestamp": 1790803438515}
+{"type": "text", "text": "0", "timestamp": 1790803438516}
+{"type": "text", "text": "B", "timestamp": 1790803438516}
+{"type": "text", "text": " parameter", "timestamp": 1790803438517}
+{"type": "text", "text": " models", "timestamp": 1790803438534}
+{"type": "text", "text": " fully", "timestamp": 1790803438535}
+{"type": "text", "text": " in", "timestamp": 1790803438535}
+{"type": "text", "text": " fast", "timestamp": 1790803438535}
+{"type": "text", "text": " memory", "timestamp": 1790803438558}
+{"type": "text", "text": ";", "timestamp": 1790803438560}
+{"type": "text", "text": " thrott", "timestamp": 1790803438563}
+{"type": "text", "text": "led", "timestamp": 1790803438564}
+{"type": "text", "text": " to", "timestamp": 1790803438580}
+{"type": "text", "text": " ", "timestamp": 1790803438581}
+{"type": "text", "text": "6", "timestamp": 1790803438581}
+{"type": "text", "text": " tokens", "timestamp": 1790803438581}
+{"type": "text", "text": "/sec", "timestamp": 1790803438595}
+{"type": "text", "text": " versus", "timestamp": 1790803438596}
+{"type": "text", "text": " ", "timestamp": 1790803438597}
+{"type": "text", "text": "1", "timestamp": 1790803438597}
+{"type": "text", "text": "7", "timestamp": 1790803438619}
+{"type": "text", "text": " tokens", "timestamp": 1790803438620}
+{"type": "text", "text": "/sec", "timestamp": 1790803438621}
+{"type": "text", "text": " on", "timestamp": 1790803438621}
+{"type": "text", "text": " ", "timestamp": 1790803438641}
+{"type": "text", "text": "1", "timestamp": 1790803438642}
+{"type": "text", "text": "2", "timestamp": 1790803438642}
+{"type": "text", "text": "8", "timestamp": 1790803438644}
+{"type": "text", "text": " GB", "timestamp": 1790803438665}
+{"type": "text", "text": " and", "timestamp": 1790803438666}
+{"type": "text", "text": " ", "timestamp": 1790803438666}
+{"type": "text", "text": "1", "timestamp": 1790803438667}
+{"type": "text", "text": "5", "timestamp": 1790803438688}
+{"type": "text", "text": " tokens", "timestamp": 1790803438689}
+{"type": "text", "text": "/sec", "timestamp": 1790803438689}
+{"type": "text", "text": " on", "timestamp": 1790803438690}
+{"type": "text", "text": " competitor", "timestamp": 1790803438715}
+{"type": "text", "text": ".", "timestamp": 1790803438716}
+{"type": "text", "text": "\n", "timestamp": 1790803438717}
+{"type": "text", "text": "*", "timestamp": 1790803438717}
+{"type": "text", "text": "  ", "timestamp": 1790803438741}
+{"type": "text", "text": " ", "timestamp": 1790803438742}
+{"type": "text", "text": "1", "timestamp": 1790803438743}
+{"type": "text", "text": "2", "timestamp": 1790803438743}
+{"type": "text", "text": "8", "timestamp": 1790803438756}
+{"type": "text", "text": " GB", "timestamp": 1790803438757}
+{"type": "text", "text": " configuration", "timestamp": 1790803438757}
+{"type": "text", "text": " ran", "timestamp": 1790803438757}
+{"type": "text", "text": " ", "timestamp": 1790803438785}
+{"type": "text", "text": "3", "timestamp": 1790803438786}
+{"type": "text", "text": "0", "timestamp": 1790803438794}
+{"type": "text", "text": "B", "timestamp": 1790803438795}
+{"type": "text", "text": " parameter", "timestamp": 1790803438808}
+{"type": "text", "text": " model", "timestamp": 1790803438809}
+{"type": "text", "text": " at", "timestamp": 1790803438809}
+{"type": "text", "text": " ", "timestamp": 1790803438809}
+{"type": "text", "text": "1", "timestamp": 1790803438825}
+{"type": "text", "text": "7", "timestamp": 1790803438826}
+{"type": "text", "text": " tokens", "timestamp": 1790803438836}
+{"type": "text", "text": "/sec", "timestamp": 1790803438837}
+{"type": "text", "text": ",", "timestamp": 1790803438853}
+{"type": "text", "text": " out", "timestamp": 1790803438854}
+{"type": "text", "text": "perform", "timestamp": 1790803438855}
+{"type": "text", "text": "ing", "timestamp": 1790803438855}
+{"type": "text", "text": " competitor", "timestamp": 1790803438902}
+{"type": "text", "text": "'s", "timestamp": 1790803438904}
+{"type": "text", "text": " ", "timestamp": 1790803438907}
+{"type": "text", "text": "6", "timestamp": 1790803438909}
+{"type": "text", "text": "4", "timestamp": 1790803438914}
+{"type": "text", "text": " GB", "timestamp": 1790803438914}
+{"type": "text", "text": " (", "timestamp": 1790803438914}
+{"type": "text", "text": "1", "timestamp": 1790803438915}
+{"type": "text", "text": "5", "timestamp": 1790803439039}
+{"type": "text", "text": " tokens", "timestamp": 1790803439041}
+{"type": "text", "text": "/sec", "timestamp": 1790803439042}
+{"type": "text", "text": ").", "timestamp": 1790803439043}
+{"type": "text", "text": "\n", "timestamp": 1790803439068}
+{"type": "text", "text": "*", "timestamp": 1790803439070}
+{"type": "text", "text": "  ", "timestamp": 1790803439071}
+{"type": "text", "text": " Image", "timestamp": 1790803439072}
+{"type": "text", "text": " generation", "timestamp": 1790803439090}
+{"type": "text", "text": " at", "timestamp": 1790803439092}
+{"type": "text", "text": " ", "timestamp": 1790803439095}
+{"type": "text", "text": "1", "timestamp": 1790803439096}
+{"type": "text", "text": "0", "timestamp": 1790803439109}
+{"type": "text", "text": "2", "timestamp": 1790803439109}
+{"type": "text", "text": "4", "timestamp": 1790803439110}
+{"type": "text", "text": " \u00d7", "timestamp": 1790803439111}
+{"type": "text", "text": " ", "timestamp": 1790803439147}
+{"type": "text", "text": "1", "timestamp": 1790803439148}
+{"type": "text", "text": "0", "timestamp": 1790803439149}
+{"type": "text", "text": "2", "timestamp": 1790803439150}
+{"type": "text", "text": "4", "timestamp": 1790803439164}
+{"type": "text", "text": " took", "timestamp": 1790803439165}
+{"type": "text", "text": " longer", "timestamp": 1790803439166}
+{"type": "text", "text": " (", "timestamp": 1790803439167}
+{"type": "text", "text": "5", "timestamp": 1790803439183}
+{"type": "text", "text": ".", "timestamp": 1790803439184}
+{"type": "text", "text": "3", "timestamp": 1790803439185}
+{"type": "text", "text": "s", "timestamp": 1790803439186}
+{"type": "text", "text": ")", "timestamp": 1790803439205}
+{"type": "text", "text": " than", "timestamp": 1790803439206}
+{"type": "text", "text": " competitor", "timestamp": 1790803439207}
+{"type": "text", "text": " (", "timestamp": 1790803439208}
+{"type": "text", "text": "4", "timestamp": 1790803439230}
+{"type": "text", "text": ".", "timestamp": 1790803439231}
+{"type": "text", "text": "1", "timestamp": 1790803439232}
+{"type": "text", "text": "s", "timestamp": 1790803439233}
+{"type": "text", "text": ");", "timestamp": 1790803439255}
+{"type": "text", "text": " competitors", "timestamp": 1790803439256}
+{"type": "text", "text": " with", "timestamp": 1790803439257}
+{"type": "text", "text": " larger", "timestamp": 1790803439257}
+{"type": "text", "text": ",", "timestamp": 1790803439281}
+{"type": "text", "text": " faster", "timestamp": 1790803439283}
+{"type": "text", "text": " GPUs", "timestamp": 1790803439284}
+{"type": "text", "text": " dominate", "timestamp": 1790803439284}
+{"type": "text", "text": " this", "timestamp": 1790803439304}
+{"type": "text", "text": " workload", "timestamp": 1790803439307}
+{"type": "text", "text": ".", "timestamp": 1790803439308}
+{"type": "result", "session_id": "20260930_142352_9294f9", "exit_code": 0, "text": "The Aurora 14 AI Workstation's performance on local AI workloads depends heavily on memory capacity, not just processor speed. Testing pre-production units showed the base 32 GB model bottlenecked on larger language models, while the 128 GB high-memory configuration matched and exceeded competitor speeds on those same models. However, the Aurora 14 trailed a competitor in image generation, which heavily favors GPU capability. After 20 minutes of continuous operation, both systems slowed by roughly 9\u201312% due to thermal limits, and unquantified local AI workloads drained the Aurora 14's battery in about 2 hours 40 minutes.\n\n## Key Messages\n\n*   Base 32 GB cannot run 30B parameter models fully in fast memory; throttled to 6 tokens/sec versus 17 tokens/sec on 128 GB and 15 tokens/sec on competitor.\n*   128 GB configuration ran 30B parameter model at 17 tokens/sec, outperforming competitor's 64 GB (15 tokens/sec).\n*   Image generation at 1024 \u00d7 1024 took longer (5.3s) than competitor (4.1s); competitors with larger, faster GPUs dominate this workload.", "tokens": {"input": 1703, "output": 271, "total": 5670, "cache_read": 3696, "cache_write": 0}, "duration_ms": 6329, "timestamp": 1790803439343}

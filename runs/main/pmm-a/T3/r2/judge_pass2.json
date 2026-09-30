@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 1,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The 128 GB configuration 'matched and exceeded competitor speeds on those same models': the paper does not report its 8B result.",
+    "'Unquantified local AI workloads' drained the battery in about 2 hours 40 minutes: that result is specifically for continuous local language-model inference.",
+    "The 32 GB configuration was 'throttled' to 6 tokens per second: the paper attributes that result to the model not fitting entirely in fast memory and falling back to slower paths.",
+    "'Competitors with larger, faster GPUs dominate this workload' generalizes a finding about one tested competitor."
+  ],
+  "notes": "The length and three-bullet format are correct, but the summary omits many required test conditions and caveats, including the three-unit sample, single competitor configuration, 4-bit quantization and untested output quality, and the video-playback conditions behind the battery rating. It also omits the AI-assisted design result.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011503
+}

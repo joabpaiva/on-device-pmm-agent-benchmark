@@ -1,0 +1,11 @@
+{
+  "facts": 4,
+  "complete": 5,
+  "reader": 4,
+  "ready": 4,
+  "format": 4,
+  "invented_facts": [],
+  "notes": "The requested sections and counts are present, and the comparisons are supported by the brief. Remove the closing note: it unnecessarily repeats unverified price-cut intelligence that the brief says not to use in customer-facing material.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.012391
+}

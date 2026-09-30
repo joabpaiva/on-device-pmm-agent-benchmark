@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "The other models lack the SD card reader or media-card support offered by Aurora 14; Vantage Pro 16 ports are not stated, and Summit X15's lack of an SD reader is not established.",
+    "Aurora 14 has the most versatile connectivity; Vantage Pro 16's ports are not stated.",
+    "Thunderbolt 5 is the latest or a newer interface standard; the source does not establish that comparison."
+  ],
+  "notes": "The table covers all eight attributes and correctly uses \u201cnot stated\u201d for missing values. The third differentiator makes unsupported connectivity comparisons, and the reply includes more than the requested file path.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005499
+}

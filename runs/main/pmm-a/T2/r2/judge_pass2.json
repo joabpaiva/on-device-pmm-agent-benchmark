@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "Aurora\u2019s NPU is \u201c50% more powerful\u201d; the brief gives TOPS figures, not a measured performance comparison.",
+    "Aurora\u2019s NPU \u201cwill perform better on AI locally\u201d and on \u201cAI-accelerated application loads\u201d; the brief does not establish those performance outcomes.",
+    "One Thunderbolt 4 port \u201cis not enough for dual docks or hubs.\u201d",
+    "Aurora\u2019s ports provide \u201ceasier setup\u201d than Vantage\u2019s."
+  ],
+  "notes": "The requested sections and counts are present, and the battlecard is under 350 words. The third objection is framed as a drawback of Vantage rather than a likely objection to Aurora, and several responses turn specifications into unsupported performance or usability claims.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006624
+}

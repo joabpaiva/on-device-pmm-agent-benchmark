@@ -1,0 +1,20 @@
+{
+  "facts": 1,
+  "complete": 4,
+  "reader": 2,
+  "ready": 1,
+  "format": 2,
+  "invented_facts": [
+    "A 10-minute demo featuring a Citrix/WVD session and on-device 7B-model inference for local redlines is available.",
+    "Aurora 14 is a cloud-deployed device that can use the same Windows 11 Pro image, Azure AD join script and Intune policy across a fleet.",
+    "A 20-unit purchase or test group is part of Morgan\u2019s plan.",
+    "The stated battery result is long enough for CAD or model previews on a client job site; the spec measures local video playback only.",
+    "The device requires no dongles.",
+    "A zero-impact migration map covering Amazon WorkSpaces, Datto 3DR and Citrix Workspace, with a TCO delta, can be provided.",
+    "One policy can cover all of the firm\u2019s engineers; the persona says the firm has 400 employees, not 400 engineers.",
+    "A 20-minute review is presented as a defined meeting offering."
+  ],
+  "notes": "All three emails and their intended sequence stages are present, but email 2 exceeds 120 words and email 3 appears to exceed it when the full email is counted. Unsupported deployment, workflow and cost claims make the sequence unsuitable to send with light edits.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011933
+}

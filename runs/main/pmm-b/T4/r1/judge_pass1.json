@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 5,
+  "reader": 5,
+  "ready": 5,
+  "format": 5,
+  "invented_facts": [],
+  "notes": "All five questions are answered using supported documentation, with citations for Q1\u2013Q4. Q5 correctly identifies that certification is not covered and suggests whom to contact.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005529
+}

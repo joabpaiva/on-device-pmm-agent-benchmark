@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 4,
+  "reader": 5,
+  "ready": 4,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The claims are supported by the brief, and the battlecard is fair and useful for a seller. It misses two structural requirements: the positioning summary has three sentences instead of two, and the discovery section asks two questions instead of one.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.003709
+}

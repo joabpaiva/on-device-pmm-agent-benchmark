@@ -1,0 +1,16 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 4,
+  "invented_facts": [
+    "A 3-year warranty versus a 1-year warranty is described as '30 months more supported'; the difference is 24 months.",
+    "Aurora's OLED panel is claimed to offer superior contrast and color accuracy; the brief does not make that comparison.",
+    "The $300 starting-price difference is described as being 'at launch'; the brief gives no launch pricing.",
+    "Volume discounts or rebates are suggested as possible ways to offset the price difference; neither is mentioned in the brief."
+  ],
+  "notes": "All requested sections are present and the card is within the word limit. Correct the unsupported claims and warranty math before use; the discovery item also asks two questions rather than one.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005201
+}

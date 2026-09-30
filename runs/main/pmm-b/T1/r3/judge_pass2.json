@@ -1,0 +1,20 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The post claims the workstation enables faster iteration cycles and maintains responsiveness during intensive workloads; the spec provides no performance results for those claims.",
+    "It presents querying technical documentation, generating code snippets, and analyzing simulation results without network latency as supported use cases; the spec does not establish them.",
+    "It claims the GPU supports rendering CAD assemblies, training computer vision models, and accelerating machine-learning inference; those capabilities are not specified.",
+    "It describes storage as user-upgradeable, although the spec explicitly confirms user upgradeability only for memory.",
+    "It claims the warranty provides predictable service costs, which the spec does not establish.",
+    "It claims Thunderbolt 5 supports external GPU configurations, which the spec does not state.",
+    "It says the display ensures accurate color representation and readability in various lighting conditions; those outcomes are not established by the listed display specifications.",
+    "It claims Windows 11 Pro provides enterprise management compatibility; the spec only states that the system ships with Windows 11 Pro."
+  ],
+  "notes": "The post meets the requested length and structure and is well framed for IT decision-makers. Several asserted capabilities and outcomes go beyond the spec sheet, so it would need more than light edits before publication.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.005822
+}

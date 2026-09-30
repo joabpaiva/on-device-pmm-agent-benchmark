@@ -1,0 +1,14 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 3,
+  "ready": 2,
+  "format": 1,
+  "invented_facts": [
+    "Only one Vantage Pro 16 unit was tested; the paper says three units of each configuration were tested.",
+    "Both Aurora 14 configurations achieved a median of 38 tokens per second on the 8B model; the paper reports that figure only for the base configuration."
+  ],
+  "notes": "The output preserves several important results and caveats, including Vantage\u2019s image-generation advantage, but omits test conditions such as the 22 \u00b0C environment, AC power, default performance mode, and 2,000-token prompt. It also uses six bullets instead of the requested three key messages and exceeds the 250-word limit.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006265
+}

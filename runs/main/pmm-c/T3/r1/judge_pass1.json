@@ -1,0 +1,11 @@
+{
+  "facts": 5,
+  "complete": 2,
+  "reader": 4,
+  "ready": 3,
+  "format": 3,
+  "invented_facts": [],
+  "notes": "The summary preserves the major results and six highlighted caveats, including Vantage\u2019s image-generation advantage. It omits several test conditions the task explicitly requires, such as the image count and resolution, shared inference runtime, time-to-first-token test, and hard, flat desk; the word-count postscript should also be removed.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.011826
+}

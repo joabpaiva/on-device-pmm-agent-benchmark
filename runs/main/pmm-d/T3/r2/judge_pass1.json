@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 2,
+  "reader": 4,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "The battery test used the 8B model; the paper specifies only continuous local language model inference.",
+    "Larger models require the 128 GB high-memory configuration; the tested 30B model also ran on the 32 GB Aurora 14 and 64 GB Vantage Pro 16.",
+    "Sustained workloads generally slow by 9\u201312% after 20 minutes; the sustained test covered only the 8B model."
+  ],
+  "notes": "The VP-level framing is clear and the summary meets the length and bullet requirements. It omits required caveats and test conditions, notably the single Vantage configuration, 4-bit quantization and unevaluated output quality, and the battery rating\u2019s 150-nit, Wi-Fi-off conditions.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.006566
+}

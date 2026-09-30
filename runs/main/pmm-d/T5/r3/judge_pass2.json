@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 3,
+  "reader": 3,
+  "ready": 2,
+  "format": 5,
+  "invented_facts": [
+    "A local machine can handle the same CAD and simulation workloads as the firm's cloud workstations.",
+    "TPM 2.0 and a self-healing BIOS keep local data encrypted.",
+    "The stated battery rating means engineers can work all day on a single charge at remote sites."
+  ],
+  "notes": "All three emails meet the length and CTA requirements, and the tone is generally appropriate. Email 2 lists security features but does not directly answer why a cloud-first team should buy powerful laptops; several unsupported claims need revision before sending.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.009123
+}

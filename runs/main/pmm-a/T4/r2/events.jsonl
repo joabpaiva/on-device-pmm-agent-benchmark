@@ -1,0 +1,367 @@
+{"type": "system", "subtype": "init", "model": "qwen/qwen3.5-9b", "session_id": "20260930_142400_8eb8a9", "timestamp": 1790803441369}
+{"type": "text", "text": "**", "timestamp": 1790803442750}
+{"type": "text", "text": "Q", "timestamp": 1790803442751}
+{"type": "text", "text": "1", "timestamp": 1790803442783}
+{"type": "text", "text": ".", "timestamp": 1790803442784}
+{"type": "text", "text": " If", "timestamp": 1790803442784}
+{"type": "text", "text": " I", "timestamp": 1790803442813}
+{"type": "text", "text": " buy", "timestamp": 1790803442814}
+{"type": "text", "text": " the", "timestamp": 1790803442815}
+{"type": "text", "text": " base", "timestamp": 1790803442815}
+{"type": "text", "text": " model", "timestamp": 1790803442816}
+{"type": "text", "text": " with", "timestamp": 1790803442853}
+{"type": "text", "text": " ", "timestamp": 1790803442855}
+{"type": "text", "text": "3", "timestamp": 1790803442865}
+{"type": "text", "text": "2", "timestamp": 1790803442866}
+{"type": "text", "text": " GB", "timestamp": 1790803442884}
+{"type": "text", "text": " of", "timestamp": 1790803442885}
+{"type": "text", "text": " memory", "timestamp": 1790803442885}
+{"type": "text", "text": ",", "timestamp": 1790803442886}
+{"type": "text", "text": " can", "timestamp": 1790803443029}
+{"type": "text", "text": " I", "timestamp": 1790803443030}
+{"type": "text", "text": " upgrade", "timestamp": 1790803443030}
+{"type": "text", "text": " to", "timestamp": 1790803443031}
+{"type": "text", "text": " ", "timestamp": 1790803443032}
+{"type": "text", "text": "1", "timestamp": 1790803443040}
+{"type": "text", "text": "2", "timestamp": 1790803443040}
+{"type": "text", "text": "8", "timestamp": 1790803443041}
+{"type": "text", "text": " GB", "timestamp": 1790803443041}
+{"type": "text", "text": " myself", "timestamp": 1790803443042}
+{"type": "text", "text": " later", "timestamp": 1790803443042}
+{"type": "text", "text": "?**", "timestamp": 1790803443042}
+{"type": "text", "text": "\n\n", "timestamp": 1790803443043}
+{"type": "text", "text": "**", "timestamp": 1790803443092}
+{"type": "text", "text": "Answer", "timestamp": 1790803443094}
+{"type": "text", "text": ":**", "timestamp": 1790803443301}
+{"type": "text", "text": " Yes", "timestamp": 1790803443301}
+{"type": "text", "text": ".", "timestamp": 1790803443302}
+{"type": "text", "text": " Aurora", "timestamp": 1790803443302}
+{"type": "text", "text": " ", "timestamp": 1790803443302}
+{"type": "text", "text": "1", "timestamp": 1790803443302}
+{"type": "text", "text": "4", "timestamp": 1790803443302}
+{"type": "text", "text": " has", "timestamp": 1790803443302}
+{"type": "text", "text": " two", "timestamp": 1790803443302}
+{"type": "text", "text": " SO", "timestamp": 1790803443302}
+{"type": "text", "text": "-D", "timestamp": 1790803443303}
+{"type": "text", "text": "IM", "timestamp": 1790803443303}
+{"type": "text", "text": "M", "timestamp": 1790803443303}
+{"type": "text", "text": " memory", "timestamp": 1790803443303}
+{"type": "text", "text": " slots", "timestamp": 1790803443303}
+{"type": "text", "text": " and", "timestamp": 1790803443303}
+{"type": "text", "text": " supports", "timestamp": 1790803443303}
+{"type": "text", "text": " up", "timestamp": 1790803443303}
+{"type": "text", "text": " to", "timestamp": 1790803443303}
+{"type": "text", "text": " ", "timestamp": 1790803443303}
+{"type": "text", "text": "1", "timestamp": 1790803443303}
+{"type": "text", "text": "2", "timestamp": 1790803443303}
+{"type": "text", "text": "8", "timestamp": 1790803443304}
+{"type": "text", "text": " GB", "timestamp": 1790803443304}
+{"type": "text", "text": ".", "timestamp": 1790803443304}
+{"type": "text", "text": " Customers", "timestamp": 1790803443304}
+{"type": "text", "text": " may", "timestamp": 1790803443304}
+{"type": "text", "text": " upgrade", "timestamp": 1790803443304}
+{"type": "text", "text": " memory", "timestamp": 1790803443304}
+{"type": "text", "text": " themselves", "timestamp": 1790803443304}
+{"type": "text", "text": ".", "timestamp": 1790803443304}
+{"type": "text", "text": "\n\n", "timestamp": 1790803443304}
+{"type": "text", "text": "*C", "timestamp": 1790803443304}
+{"type": "text", "text": "ite", "timestamp": 1790803443305}
+{"type": "text", "text": ":*", "timestamp": 1790803443441}
+{"type": "text", "text": " Section", "timestamp": 1790803443442}
+{"type": "text", "text": " ", "timestamp": 1790803443442}
+{"type": "text", "text": "2", "timestamp": 1790803443442}
+{"type": "text", "text": ":", "timestamp": 1790803443442}
+{"type": "text", "text": " Memory", "timestamp": 1790803443442}
+{"type": "text", "text": " and", "timestamp": 1790803443442}
+{"type": "text", "text": " Storage", "timestamp": 1790803443443}
+{"type": "text", "text": " Up", "timestamp": 1790803443443}
+{"type": "text", "text": "grades", "timestamp": 1790803443443}
+{"type": "text", "text": "\n\n", "timestamp": 1790803443443}
+{"type": "text", "text": "***", "timestamp": 1790803443443}
+{"type": "text", "text": "\n\n", "timestamp": 1790803443444}
+{"type": "text", "text": "**", "timestamp": 1790803443444}
+{"type": "text", "text": "Q", "timestamp": 1790803443444}
+{"type": "text", "text": "2", "timestamp": 1790803443445}
+{"type": "text", "text": ".", "timestamp": 1790803443665}
+{"type": "text", "text": " What", "timestamp": 1790803443667}
+{"type": "text", "text": " warranty", "timestamp": 1790803443667}
+{"type": "text", "text": " comes", "timestamp": 1790803443668}
+{"type": "text", "text": " standard", "timestamp": 1790803443694}
+{"type": "text", "text": ",", "timestamp": 1790803443695}
+{"type": "text", "text": " and", "timestamp": 1790803443696}
+{"type": "text", "text": " can", "timestamp": 1790803443696}
+{"type": "text", "text": " I", "timestamp": 1790803443734}
+{"type": "text", "text": " extend", "timestamp": 1790803443735}
+{"type": "text", "text": " it", "timestamp": 1790803443736}
+{"type": "text", "text": "?**", "timestamp": 1790803443736}
+{"type": "text", "text": "\n\n", "timestamp": 1790803443769}
+{"type": "text", "text": "**", "timestamp": 1790803443770}
+{"type": "text", "text": "Answer", "timestamp": 1790803443771}
+{"type": "text", "text": ":**", "timestamp": 1790803444229}
+{"type": "text", "text": " Aurora", "timestamp": 1790803444229}
+{"type": "text", "text": " ", "timestamp": 1790803444230}
+{"type": "text", "text": "1", "timestamp": 1790803444230}
+{"type": "text", "text": "4", "timestamp": 1790803444230}
+{"type": "text", "text": " includes", "timestamp": 1790803444230}
+{"type": "text", "text": " a", "timestamp": 1790803444230}
+{"type": "text", "text": " ", "timestamp": 1790803444230}
+{"type": "text", "text": "3", "timestamp": 1790803444230}
+{"type": "text", "text": "-year", "timestamp": 1790803444231}
+{"type": "text", "text": " on", "timestamp": 1790803444231}
+{"type": "text", "text": "-site", "timestamp": 1790803444231}
+{"type": "text", "text": ",", "timestamp": 1790803444231}
+{"type": "text", "text": " next", "timestamp": 1790803444231}
+{"type": "text", "text": "-business", "timestamp": 1790803444231}
+{"type": "text", "text": "-day", "timestamp": 1790803444231}
+{"type": "text", "text": " warranty", "timestamp": 1790803444231}
+{"type": "text", "text": " as", "timestamp": 1790803444232}
+{"type": "text", "text": " standard", "timestamp": 1790803444232}
+{"type": "text", "text": ".", "timestamp": 1790803444232}
+{"type": "text", "text": " Customers", "timestamp": 1790803444232}
+{"type": "text", "text": " can", "timestamp": 1790803444232}
+{"type": "text", "text": " extend", "timestamp": 1790803444232}
+{"type": "text", "text": " coverage", "timestamp": 1790803444232}
+{"type": "text", "text": " to", "timestamp": 1790803444232}
+{"type": "text", "text": " ", "timestamp": 1790803444232}
+{"type": "text", "text": "4", "timestamp": 1790803444232}
+{"type": "text", "text": " or", "timestamp": 1790803444232}
+{"type": "text", "text": " ", "timestamp": 1790803444232}
+{"type": "text", "text": "5", "timestamp": 1790803444233}
+{"type": "text", "text": " years", "timestamp": 1790803444233}
+{"type": "text", "text": " at", "timestamp": 1790803444233}
+{"type": "text", "text": " purchase", "timestamp": 1790803444233}
+{"type": "text", "text": " or", "timestamp": 1790803444233}
+{"type": "text", "text": " within", "timestamp": 1790803444233}
+{"type": "text", "text": " ", "timestamp": 1790803444233}
+{"type": "text", "text": "9", "timestamp": 1790803444233}
+{"type": "text", "text": "0", "timestamp": 1790803444233}
+{"type": "text", "text": " days", "timestamp": 1790803444233}
+{"type": "text", "text": " of", "timestamp": 1790803444233}
+{"type": "text", "text": " purchase", "timestamp": 1790803444234}
+{"type": "text", "text": ".", "timestamp": 1790803444234}
+{"type": "text", "text": "\n\n", "timestamp": 1790803444234}
+{"type": "text", "text": "*C", "timestamp": 1790803444234}
+{"type": "text", "text": "ite", "timestamp": 1790803444235}
+{"type": "text", "text": ":*", "timestamp": 1790803444330}
+{"type": "text", "text": " Section", "timestamp": 1790803444330}
+{"type": "text", "text": " ", "timestamp": 1790803444330}
+{"type": "text", "text": "1", "timestamp": 1790803444331}
+{"type": "text", "text": ":", "timestamp": 1790803444331}
+{"type": "text", "text": " Warranty", "timestamp": 1790803444331}
+{"type": "text", "text": " and", "timestamp": 1790803444331}
+{"type": "text", "text": " Support", "timestamp": 1790803444331}
+{"type": "text", "text": "\n\n", "timestamp": 1790803444331}
+{"type": "text", "text": "***", "timestamp": 1790803444331}
+{"type": "text", "text": "\n\n", "timestamp": 1790803444332}
+{"type": "text", "text": "**", "timestamp": 1790803444332}
+{"type": "text", "text": "Q", "timestamp": 1790803444369}
+{"type": "text", "text": "3", "timestamp": 1790803444370}
+{"type": "text", "text": ".", "timestamp": 1790803444371}
+{"type": "text", "text": " How", "timestamp": 1790803444371}
+{"type": "text", "text": " many", "timestamp": 1790803444409}
+{"type": "text", "text": " external", "timestamp": 1790803444410}
+{"type": "text", "text": " monitors", "timestamp": 1790803444411}
+{"type": "text", "text": " can", "timestamp": 1790803444412}
+{"type": "text", "text": " I", "timestamp": 1790803444463}
+{"type": "text", "text": " run", "timestamp": 1790803444463}
+{"type": "text", "text": " from", "timestamp": 1790803444464}
+{"type": "text", "text": " one", "timestamp": 1790803444465}
+{"type": "text", "text": " dock", "timestamp": 1790803444472}
+{"type": "text", "text": "?**", "timestamp": 1790803444473}
+{"type": "text", "text": "\n\n", "timestamp": 1790803444473}
+{"type": "text", "text": "**", "timestamp": 1790803444474}
+{"type": "text", "text": "Answer", "timestamp": 1790803444499}
+{"type": "text", "text": ":**", "timestamp": 1790803445307}
+{"type": "text", "text": " Through", "timestamp": 1790803445307}
+{"type": "text", "text": " a", "timestamp": 1790803445308}
+{"type": "text", "text": " single", "timestamp": 1790803445308}
+{"type": "text", "text": " Thunder", "timestamp": 1790803445308}
+{"type": "text", "text": "bolt", "timestamp": 1790803445308}
+{"type": "text", "text": " ", "timestamp": 1790803445308}
+{"type": "text", "text": "5", "timestamp": 1790803445308}
+{"type": "text", "text": " dock", "timestamp": 1790803445308}
+{"type": "text", "text": ",", "timestamp": 1790803445308}
+{"type": "text", "text": " Aurora", "timestamp": 1790803445308}
+{"type": "text", "text": " ", "timestamp": 1790803445309}
+{"type": "text", "text": "1", "timestamp": 1790803445309}
+{"type": "text", "text": "4", "timestamp": 1790803445309}
+{"type": "text", "text": " supports", "timestamp": 1790803445309}
+{"type": "text", "text": " up", "timestamp": 1790803445309}
+{"type": "text", "text": " to", "timestamp": 1790803445309}
+{"type": "text", "text": " three", "timestamp": 1790803445309}
+{"type": "text", "text": " external", "timestamp": 1790803445310}
+{"type": "text", "text": " ", "timestamp": 1790803445310}
+{"type": "text", "text": "4", "timestamp": 1790803445310}
+{"type": "text", "text": "K", "timestamp": 1790803445310}
+{"type": "text", "text": " displays", "timestamp": 1790803445310}
+{"type": "text", "text": " at", "timestamp": 1790803445310}
+{"type": "text", "text": " ", "timestamp": 1790803445310}
+{"type": "text", "text": "6", "timestamp": 1790803445310}
+{"type": "text", "text": "0", "timestamp": 1790803445310}
+{"type": "text", "text": " Hz", "timestamp": 1790803445310}
+{"type": "text", "text": ",", "timestamp": 1790803445310}
+{"type": "text", "text": " or", "timestamp": 1790803445311}
+{"type": "text", "text": " two", "timestamp": 1790803445311}
+{"type": "text", "text": " external", "timestamp": 1790803445311}
+{"type": "text", "text": " displays", "timestamp": 1790803445311}
+{"type": "text", "text": " at", "timestamp": 1790803445311}
+{"type": "text", "text": " up", "timestamp": 1790803445311}
+{"type": "text", "text": " to", "timestamp": 1790803445311}
+{"type": "text", "text": " ", "timestamp": 1790803445311}
+{"type": "text", "text": "8", "timestamp": 1790803445311}
+{"type": "text", "text": "K", "timestamp": 1790803445311}
+{"type": "text", "text": " ", "timestamp": 1790803445312}
+{"type": "text", "text": "6", "timestamp": 1790803445312}
+{"type": "text", "text": "0", "timestamp": 1790803445312}
+{"type": "text", "text": " Hz", "timestamp": 1790803445312}
+{"type": "text", "text": ".", "timestamp": 1790803445312}
+{"type": "text", "text": " Additionally", "timestamp": 1790803445312}
+{"type": "text", "text": ",", "timestamp": 1790803445312}
+{"type": "text", "text": " the", "timestamp": 1790803445312}
+{"type": "text", "text": " HDMI", "timestamp": 1790803445312}
+{"type": "text", "text": " ", "timestamp": 1790803445312}
+{"type": "text", "text": "2", "timestamp": 1790803445313}
+{"type": "text", "text": ".", "timestamp": 1790803445313}
+{"type": "text", "text": "1", "timestamp": 1790803445313}
+{"type": "text", "text": " port", "timestamp": 1790803445313}
+{"type": "text", "text": " supports", "timestamp": 1790803445313}
+{"type": "text", "text": " one", "timestamp": 1790803445313}
+{"type": "text", "text": " additional", "timestamp": 1790803445313}
+{"type": "text", "text": " display", "timestamp": 1790803445313}
+{"type": "text", "text": " at", "timestamp": 1790803445313}
+{"type": "text", "text": " up", "timestamp": 1790803445313}
+{"type": "text", "text": " to", "timestamp": 1790803445313}
+{"type": "text", "text": " ", "timestamp": 1790803445313}
+{"type": "text", "text": "4", "timestamp": 1790803445314}
+{"type": "text", "text": "K", "timestamp": 1790803445314}
+{"type": "text", "text": " ", "timestamp": 1790803445314}
+{"type": "text", "text": "1", "timestamp": 1790803445314}
+{"type": "text", "text": "2", "timestamp": 1790803445314}
+{"type": "text", "text": "0", "timestamp": 1790803445314}
+{"type": "text", "text": " Hz", "timestamp": 1790803445314}
+{"type": "text", "text": ".", "timestamp": 1790803445314}
+{"type": "text", "text": "\n\n", "timestamp": 1790803445314}
+{"type": "text", "text": "*C", "timestamp": 1790803445314}
+{"type": "text", "text": "ite", "timestamp": 1790803445315}
+{"type": "text", "text": ":*", "timestamp": 1790803445412}
+{"type": "text", "text": " Section", "timestamp": 1790803445413}
+{"type": "text", "text": " ", "timestamp": 1790803445413}
+{"type": "text", "text": "3", "timestamp": 1790803445413}
+{"type": "text", "text": ":", "timestamp": 1790803445414}
+{"type": "text", "text": " Dock", "timestamp": 1790803445414}
+{"type": "text", "text": "ing", "timestamp": 1790803445414}
+{"type": "text", "text": " and", "timestamp": 1790803445414}
+{"type": "text", "text": " External", "timestamp": 1790803445414}
+{"type": "text", "text": " Displays", "timestamp": 1790803445414}
+{"type": "text", "text": "\n\n", "timestamp": 1790803445415}
+{"type": "text", "text": "***", "timestamp": 1790803445415}
+{"type": "text", "text": "\n\n", "timestamp": 1790803445415}
+{"type": "text", "text": "**", "timestamp": 1790803445416}
+{"type": "text", "text": "Q", "timestamp": 1790803445417}
+{"type": "text", "text": "4", "timestamp": 1790803445446}
+{"type": "text", "text": ".", "timestamp": 1790803445447}
+{"type": "text", "text": " What", "timestamp": 1790803445448}
+{"type": "text", "text": " happens", "timestamp": 1790803445448}
+{"type": "text", "text": " if", "timestamp": 1790803445483}
+{"type": "text", "text": " the", "timestamp": 1790803445484}
+{"type": "text", "text": " BIOS", "timestamp": 1790803445485}
+{"type": "text", "text": " is", "timestamp": 1790803445485}
+{"type": "text", "text": " attacked", "timestamp": 1790803445513}
+{"type": "text", "text": "?**", "timestamp": 1790803445514}
+{"type": "text", "text": "\n\n", "timestamp": 1790803445514}
+{"type": "text", "text": "**", "timestamp": 1790803445515}
+{"type": "text", "text": "Answer", "timestamp": 1790803445565}
+{"type": "text", "text": ":**", "timestamp": 1790803446008}
+{"type": "text", "text": " Aurora", "timestamp": 1790803446008}
+{"type": "text", "text": " ", "timestamp": 1790803446009}
+{"type": "text", "text": "1", "timestamp": 1790803446009}
+{"type": "text", "text": "4", "timestamp": 1790803446009}
+{"type": "text", "text": "'s", "timestamp": 1790803446009}
+{"type": "text", "text": " self", "timestamp": 1790803446009}
+{"type": "text", "text": "-he", "timestamp": 1790803446009}
+{"type": "text", "text": "aling", "timestamp": 1790803446009}
+{"type": "text", "text": " BIOS", "timestamp": 1790803446009}
+{"type": "text", "text": " continuously", "timestamp": 1790803446009}
+{"type": "text", "text": " checks", "timestamp": 1790803446009}
+{"type": "text", "text": " firmware", "timestamp": 1790803446009}
+{"type": "text", "text": " integrity", "timestamp": 1790803446010}
+{"type": "text", "text": ".", "timestamp": 1790803446010}
+{"type": "text", "text": " If", "timestamp": 1790803446010}
+{"type": "text", "text": " the", "timestamp": 1790803446010}
+{"type": "text", "text": " BIOS", "timestamp": 1790803446010}
+{"type": "text", "text": " is", "timestamp": 1790803446010}
+{"type": "text", "text": " corrupted", "timestamp": 1790803446010}
+{"type": "text", "text": " or", "timestamp": 1790803446010}
+{"type": "text", "text": " attacked", "timestamp": 1790803446010}
+{"type": "text", "text": ",", "timestamp": 1790803446010}
+{"type": "text", "text": " the", "timestamp": 1790803446010}
+{"type": "text", "text": " system", "timestamp": 1790803446011}
+{"type": "text", "text": " automatically", "timestamp": 1790803446011}
+{"type": "text", "text": " restores", "timestamp": 1790803446011}
+{"type": "text", "text": " a", "timestamp": 1790803446011}
+{"type": "text", "text": " protected", "timestamp": 1790803446011}
+{"type": "text", "text": " copy", "timestamp": 1790803446011}
+{"type": "text", "text": " at", "timestamp": 1790803446011}
+{"type": "text", "text": " the", "timestamp": 1790803446012}
+{"type": "text", "text": " next", "timestamp": 1790803446012}
+{"type": "text", "text": " boot", "timestamp": 1790803446012}
+{"type": "text", "text": ".", "timestamp": 1790803446012}
+{"type": "text", "text": "\n\n", "timestamp": 1790803446012}
+{"type": "text", "text": "*C", "timestamp": 1790803446012}
+{"type": "text", "text": "ite", "timestamp": 1790803446012}
+{"type": "text", "text": ":*", "timestamp": 1790803446071}
+{"type": "text", "text": " Section", "timestamp": 1790803446072}
+{"type": "text", "text": " ", "timestamp": 1790803446072}
+{"type": "text", "text": "4", "timestamp": 1790803446072}
+{"type": "text", "text": ":", "timestamp": 1790803446072}
+{"type": "text", "text": " Security", "timestamp": 1790803446072}
+{"type": "text", "text": " Features", "timestamp": 1790803446072}
+{"type": "text", "text": "\n\n", "timestamp": 1790803446073}
+{"type": "text", "text": "***", "timestamp": 1790803446073}
+{"type": "text", "text": "\n\n", "timestamp": 1790803446104}
+{"type": "text", "text": "**", "timestamp": 1790803446105}
+{"type": "text", "text": "Q", "timestamp": 1790803446106}
+{"type": "text", "text": "5", "timestamp": 1790803446106}
+{"type": "text", "text": ".", "timestamp": 1790803446145}
+{"type": "text", "text": " Is", "timestamp": 1790803446146}
+{"type": "text", "text": " Aurora", "timestamp": 1790803446146}
+{"type": "text", "text": " ", "timestamp": 1790803446147}
+{"type": "text", "text": "1", "timestamp": 1790803446188}
+{"type": "text", "text": "4", "timestamp": 1790803446189}
+{"type": "text", "text": " certified", "timestamp": 1790803446190}
+{"type": "text", "text": " for", "timestamp": 1790803446191}
+{"type": "text", "text": " Ubuntu", "timestamp": 1790803446304}
+{"type": "text", "text": " ", "timestamp": 1790803446305}
+{"type": "text", "text": "2", "timestamp": 1790803446305}
+{"type": "text", "text": "4", "timestamp": 1790803446306}
+{"type": "text", "text": ".", "timestamp": 1790803446337}
+{"type": "text", "text": "0", "timestamp": 1790803446338}
+{"type": "text", "text": "4", "timestamp": 1790803446338}
+{"type": "text", "text": "?**", "timestamp": 1790803446339}
+{"type": "text", "text": "\n\n", "timestamp": 1790803446371}
+{"type": "text", "text": "**", "timestamp": 1790803446372}
+{"type": "text", "text": "Answer", "timestamp": 1790803446373}
+{"type": "text", "text": ":**", "timestamp": 1790803446598}
+{"type": "text", "text": " Not", "timestamp": 1790803446598}
+{"type": "text", "text": " covered", "timestamp": 1790803446598}
+{"type": "text", "text": " in", "timestamp": 1790803446598}
+{"type": "text", "text": " the", "timestamp": 1790803446598}
+{"type": "text", "text": " provided", "timestamp": 1790803446598}
+{"type": "text", "text": " documentation", "timestamp": 1790803446598}
+{"type": "text", "text": ".", "timestamp": 1790803446598}
+{"type": "text", "text": " Please", "timestamp": 1790803446598}
+{"type": "text", "text": " contact", "timestamp": 1790803446599}
+{"type": "text", "text": " product", "timestamp": 1790803446599}
+{"type": "text", "text": " support", "timestamp": 1790803446599}
+{"type": "text", "text": " for", "timestamp": 1790803446599}
+{"type": "text", "text": " Ubuntu", "timestamp": 1790803446599}
+{"type": "text", "text": " ", "timestamp": 1790803446599}
+{"type": "text", "text": "2", "timestamp": 1790803446599}
+{"type": "text", "text": "4", "timestamp": 1790803446599}
+{"type": "text", "text": ".", "timestamp": 1790803446599}
+{"type": "text", "text": "0", "timestamp": 1790803446599}
+{"type": "text", "text": "4", "timestamp": 1790803446599}
+{"type": "text", "text": " certification", "timestamp": 1790803446600}
+{"type": "text", "text": " details", "timestamp": 1790803446600}
+{"type": "text", "text": ".", "timestamp": 1790803446600}
+{"type": "result", "session_id": "20260930_142400_8eb8a9", "exit_code": 0, "text": "**Q1. If I buy the base model with 32 GB of memory, can I upgrade to 128 GB myself later?**\n\n**Answer:** Yes. Aurora 14 has two SO-DIMM memory slots and supports up to 128 GB. Customers may upgrade memory themselves.\n\n*Cite:* Section 2: Memory and Storage Upgrades\n\n***\n\n**Q2. What warranty comes standard, and can I extend it?**\n\n**Answer:** Aurora 14 includes a 3-year on-site, next-business-day warranty as standard. Customers can extend coverage to 4 or 5 years at purchase or within 90 days of purchase.\n\n*Cite:* Section 1: Warranty and Support\n\n***\n\n**Q3. How many external monitors can I run from one dock?**\n\n**Answer:** Through a single Thunderbolt 5 dock, Aurora 14 supports up to three external 4K displays at 60 Hz, or two external displays at up to 8K 60 Hz. Additionally, the HDMI 2.1 port supports one additional display at up to 4K 120 Hz.\n\n*Cite:* Section 3: Docking and External Displays\n\n***\n\n**Q4. What happens if the BIOS is attacked?**\n\n**Answer:** Aurora 14's self-healing BIOS continuously checks firmware integrity. If the BIOS is corrupted or attacked, the system automatically restores a protected copy at the next boot.\n\n*Cite:* Section 4: Security Features\n\n***\n\n**Q5. Is Aurora 14 certified for Ubuntu 24.04?**\n\n**Answer:** Not covered in the provided documentation. Please contact product support for Ubuntu 24.04 certification details.", "tokens": {"input": 4413, "output": 366, "total": 4779, "cache_read": 0, "cache_write": 0}, "duration_ms": 5251, "timestamp": 1790803446620}

@@ -1,0 +1,13 @@
+{
+  "facts": 2,
+  "complete": 4,
+  "reader": 4,
+  "ready": 3,
+  "format": 4,
+  "invented_facts": [
+    "Q5 suggests checking the Aurora compatibility list for Ubuntu certification, but the documentation mentions that list only for qualified memory modules."
+  ],
+  "notes": "The answers cite the relevant sections and cover Q1\u2013Q4, though Q3 omits the 60 Hz limit for three 4K displays. Q5 appropriately avoids a certification claim, but its compatibility-list suggestion is unsupported and its parenthetical wording is not customer-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.00501
+}

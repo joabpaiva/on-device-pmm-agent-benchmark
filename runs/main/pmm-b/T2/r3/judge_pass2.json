@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora delivers superior long-term value; the brief provides no long-term cost comparison.",
+    "Aurora\u2019s NPU and memory provide better overall performance for most AI workflows; the brief does not support that broad comparison.",
+    "Upgrading Aurora\u2019s memory will avoid replacing the entire system as needs grow; that outcome is not established by the brief."
+  ],
+  "notes": "All requested sections and counts are present, and the Vantage strengths are fairly acknowledged. The unsupported value and performance claims need revision before this is customer-ready.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.004116
+}

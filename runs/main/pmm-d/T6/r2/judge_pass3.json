@@ -1,0 +1,15 @@
+{
+  "facts": 2,
+  "complete": 5,
+  "reader": 4,
+  "ready": 3,
+  "format": 5,
+  "invented_facts": [
+    "Aurora 14 has user-upgradeable slots; the source says its memory is user-upgradeable but does not specify slots.",
+    "Thunderbolt 5 is the fastest interface in the lineup; Vantage Pro 16's ports are not stated.",
+    "Aurora 14 has the smallest form factor; chassis dimensions are not provided."
+  ],
+  "notes": "The table covers all eight attributes for all three products and correctly marks missing values as not stated. The differentiators need light revision to remove claims the specs do not establish.",
+  "_judge_model": "openai/gpt-6-sol",
+  "_judge_cost_usd": 0.007591
+}
