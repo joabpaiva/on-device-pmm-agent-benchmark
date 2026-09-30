@@ -51,7 +51,7 @@ Judge spend for Phase 1: $1.38 (162 gradings).
 8. **One genuine 9B failure:** T5 run 1 stopped after writing its plan and "Email 1". Consistency is the 9B's weak spot (largest run-to-run spread).
 
 
-## Phase 2 results (laptop, 30 Sep 2026) — measured, quality not yet graded
+## Phase 2 results (laptop, 30 Sep 2026): measured, quality not yet graded
 
 **Machine:** MacBook Air (Mac15,12), Apple M3, 8-core CPU (4 performance + 4 efficiency), 10-core GPU, 24 GB unified memory, fanless; macOS 27.0.1; Hermes Agent v0.21.5; llama.cpp build 10964 (Metal) serving Qwen3.5-9B Q8_0 (9.5 GB), 64K context, thinking off, localhost only. Plugged in.
 
