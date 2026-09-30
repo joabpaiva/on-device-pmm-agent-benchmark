@@ -28,7 +28,9 @@ for p in pmm-a pmm-b pmm-c pmm-d; do
   hermes -p "$p" config set memory.memory_enabled false
   hermes -p "$p" config set memory.user_profile_enabled false
   hermes -p "$p" config set auxiliary.background_review.enabled false
-  hermes -p "$p" config set agent.reasoning_effort none
+  # `config set` stores the word none as YAML null (= provider default), so write the string directly
+  hermes -p "$p" config set agent.reasoning_effort low --force >/dev/null
+  sed -i '' 's/^  reasoning_effort:.*$/  reasoning_effort: "none"/' "$HERMES_HOME_ROOT/profiles/$p/config.yaml"
   hermes -p "$p" config set terminal.cwd .   # file tools resolve from the run folder the script launches in
 done
 

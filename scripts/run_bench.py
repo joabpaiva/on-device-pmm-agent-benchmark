@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TASKS = json.loads((ROOT / "tasks/tasks.json").read_text())["tasks"]
 CFG = json.loads((ROOT / "config/bench.json").read_text())
 INPUTS = ROOT / "tasks/inputs"
+WORK = Path("/tmp/pmm-bench/work")
 
 CSV_FIELDS = ["label", "profile", "model", "task", "run", "started_at", "exit_code", "error",
               "duration_s", "ttft_s", "tokens_in", "tokens_out", "cache_read", "tokens_per_s", "cost_usd",
@@ -119,8 +120,14 @@ def run_once(label, profile, task, run_idx, energy, timeout):
     rdir = ROOT / "runs" / label / profile / task["id"] / f"r{run_idx}"
     if rdir.exists():
         shutil.rmtree(rdir)
-    ws = rdir / "workspace"
+    # The agent works in one fixed scratch folder OUTSIDE any git repo. Hermes tells the model the
+    # project root it detects; inside this repo that would leak the repo name and point file tools
+    # at the wrong folder. A fixed path also keeps the system prompt identical for every run.
+    ws = WORK
+    if ws.exists():
+        shutil.rmtree(ws)
     (ws / "outputs").mkdir(parents=True)
+    rdir.mkdir(parents=True)
     for rel in task["workspace_files"]:
         dst = ws / "inputs" / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
@@ -173,6 +180,7 @@ def run_once(label, profile, task, run_idx, energy, timeout):
         mon.stop_evt.set(); mon.join(timeout=3)
     avg_w = stop_powermetrics(pm)
 
+    shutil.copytree(ws, rdir / "workspace")  # keep the agent's files with the run record
     final_text = (result or {}).get("text") or "".join(texts)
     (rdir / "response.md").write_text(final_text or "")
     (rdir / "events.jsonl").write_text("\n".join(json.dumps(e) for e in events))
@@ -186,7 +194,6 @@ def run_once(label, profile, task, run_idx, energy, timeout):
     tout = tok.get("output") or 0
     dur = ((result or {}).get("duration_ms") or wall * 1000) / 1000.0
     ttft = (first_text_ts - init_ts) / 1000.0 if (first_text_ts and init_ts) else None
-    gen_time = dur - (ttft or 0)
     out_file = task.get("output_file")
     row = {
         "label": label, "profile": profile, "model": pcfg["model"], "task": task["id"], "run": run_idx,
@@ -195,10 +202,10 @@ def run_once(label, profile, task, run_idx, energy, timeout):
         "error": (result or {}).get("error") or ("timeout/no result" if result is None else ""),
         "duration_s": round(dur, 2), "ttft_s": round(ttft, 2) if ttft is not None else "",
         "tokens_in": tin, "tokens_out": tout, "cache_read": tok.get("cache_read") or 0,
-        "tokens_per_s": round(tout / gen_time, 1) if tout and gen_time > 0 else "",
+        "tokens_per_s": round(tout / dur, 1) if tout and dur > 0 else "",  # output tokens / total time
         "cost_usd": round(tin * pcfg["price_in"] / 1e6 + tout * pcfg["price_out"] / 1e6, 6),
         "tool_calls": tool_calls, "tool_errors": tool_errors,
-        "output_file_saved": (ws / out_file).exists() if out_file else "",
+        "output_file_saved": (rdir / "workspace" / out_file).exists() if out_file else "",
         "energy_wh": round(avg_w * wall / 3600, 4) if avg_w else "",
         "avg_power_w": round(avg_w, 1) if avg_w else "",
         "peak_llama_rss_gb": round(mon.peak_rss_kb / 1024 / 1024, 2) if mon and mon.peak_rss_kb else "",
