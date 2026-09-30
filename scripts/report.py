@@ -188,7 +188,7 @@ def main():
     hr, mp_path, rg_dir = OUT / "human_regrade.csv", OUT / ".regrade_map.json", OUT / "regrade"
     rg_dir.mkdir(exist_ok=True)
     mp = json.loads(mp_path.read_text()) if mp_path.exists() else {}
-    existing = list(csv.DictReader(hr.open())) if hr.exists() else []
+    existing = list(csv.DictReader(hr.open(encoding="utf-8-sig"))) if hr.exists() else []
     have = {h["blind_id"] for h in existing}
     added = 0
     for r in sorted((r for r in rows if r["task"] in ("T4", "T6")), key=lambda r: hashlib.sha1(str(r["_dir"]).encode()).hexdigest()):
