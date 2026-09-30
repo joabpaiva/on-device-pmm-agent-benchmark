@@ -6,7 +6,7 @@ the answer-key notes and the output. It never sees which profile or model wrote 
 outputs are graded in shuffled order. Each output is graded `passes` times (default 2) at
 temperature 0; report.py averages the passes.
 
-Usage: OPENROUTER_API_KEY=... python3 scripts/judge.py [--label main] [--force]
+Usage: python3 scripts/judge.py [--label main] [--force]
 """
 import argparse, json, os, random, sys, time, urllib.request
 from pathlib import Path
@@ -69,7 +69,15 @@ def main():
     ap.add_argument("--label", default="main")
     ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
-    key = os.environ.get("OPENROUTER_API_KEY") or sys.exit("export OPENROUTER_API_KEY first")
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:  # fall back to the key setup_profiles.sh saved in pmm-a's .env
+        env = Path.home() / ".hermes/profiles/pmm-a/.env"
+        if env.exists():
+            for line in env.read_text().splitlines():
+                if line.startswith("OPENROUTER_API_KEY="):
+                    key = line.split("=", 1)[1].strip().strip('"').strip("'")
+    if not key:
+        sys.exit("No OpenRouter key found. Run profiles/setup_profiles.sh first, or export OPENROUTER_API_KEY.")
     runs = sorted((ROOT / "runs" / a.label).glob("*/T*/r*"))
     passes = CFG["judge"]["passes"]
     jobs = [(r, p) for r in runs for p in range(1, passes + 1)

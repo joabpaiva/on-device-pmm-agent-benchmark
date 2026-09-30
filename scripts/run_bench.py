@@ -23,7 +23,7 @@ CFG = json.loads((ROOT / "config/bench.json").read_text())
 INPUTS = ROOT / "tasks/inputs"
 
 CSV_FIELDS = ["label", "profile", "model", "task", "run", "started_at", "exit_code", "error",
-              "duration_s", "ttft_s", "tokens_in", "tokens_out", "tokens_per_s", "cost_usd",
+              "duration_s", "ttft_s", "tokens_in", "tokens_out", "cache_read", "tokens_per_s", "cost_usd",
               "tool_calls", "tool_errors", "output_file_saved", "energy_wh", "avg_power_w",
               "peak_llama_rss_gb", "remote_endpoints"]
 
@@ -180,7 +180,10 @@ def run_once(label, profile, task, run_idx, energy, timeout):
         (rdir / "stderr.txt").write_text(stderr)
 
     tok = (result or {}).get("tokens") or {}
-    tin, tout = tok.get("input") or 0, tok.get("output") or 0
+    # Hermes reports cached prompt tokens separately; count them all as input. Cost prices every
+    # prompt token at the list input rate (cache discounts ignored), so cost is an upper bound.
+    tin = (tok.get("input") or 0) + (tok.get("cache_read") or 0) + (tok.get("cache_write") or 0)
+    tout = tok.get("output") or 0
     dur = ((result or {}).get("duration_ms") or wall * 1000) / 1000.0
     ttft = (first_text_ts - init_ts) / 1000.0 if (first_text_ts and init_ts) else None
     gen_time = dur - (ttft or 0)
@@ -191,7 +194,7 @@ def run_once(label, profile, task, run_idx, energy, timeout):
         "exit_code": (result or {}).get("exit_code", proc.returncode),
         "error": (result or {}).get("error") or ("timeout/no result" if result is None else ""),
         "duration_s": round(dur, 2), "ttft_s": round(ttft, 2) if ttft is not None else "",
-        "tokens_in": tin, "tokens_out": tout,
+        "tokens_in": tin, "tokens_out": tout, "cache_read": tok.get("cache_read") or 0,
         "tokens_per_s": round(tout / gen_time, 1) if tout and gen_time > 0 else "",
         "cost_usd": round(tin * pcfg["price_in"] / 1e6 + tout * pcfg["price_out"] / 1e6, 6),
         "tool_calls": tool_calls, "tool_errors": tool_errors,

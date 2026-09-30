@@ -24,11 +24,12 @@ results/      CSVs behind every results slide (created by report.py)
 Everything below runs in Terminal on the Mac, from this folder. Scripts use only the Python standard library.
 
 ### 1. OpenRouter key
-Create a key at openrouter.ai and add a few dollars of credit. The whole benchmark, judge included, should cost under $5.
+OpenRouter is a web API; nothing to install. Create a key at openrouter.ai and add a few dollars of credit. The whole benchmark, judge included, should cost under $5. Paste it into Terminal for this session only (never into a file in this repo):
 
 ```bash
 export OPENROUTER_API_KEY=sk-or-...
 ```
+Step 2 saves it into each profile's private `~/.hermes/profiles/<name>/.env`, and `judge.py` reads it from there, so you only paste it once.
 
 ### 2. Create the four profiles
 ```bash
