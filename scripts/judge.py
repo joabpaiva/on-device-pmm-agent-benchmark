@@ -7,6 +7,7 @@ outputs are graded in shuffled order. Each output is graded `passes` times (3 in
 temperature 0; report.py averages the passes.
 
 Usage: python3 scripts/judge.py [--label main] [--force]
+       python3 scripts/judge.py --show runs/main/pmm-c/T4/r1   # see exactly what the judge receives
 """
 import argparse, json, os, random, sys, time, urllib.request
 from pathlib import Path
@@ -73,7 +74,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--label", default="main")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--show", metavar="RUN_FOLDER", help="print the exact request the judge receives for one run, then exit")
     a = ap.parse_args()
+    if a.show:
+        rdir = (ROOT / a.show).resolve()
+        print(f"MODEL: {CFG['judge']['model']}  (temperature 0, JSON only)\n")
+        print(build_prompt(rdir, rdir.parent.name))
+        return
     key = os.environ.get("OPENROUTER_API_KEY")
     if not key:  # fall back to the key setup_profiles.sh saved in pmm-a's .env
         env = Path.home() / ".hermes/profiles/pmm-a/.env"
