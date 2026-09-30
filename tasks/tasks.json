@@ -1,0 +1,59 @@
+{
+  "_note": "Frozen prompts. Identical for every configuration. Files in 'attachments' are appended to the prompt as attached text. Files in 'workspace_files' are copied into the run's working folder for the agent to find with its file tools.",
+  "tasks": [
+    {
+      "id": "T1",
+      "name": "Launch blog post",
+      "prompt": "Using only the attached spec sheet (aurora14_spec.md), write a 500–600 word launch blog post for IT decision-makers at mid-size engineering firms. Include a headline, a two-sentence intro, three sections on the benefits that matter most to this reader, and a closing call to action. Do not invent specifications, prices, benchmarks, dates, or customer names.",
+      "attachments": ["aurora14_spec.md"],
+      "workspace_files": [],
+      "sources": ["aurora14_spec.md"],
+      "output_file": null
+    },
+    {
+      "id": "T2",
+      "name": "Competitive battlecard",
+      "prompt": "Using only the attached competitive brief (vantage_brief.md), create a one-page sales battlecard: Aurora 14 vs Vantage Pro 16. Include a 2-sentence positioning summary, 3 Aurora strengths, 2 genuine Vantage strengths, 3 likely customer objections each with a response, and 1 discovery question for the seller to ask. Maximum 350 words. Stay factual and fair.",
+      "attachments": ["vantage_brief.md"],
+      "workspace_files": [],
+      "sources": ["vantage_brief.md"],
+      "output_file": null
+    },
+    {
+      "id": "T3",
+      "name": "Executive summary",
+      "prompt": "Summarize the attached technical white paper (ai_workload_paper.md, about 1,100 words) for a VP audience. Write no more than 250 words, followed by 3 key messages as bullets. Keep every test condition and caveat the paper states. Do not add conclusions the paper does not make.",
+      "attachments": ["ai_workload_paper.md"],
+      "workspace_files": [],
+      "sources": ["ai_workload_paper.md"],
+      "output_file": null
+    },
+    {
+      "id": "T4",
+      "name": "Customer FAQ (trust test)",
+      "prompt": "Answer the 5 customer questions below using only the attached product documentation (aurora14_docs.md). Cite the section you used for each answer. If the documentation does not answer a question, reply exactly: \"Not covered in the provided documentation\" and suggest who the customer should contact.\n\nQ1. If I buy the base model with 32 GB of memory, can I upgrade to 128 GB myself later?\nQ2. What warranty comes standard, and can I extend it?\nQ3. How many external monitors can I run from one dock?\nQ4. What happens if the BIOS is attacked?\nQ5. Is Aurora 14 certified for Ubuntu 24.04?",
+      "attachments": ["aurora14_docs.md"],
+      "workspace_files": [],
+      "sources": ["aurora14_docs.md"],
+      "output_file": null
+    },
+    {
+      "id": "T5",
+      "name": "Nurture email sequence",
+      "prompt": "Write a 3-email nurture sequence for the buyer in the attached persona (it_director_persona.md): an IT director whose team is cloud-first and whose budget cycle closes in Q1. Each email: a subject line, 120 words maximum, exactly one call to action. Email 1 builds awareness, email 2 answers the cloud-first objection with facts from the attached spec sheet, email 3 asks for a meeting. Use no statistics that are not in the attachments.",
+      "attachments": ["it_director_persona.md", "aurora14_spec.md"],
+      "workspace_files": [],
+      "sources": ["it_director_persona.md", "aurora14_spec.md"],
+      "output_file": null
+    },
+    {
+      "id": "T6",
+      "name": "Competitive spec matrix (agentic)",
+      "prompt": "The folder inputs/t6/ contains spec sheets for three workstations in different formats. List the folder, read every file, and build a comparison table of all three products across 8 attributes: CPU, GPU, max memory, max storage, display, weight, battery, ports. Write \"not stated\" for any value the files do not provide. Then write 3 differentiators for Aurora 14 that the table supports. Save the result to outputs/t6_matrix.md and reply with the file path.",
+      "attachments": [],
+      "workspace_files": ["t6/aurora14.md", "t6/vantage_pro16.csv", "t6/summit_x15.txt"],
+      "sources": ["t6/aurora14.md", "t6/vantage_pro16.csv", "t6/summit_x15.txt"],
+      "output_file": "outputs/t6_matrix.md"
+    }
+  ]
+}

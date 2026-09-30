@@ -1,0 +1,71 @@
+# On-Device AI Workload Performance: An Evaluation of the Aurora 14 AI Workstation
+
+*Fictional technical white paper created for benchmark testing. All products, results and figures are invented.*
+
+## Executive Overview
+
+Engineering and design teams are starting to run AI models on their own devices instead of sending every request to a cloud service. The reasons are practical: sensitive project files stay on the machine, work continues without a network connection, and there is no per-request cloud charge. This paper evaluates how well the Aurora 14 AI Workstation handles three common on-device AI workloads, and how it compares with one competing mobile workstation.
+
+We tested language model inference, image generation, and a mixed "AI-assisted design" workflow that combines a CAD application with a local AI assistant. We report throughput, responsiveness, sustained performance and battery behavior.
+
+## 1. Test Methodology
+
+### 1.1 Systems under test
+
+We tested the Aurora 14 in two configurations: a base configuration with 32 GB of memory and a high-memory configuration with 128 GB. The comparison system was the Vantage Pro 16 in its base configuration (64 GB of memory, Vireo V9000 GPU with 24 GB). Other Vantage Pro 16 configurations were not available for testing, so the comparison covers that single configuration only.
+
+All Aurora 14 units were pre-production units supplied before the final firmware release. Final retail units may perform differently, and we plan to repeat the tests on retail hardware.
+
+We tested three units of each configuration and report the median result. Three units is a small sample; unit-to-unit variation in a larger population may be wider than we observed.
+
+### 1.2 Workloads
+
+**Language model inference.** We ran two open-weight language models locally: an 8-billion-parameter model and a 30-billion-parameter model. Both models were run in 4-bit quantized form using the same open-source inference runtime on both systems. Quantization reduces memory use and increases speed, but output quality can differ from the full-precision versions of the same models that cloud services typically run. We did not evaluate output quality in this study; we measured speed only.
+
+**Image generation.** We generated 100 images at 1024 × 1024 resolution with an open-weight diffusion model and measured average time per image.
+
+**AI-assisted design.** An engineer followed a scripted 45-minute session: editing a CAD assembly while asking a local AI assistant to summarize change logs, draft component descriptions and answer questions about a 60-page design specification.
+
+### 1.3 Environment
+
+Tests ran at a room temperature of 22 °C with systems on a hard, flat desk, plugged into AC power unless a battery test is stated. Each system used its manufacturer's default "Best performance" power mode.
+
+## 2. Results
+
+### 2.1 Language model inference
+
+With the 8B model, the Aurora 14 base configuration generated text at a median of 38 tokens per second. The Vantage Pro 16 generated 41 tokens per second. The difference is within the range we would expect from normal run-to-run variation, and we consider the two systems comparable on this workload.
+
+With the 30B model, results depended on memory. The Aurora 14 base configuration (32 GB) could not hold the 30B model entirely in fast memory and fell back to slower system paths, reaching 6 tokens per second. The Aurora 14 high-memory configuration (128 GB) reached 17 tokens per second. The Vantage Pro 16 (64 GB) reached 15 tokens per second.
+
+Time to first token for a 2,000-token prompt was under two seconds on all systems with the 8B model and between four and six seconds with the 30B model.
+
+### 2.2 Image generation
+
+The Vantage Pro 16 was faster at image generation, averaging 4.1 seconds per image versus 5.3 seconds for the Aurora 14. We attribute this to the Vantage Pro 16's larger and faster GPU. Image generation is the workload in this study where GPU capability matters most.
+
+### 2.3 Sustained performance
+
+AI workloads often run for long periods. We ran the 8B language model continuously for 40 minutes on each system. Both systems slowed down after roughly 20 minutes as they reached their thermal limits. The Aurora 14 settled at about 12% below its initial throughput; the Vantage Pro 16 settled at about 9% below its initial throughput. Readers should expect sustained speeds to be lower than the short-run peak numbers in Section 2.1.
+
+### 2.4 AI-assisted design session
+
+In the scripted 45-minute session, the Aurora 14 high-memory configuration kept the CAD application and the local AI assistant running side by side without the assistant being unloaded from memory. On the base configuration, the assistant was unloaded twice when the CAD assembly grew large, adding a reload delay of about eight seconds each time. Engineers rated the high-memory configuration as noticeably smoother.
+
+### 2.5 Battery behavior
+
+The Aurora 14 is rated for up to 11 hours of local video playback. That rating was measured at 150 nits of screen brightness with Wi-Fi off, and it does not represent battery life under AI workloads. Under continuous local language model inference on battery, the Aurora 14 ran for 2 hours and 40 minutes before shutdown. We did not run an equivalent battery test on the Vantage Pro 16.
+
+## 3. Discussion
+
+The results show that memory capacity, more than raw processor speed, decides which AI models a mobile workstation can run well on the device. With small models, the systems we tested perform similarly. With larger models, the configuration with the most memory performed best. For image generation, GPU capability dominates, and the competing system's larger GPU gave it an advantage.
+
+For organizations planning to run AI on the device, these results suggest choosing memory based on the largest model the team expects to use, and treating GPU capability as the deciding factor only for image and 3D-heavy work.
+
+## 4. Limitations
+
+This study has several limitations, stated in the sections above: the Aurora 14 units were pre-production; we tested three units per configuration; the comparison covers a single Vantage Pro 16 configuration; language models were run in 4-bit quantized form and output quality was not evaluated; sustained workloads ran slower than peak results; and the rated battery life was measured on video playback, not AI workloads.
+
+## 5. Conclusion
+
+The Aurora 14 is a capable platform for on-device AI. In its high-memory configuration it ran the largest model in this study faster than the tested competitor, and it kept a local AI assistant available alongside demanding design applications. Buyers whose work centers on image generation may find the competing system faster for that task.

@@ -1,0 +1,7 @@
+SUMMIT X15 MOBILE WORKSTATION - PRODUCT NOTES
+
+The Summit X15 is built around the Helix H7 AI processor with 12 cores, paired with a Vireo V6000 GPU carrying 8 GB of graphics memory. Memory can be configured up to 96 GB. The 15.6-inch OLED display runs at 3840 x 2400 with a 60 Hz refresh rate.
+
+The chassis weighs 1.95 kg. For connectivity it offers 2 x Thunderbolt 4, one USB-A port and HDMI 2.1.
+
+Storage and battery options will be announced closer to launch.
