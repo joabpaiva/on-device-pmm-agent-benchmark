@@ -11,7 +11,7 @@
 # Leave this Terminal window open while pmm-d runs. Ctrl-C stops the server.
 set -euo pipefail
 
-BIN=$(ls -d "$HOME"/.hermes/tools/llamacpp-metal-*/llama-server 2>/dev/null | tail -1)
+BIN=$(ls -d "$HOME"/.hermes/tools/llamacpp-metal-*/llama-server 2>/dev/null | tail -1 || true)
 MODEL="$HOME/.hermes/models/Qwen3.5-9B-Q8_0.gguf"
 PORT="${PORT:-8081}"
 ALIAS="qwen3.5-9b-q8_0"

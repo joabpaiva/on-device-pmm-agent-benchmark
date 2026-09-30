@@ -13,9 +13,12 @@ Examples
 
 Standard library only.
 """
-import argparse, csv, json, os, re, shutil, signal, subprocess, sys, threading, time
+import argparse, csv, json, os, re, shutil, signal, subprocess, sys, tempfile, threading, time
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import build_deliverable, files_written  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TASKS = json.loads((ROOT / "tasks/tasks.json").read_text())["tasks"]
@@ -25,7 +28,7 @@ WORK = Path("/tmp/pmm-bench/work")
 
 CSV_FIELDS = ["label", "profile", "model", "task", "run", "started_at", "exit_code", "error",
               "duration_s", "ttft_s", "tokens_in", "tokens_out", "cache_read", "tokens_per_s", "cost_usd",
-              "tool_calls", "tool_errors", "output_file_saved", "energy_wh", "avg_power_w",
+              "tool_calls", "tool_errors", "output_file_saved", "files_written", "energy_wh", "avg_power_w",
               "peak_llama_rss_gb", "remote_endpoints"]
 
 
@@ -87,28 +90,43 @@ class Monitor(threading.Thread):
 
 
 def start_powermetrics():
+    # Output goes to a file, not a pipe: an unread pipe fills up and stalls powermetrics mid-run.
     try:
-        return subprocess.Popen(["sudo", "-n", "powermetrics", "-i", "500", "--samplers", "cpu_power,gpu_power,ane_power"],
-                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        out = tempfile.TemporaryFile(mode="w+")
+        err = tempfile.TemporaryFile(mode="w+")
+        proc = subprocess.Popen(["sudo", "-n", "powermetrics", "-i", "500", "--samplers", "cpu_power,gpu_power,ane_power"],
+                                stdout=out, stderr=err, text=True)
+        return proc, out, err
     except Exception as e:
         print(f"   powermetrics not started: {e}")
         return None
 
 
-def stop_powermetrics(proc):
-    if not proc:
+def stop_powermetrics(pm):
+    if not pm:
         return None
+    proc, fout, ferr = pm
     subprocess.run(["sudo", "-n", "kill", "-INT", str(proc.pid)], capture_output=True)
     try:
-        out, err = proc.communicate(timeout=10)
+        proc.wait(timeout=10)
     except subprocess.TimeoutExpired:
-        proc.kill(); out, err = proc.communicate()
+        subprocess.run(["sudo", "-n", "kill", "-KILL", str(proc.pid)], capture_output=True)
+    fout.seek(0); ferr.seek(0)
+    out, err = fout.read(), ferr.read()
+    fout.close(); ferr.close()
     vals = [int(v) for v in re.findall(r"Combined Power \(CPU \+ GPU \+ ANE\):\s*(\d+)\s*mW", out)]
     if not vals:
         if err.strip():
             print("   powermetrics:", err.strip().splitlines()[-1])
         return None
     return sum(vals) / len(vals) / 1000.0  # average watts
+
+
+def kill_group(proc):
+    try:
+        os.killpg(proc.pid, signal.SIGKILL)
+    except (ProcessLookupError, PermissionError):
+        pass
 
 
 # ---------------- one run ----------------
@@ -137,7 +155,9 @@ def run_once(label, profile, task, run_idx, energy, timeout):
     started = datetime.now().isoformat(timespec="seconds")
     pm = start_powermetrics() if energy else None
     t0 = time.time()
-    proc = subprocess.Popen(cmd, cwd=ws, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    errf = open(rdir / "stderr.txt", "w")  # a file, not a pipe: an unread stderr pipe can block Hermes
+    proc = subprocess.Popen(cmd, cwd=ws, stdout=subprocess.PIPE, stderr=errf, text=True,
+                            start_new_session=True)  # own process group, so a timeout kills any child tools too
     mon = Monitor(proc.pid, watch_net=pcfg["local"]) if pcfg["local"] else None
     if mon:
         mon.start()
@@ -145,7 +165,7 @@ def run_once(label, profile, task, run_idx, energy, timeout):
     events, first_text_ts, init_ts, texts = [], None, None, []
     tool_calls = tool_errors = 0
     result = None
-    killer = threading.Timer(timeout, lambda: proc.kill())
+    killer = threading.Timer(timeout, lambda: kill_group(proc))
     killer.start()
     for line in proc.stdout:
         line = line.strip()
@@ -165,14 +185,17 @@ def run_once(label, profile, task, run_idx, energy, timeout):
             texts.append(ev.get("text", ""))
         elif typ == "tool_use":
             tool_calls += 1
+            if first_text_ts is None:  # first model output may be a tool call rather than text
+                first_text_ts = ev.get("timestamp")
         elif typ == "tool_result" and ev.get("is_error"):
             tool_errors += 1
         elif typ == "result":
             result = ev
     proc.wait()
     killer.cancel()
+    kill_group(proc)  # clean up anything Hermes left running before the next run reuses the folder
     wall = time.time() - t0
-    stderr = proc.stderr.read()
+    errf.close()
     if mon:
         mon.stop_evt.set(); mon.join(timeout=3)
     avg_w = stop_powermetrics(pm)
@@ -181,8 +204,9 @@ def run_once(label, profile, task, run_idx, energy, timeout):
     final_text = (result or {}).get("text") or "".join(texts)
     (rdir / "response.md").write_text(final_text or "")
     (rdir / "events.jsonl").write_text("\n".join(json.dumps(e) for e in events))
-    if stderr.strip():
-        (rdir / "stderr.txt").write_text(stderr)
+    build_deliverable(rdir)
+    if not (rdir / "stderr.txt").read_text().strip():
+        (rdir / "stderr.txt").unlink()
 
     tok = (result or {}).get("tokens") or {}
     # Hermes reports cached prompt tokens separately; count them all as input. Cost prices every
@@ -203,6 +227,7 @@ def run_once(label, profile, task, run_idx, energy, timeout):
         "cost_usd": round(tin * pcfg["price_in"] / 1e6 + tout * pcfg["price_out"] / 1e6, 6),
         "tool_calls": tool_calls, "tool_errors": tool_errors,
         "output_file_saved": (rdir / "workspace" / out_file).exists() if out_file else "",
+        "files_written": files_written(rdir),
         "energy_wh": round(avg_w * wall / 3600, 4) if avg_w else "",
         "avg_power_w": round(avg_w, 1) if avg_w else "",
         "peak_llama_rss_gb": round(mon.peak_rss_kb / 1024 / 1024, 2) if mon and mon.peak_rss_kb else "",

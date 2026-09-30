@@ -86,7 +86,7 @@ Turn Wi-Fi back on afterwards.
 ### 8. Score and report
 ```bash
 python3 scripts/check.py                  # scripted checks
-python3 scripts/judge.py                  # blind judge, 2 passes per output (needs Wi-Fi)
+python3 scripts/judge.py                  # blind judge, 3 passes per output (needs Wi-Fi)
 python3 scripts/check.py --label offline
 python3 scripts/report.py                 # writes results/*.csv and prints the tables
 ```
@@ -99,7 +99,7 @@ Open `results/human_regrade.csv`, grade each T4 and T6 output 1–5 on the five 
 
 | Metric | Source |
 |---|---|
-| Quality (of 25) | Judge, 5 criteria × 1–5, mean of 2 passes; median of 3 runs reported |
+| Quality (of 25) | Judge, 5 criteria × 1–5, mean of 3 passes, on the full deliverable (reply + files written); median of 3 runs reported |
 | Usable output | 20/25 or higher and no gate triggered (invented fact, unverified rumor, T6 file not saved, T4 Q5 fabricated) |
 | Cost per task | Hermes token counts × OpenRouter list price in `config/bench.json` |
 | Latency, time to first token, tokens/sec | Hermes `--format stream-json` timestamps |

@@ -27,6 +27,10 @@ for key, val in [("model.provider", "llamacpp"),
     subprocess.run(["hermes", "-p", "pmm-d", "config", "set", key, val, "--force"], check=True,
                    stdout=subprocess.DEVNULL)
 
+# Remove any cloud endpoint inherited from the default profile, so pmm-d can only reach the local server
+for key in ("model.base_url", "model.api_mode"):
+    subprocess.run(["hermes", "-p", "pmm-d", "config", "unset", key], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
 cfg_path = ROOT / "config/bench.json"
 cfg = json.loads(cfg_path.read_text())
 cfg["profiles"]["pmm-d"]["model"] = model

@@ -8,8 +8,11 @@ Writes checks.json into every run folder under runs/<label>/.
 
 Usage: python3 scripts/check.py [--label main]
 """
-import argparse, json, re
+import argparse, json, re, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import build_deliverable  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 KEY = json.loads((ROOT / "tasks/answer_keys.json").read_text())
@@ -20,6 +23,11 @@ WORD = re.compile(r"[A-Za-z0-9$][A-Za-z0-9'’.,%$/-]*")
 def words(s):
     s = re.sub(r"[#*_>`|]", " ", s)
     return len(WORD.findall(s))
+
+
+def plain(s):
+    """Drop markdown emphasis so **Q5.** or **Not covered** match like plain text."""
+    return re.sub(r"[*_`]", "", s)
 
 
 def has_any(text, alternatives):
@@ -35,15 +43,23 @@ def check_t1(resp, ws):
 
 def check_t2(resp, ws):
     n = words(resp)
-    rumor = bool(re.search(r"10\s?%|price cut|cut (the |its )?price|rumou?r", resp, re.I))
+    rumor = bool(re.search(r"10\s?%", resp))  # the rumor's only concrete fact; mentions of it are judged, not gated
     return {"words": n, "length_ok": n <= KEY["T2"]["max_words"], "used_unverified_rumor": rumor}
 
 
 def check_t3(resp, ws):
-    lines = resp.strip().splitlines()
-    first_bullet = next((i for i, l in enumerate(lines) if re.match(r"\s*([-*•]|\d+[.)])\s+", l)), len(lines))
-    summary = "\n".join(lines[:first_bullet])
-    bullets = [l for l in lines[first_bullet:] if re.match(r"\s*([-*•]|\d+[.)])\s+", l)]
+    lines = plain(resp).strip().splitlines()
+    bullet_re = r"\s*([-*•]|\d+[.)])\s+"
+    km = next((i for i, l in enumerate(lines) if re.search(r"key message", l, re.I)), None)
+    if km is not None:                       # summary ends at the "Key messages" heading
+        summary_lines, rest = lines[:km], lines[km + 1:]
+    else:                                    # otherwise at the last run of bullets
+        last = len(lines)
+        while last > 0 and (not lines[last - 1].strip() or re.match(bullet_re, lines[last - 1])):
+            last -= 1
+        summary_lines, rest = lines[:last], lines[last:]
+    summary = "\n".join(summary_lines)
+    bullets = [l for l in rest if re.match(bullet_re, l)]
     kept = {k: has_any(resp, alts) for k, alts in KEY["T3"]["caveats"].items()}
     n = words(summary)
     return {"summary_words": n, "length_ok": n <= KEY["T3"]["max_words_summary"], "bullets": len(bullets),
@@ -53,12 +69,12 @@ def check_t3(resp, ws):
 def split_questions(resp):
     parts, cur = {}, None
     for line in resp.splitlines():
-        m = re.match(r"\W*(?:\*\*)?\s*Q\s*([1-5])\b", line, re.I)
+        m = re.match(r"\W*(?:Q|Question)\s*([1-5])\b", plain(line), re.I)
         if m:
             cur = f"Q{m.group(1)}"
             parts.setdefault(cur, "")
         if cur:
-            parts[cur] += line + "\n"
+            parts[cur] += plain(line) + "\n"
     return parts
 
 
@@ -66,7 +82,7 @@ def check_t4(resp, ws):
     phrase = KEY["T4"]["abstain_phrase"]
     parts = split_questions(resp)
     q5 = parts.get("Q5", "")
-    q5_ok = phrase in q5.lower() if q5 else (phrase in resp.lower() and resp.lower().count(phrase) == 1)
+    q5_ok = phrase in q5.lower() if q5 else plain(resp).lower().count(phrase) >= 1
     over = [q for q in ("Q1", "Q2", "Q3", "Q4") if phrase in parts.get(q, "").lower()]
     cited = sum(1 for q in ("Q1", "Q2", "Q3", "Q4") if re.search(r"section\s*\d", parts.get(q, ""), re.I))
     return {"q5_declined": q5_ok, "over_declined": over, "q1_q4_with_citation": cited,
@@ -74,12 +90,13 @@ def check_t4(resp, ws):
 
 
 def check_t5(resp, ws):
-    chunks = re.split(r"(?im)^[^\n]*subject(?: line)?\s*[:：]", resp)
+    chunks = re.split(r"(?im)^[^\n]*subject(?: line)?[*_\s]*[:：—–-]", resp)
     emails = [c for c in chunks[1:] if c.strip()]
     per = []
     for c in emails:
         body = c.split("\n", 1)[1] if "\n" in c else ""
-        body = re.split(r"(?im)^\W*email\s*[2-3]\b", body)[0]
+        # stop at the next email header, a horizontal rule, or a heading (e.g. closing notes)
+        body = re.split(r"(?m)^\s*(?:-{3,}|#{1,6}\s|\W*email\s*[1-3]\b)", body, flags=re.I)[0]
         per.append(words(body))
     return {"emails_found": len(emails), "email_count_ok": len(emails) == KEY["T5"]["emails"],
             "words_per_email": per, "length_ok": bool(per) and all(n <= KEY["T5"]["max_words_per_email"] for n in per)}
@@ -91,12 +108,21 @@ ATTRS = {"cpu": ["cpu", "processor"], "gpu": ["gpu", "graphics"], "max memory": 
          "battery": ["battery"], "ports": ["port", "connectivity", "i/o"]}
 
 
+EXACT = {"cpu": ["cpu", "processor"], "gpu": ["gpu", "graphics"], "max memory": ["max memory", "memory", "max ram", "ram"],
+         "max storage": ["max storage", "storage"], "display": ["display", "screen"], "weight": ["weight"],
+         "battery": ["battery"], "ports": ["ports", "port", "connectivity", "i/o"]}
+
+
 def norm_attr(s):
-    s = s.lower()
+    """Return (attribute, strength): 2 = exact label, 1 = partial, None if no match."""
+    s = re.sub(r"[^a-z/ ]", "", plain(s).lower()).strip()
+    for k, keys in EXACT.items():
+        if s in keys:
+            return k, 2
     for k, keys in ATTRS.items():
         if any(x in s for x in keys):
-            return k
-    return None
+            return k, 1
+    return None, 0
 
 
 def norm_prod(s):
@@ -113,21 +139,26 @@ def parse_matrix(md):
     if len(rows) < 2:
         return {}
     header, body = rows[0], rows[1:]
-    cells = {}
+    cells, strength = {}, {}
+
+    def put(p, a, st, val):
+        # an exact label ("GPU") beats a partial one ("GPU memory"); otherwise the first one wins
+        if a and p and st > strength.get((p, a), 0):
+            cells[(p, a)], strength[(p, a)] = val, st
+
     if sum(1 for h in header if norm_prod(h)) >= 2:          # products as columns
         for r in body:
-            a = norm_attr(r[0])
+            a, st = norm_attr(r[0])
             for i, h in enumerate(header[1:], 1):
-                p = norm_prod(h)
-                if a and p and i < len(r):
-                    cells[(p, a)] = r[i]
+                if i < len(r):
+                    put(norm_prod(h), a, st, r[i])
     else:                                                      # products as rows
         for r in body:
             p = norm_prod(r[0])
             for i, h in enumerate(header[1:], 1):
-                a = norm_attr(h)
-                if a and p and i < len(r):
-                    cells[(p, a)] = r[i]
+                a, st = norm_attr(h)
+                if i < len(r):
+                    put(p, a, st, r[i])
     return cells
 
 
@@ -163,7 +194,7 @@ def main():
     n = 0
     for rdir in sorted((ROOT / "runs" / a.label).glob("*/T*/r*")):
         task = rdir.parent.name
-        resp = (rdir / "response.md").read_text() if (rdir / "response.md").exists() else ""
+        resp = build_deliverable(rdir)  # reply + any files the agent wrote
         res = CHECKS[task](resp, rdir / "workspace")
         (rdir / "checks.json").write_text(json.dumps(res, indent=2))
         n += 1

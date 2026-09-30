@@ -38,7 +38,7 @@
     "model": "openai/gpt-6-sol",
     "price_in": 2.0,
     "price_out": 10.0,
-    "passes": 2
+    "passes": 3
   },
   "runs_per_task": 3,
   "toolsets": "file",

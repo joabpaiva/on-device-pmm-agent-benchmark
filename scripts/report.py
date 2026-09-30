@@ -20,6 +20,18 @@ CRIT = ["facts", "complete", "reader", "ready", "format"]
 TASK_IDS = ["T1", "T2", "T3", "T4", "T5", "T6"]
 
 
+MISSING_CHECKS = []
+
+
+def score(v):
+    """Judge scores should be integers 1-5; tolerate '4/5' or '4.0', clamp anything else."""
+    try:
+        v = float(str(v).split("/")[0])
+    except (TypeError, ValueError):
+        return 1.0
+    return min(5.0, max(1.0, v))
+
+
 def load(label):
     rows = []
     for rdir in sorted((ROOT / "runs" / label).glob("*/T*/r*")):
@@ -30,15 +42,17 @@ def load(label):
         r["_dir"] = rdir
         r["checks"] = json.loads((rdir / "checks.json").read_text()) if (rdir / "checks.json").exists() else {}
         passes = [json.loads(p.read_text()) for p in sorted(rdir.glob("judge_pass*.json"))]
+        if not (rdir / "checks.json").exists():
+            MISSING_CHECKS.append(str(rdir.relative_to(ROOT)))
         r["judged"] = bool(passes)
         if passes:
             for c in CRIT:
-                r[c] = st.mean(float(p.get(c, 1)) for p in passes)
+                r[c] = st.mean(score(p.get(c)) for p in passes)
             r["invented"] = st.mean(len(p.get("invented_facts") or []) for p in passes)
             r["judge_cost"] = sum(p.get("_judge_cost_usd", 0) for p in passes)
         gates = []
-        if r.get("invented", 0) > 0 and r.get("facts", 0) > 2:
-            r["facts"] = 2.0; gates.append("invented fact")
+        if r.get("invented", 0) > 0:                   # any judge pass found an invented fact
+            r["facts"] = min(r.get("facts", 1), 2.0); gates.append("invented fact")
         ch = r["checks"]
         if r["task"] == "T6" and not ch.get("file_saved", True):
             r["complete"] = min(r.get("complete", 1), 2.0); gates.append("file not saved")
@@ -89,7 +103,7 @@ def main():
     # per-run
     flat_keys = ["profile", "model", "task", "run", "started_at", "exit_code", "error", "duration_s", "ttft_s",
                  "tokens_in", "tokens_out", "tokens_per_s", "cost_usd", "tool_calls", "tool_errors",
-                 "output_file_saved", "energy_wh", "avg_power_w", "peak_llama_rss_gb", "remote_endpoints"] + CRIT + ["total", "invented", "usable"]
+                 "output_file_saved", "files_written", "energy_wh", "avg_power_w", "peak_llama_rss_gb", "remote_endpoints"] + CRIT + ["total", "invented", "usable"]
     with (OUT / f"per_run_{a.label}.csv").open("w", newline="") as f:
         w = csv.writer(f); w.writerow(flat_keys + ["gates", "checks"])
         for r in rows:
@@ -129,7 +143,7 @@ def main():
             "Cost per task ($)": mean_of(rs, "cost_usd", 6),
             "Cost per usable output ($)": round(total_cost / usable, 5) if usable else "no usable output",
             "Latency per task (s)": mean_of(rs, "duration_s"),
-            "Time to first token (s)": mean_of(rs, "ttft_s"),
+            "Time to first output (s)": mean_of(rs, "ttft_s"),
             "Tokens per second": mean_of(rs, "tokens_per_s"),
             "Hallucinations (total)": round(sum(r.get("invented", 0) for r in rs), 1),
             "T4 Q5 declined correctly": f"{sum(1 for r in t4 if r['checks'].get('q5_declined'))} of {len(t4)}",
@@ -170,32 +184,41 @@ def main():
             w.writerow(["Speed, first vs last runs", "N/A", drift, "", ""])
             w.writerow(["Cost per task ($)", effs["pmm-a"]["Cost per task ($)"], effs["pmm-d"]["Cost per task ($)"], "", ""])
 
-    # human re-grade sheet (blind)
-    hr = OUT / "human_regrade.csv"
-    if not hr.exists():
-        items = [r for r in rows if r["task"] in ("T4", "T6")]
-        with hr.open("w", newline="") as f:
-            w = csv.writer(f); w.writerow(["blind_id", "task", "path_to_output"] + CRIT + ["notes"])
-            for r in sorted(items, key=lambda r: hashlib.sha1(str(r["_dir"]).encode()).hexdigest()):
-                bid = hashlib.sha1(str(r["_dir"]).encode()).hexdigest()[:8]
-                path = r["_dir"].relative_to(ROOT) / ("workspace/outputs/t6_matrix.md" if r["task"] == "T6" else "response.md")
-                w.writerow([bid, r["task"], str(path).replace(f"/{r['profile']}/", "/<hidden>/")] + [""] * 6)
-        print("Created results/human_regrade.csv (paths hide the profile; open outputs via the blind_id map in results/.regrade_map.json)")
-        (OUT / ".regrade_map.json").write_text(json.dumps({hashlib.sha1(str(r["_dir"]).encode()).hexdigest()[:8]: str(r["_dir"].relative_to(ROOT)) for r in items}, indent=1))
-    else:
-        filled = list(csv.DictReader(hr.open()))
-        mp = json.loads((OUT / ".regrade_map.json").read_text())
-        pairs = []
-        for h in filled:
-            if all(h.get(c) for c in CRIT):
-                human = sum(float(h[c]) for c in CRIT)
-                r = next((r for r in rows if str(r["_dir"].relative_to(ROOT)) == mp.get(h["blind_id"])), None)
-                if r and r["total"] is not None:
-                    pairs.append(abs(human - r["total"]))
-        if pairs:
-            agree = sum(1 for d in pairs if d <= 2) / len(pairs)
-            print(f"Human vs judge: {len(pairs)} outputs, {100 * agree:.0f}% within 2 points of 25, mean gap {st.mean(pairs):.1f}")
+    # human re-grade sheet (blind): outputs copied to results/regrade/<id>.md, new runs appended on each report
+    hr, mp_path, rg_dir = OUT / "human_regrade.csv", OUT / ".regrade_map.json", OUT / "regrade"
+    rg_dir.mkdir(exist_ok=True)
+    mp = json.loads(mp_path.read_text()) if mp_path.exists() else {}
+    existing = list(csv.DictReader(hr.open())) if hr.exists() else []
+    have = {h["blind_id"] for h in existing}
+    added = 0
+    for r in sorted((r for r in rows if r["task"] in ("T4", "T6")), key=lambda r: hashlib.sha1(str(r["_dir"]).encode()).hexdigest()):
+        bid = hashlib.sha1(str(r["_dir"].relative_to(ROOT)).encode()).hexdigest()[:8]
+        src = r["_dir"] / ("workspace/outputs/t6_matrix.md" if r["task"] == "T6" else "deliverable.md")
+        (rg_dir / f"{bid}.md").write_text(f"# {r['task']} output {bid}\n\n" + (src.read_text() if src.exists() else "(no output file)"))
+        mp[bid] = str(r["_dir"].relative_to(ROOT))
+        if bid not in have:
+            existing.append({"blind_id": bid, "task": r["task"], "file": f"results/regrade/{bid}.md", **{c: "" for c in CRIT}, "notes": ""})
+            added += 1
+    mp_path.write_text(json.dumps(mp, indent=1))
+    with hr.open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["blind_id", "task", "file"] + CRIT + ["notes"], extrasaction="ignore")
+        w.writeheader(); w.writerows(existing)
+    if added:
+        print(f"human_regrade.csv: {added} new outputs to grade (open the files in results/regrade/; profiles stay hidden)")
+    pairs = []
+    for h in existing:
+        if all(h.get(c) for c in CRIT):
+            human = sum(score(h[c]) for c in CRIT)
+            r = next((r for r in rows if str(r["_dir"].relative_to(ROOT)) == mp.get(h["blind_id"])), None)
+            if r and r["total"] is not None:
+                pairs.append(abs(human - r["total"]))
+    if pairs:
+        agree = sum(1 for d in pairs if d <= 2) / len(pairs)
+        print(f"Human vs judge: {len(pairs)} outputs, {100 * agree:.0f}% within 2 points of 25, mean gap {st.mean(pairs):.1f}")
+        (OUT / "judge_agreement.txt").write_text(f"{len(pairs)} outputs; {100 * agree:.0f}% within 2 points; mean gap {st.mean(pairs):.1f}\n")
 
+    if MISSING_CHECKS:
+        print(f"WARNING: {len(MISSING_CHECKS)} runs have no checks.json, so their gates were not applied. Run scripts/check.py first.")
     unjudged = sum(1 for r in rows if not r["judged"])
     print(f"Wrote results/ for {len(rows)} runs ({unjudged} not yet judged). Profiles: {', '.join(profiles)}")
     for name in ("scoreboard.csv", "efficiency.csv", "phase2.csv"):

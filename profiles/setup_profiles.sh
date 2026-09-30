@@ -43,9 +43,15 @@ for p in pmm-a pmm-b pmm-c; do
   echo "   $p -> openrouter / $model"
 done
 
-hermes -p pmm-d config set model.provider llamacpp
-hermes -p pmm-d config set local_runtime.enabled true
-echo "   pmm-d -> llamacpp (model set later by scripts/set_local_model.py)"
+pmm_d_model=$(python3 -c "import json;print(json.load(open('config/bench.json'))['profiles']['pmm-d']['model'])")
+if [[ "$pmm_d_model" == "SET_AFTER_DOWNLOAD" ]]; then
+  hermes -p pmm-d config set model.provider llamacpp
+  hermes -p pmm-d config unset model.base_url >/dev/null 2>&1 || true   # never inherit a cloud endpoint
+  hermes -p pmm-d config unset model.api_mode >/dev/null 2>&1 || true
+  echo "   pmm-d -> llamacpp (model set later by scripts/set_local_model.py)"
+else
+  echo "   pmm-d already points at $pmm_d_model; left unchanged (rerun scripts/set_local_model.py to change it)"
+fi
 
 echo
 echo "Done. Next: download the local model (README step 3), then run scripts/set_local_model.py"
