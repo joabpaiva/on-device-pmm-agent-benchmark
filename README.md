@@ -8,12 +8,16 @@ Benchmark of a Hermes Agent (Nous Research) product-marketing agent on open-weig
 
 All products in the task inputs (Aurora 14, Vantage Pro 16, Summit X15) are fictional.
 
-Designed and directed by Joab Paiva. **Start with [How It Works](docs/HOW_IT_WORKS.md)** for the design, what happens in a run, how scoring works and where the numbers are approximate.
+Designed and directed by Joab Paiva.
+
+- **[Benchmark Report](docs/REPORT.md):** results, claims backed by data, where the cloud wins, and the positioning statement.
+- **[How It Works](docs/HOW_IT_WORKS.md):** the design, what happens in a run, how scoring works and where the numbers are approximate.
+- **[Findings Log](docs/FINDINGS.md):** the running record of results and decisions.
 
 ## Repo layout
 
 ```
-docs/         HOW_IT_WORKS.md
+docs/         REPORT.md, HOW_IT_WORKS.md, FINDINGS.md
 tasks/        tasks.json (frozen prompts), inputs/ (source material), answer_keys.json
 profiles/     SOUL.md (identical for all four agents), setup_profiles.sh
 config/       bench.json: profiles, models, prices, judge, runs per task
