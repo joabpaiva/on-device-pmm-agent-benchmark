@@ -1,12 +1,45 @@
 {
   "_note": "Prices are USD per 1M tokens, OpenRouter list prices on 30 Sep 2026. Update on run day. pmm-d model id is filled in after the local model download (see README step 3).",
   "profiles": {
-    "pmm-a": {"provider": "openrouter", "model": "qwen/qwen3.5-9b", "class": "9B hosted", "price_in": 0.10, "price_out": 0.15, "local": false},
-    "pmm-b": {"provider": "openrouter", "model": "qwen/qwen3.5-27b", "class": "27B hosted", "price_in": 0.195, "price_out": 1.56, "local": false},
-    "pmm-c": {"provider": "openrouter", "model": "anthropic/claude-sonnet-5.5", "class": "Frontier", "price_in": 2.00, "price_out": 10.00, "local": false},
-    "pmm-d": {"provider": "llamacpp", "model": "SET_AFTER_DOWNLOAD", "class": "9B on laptop", "price_in": 0, "price_out": 0, "local": true}
+    "pmm-a": {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.5-9b",
+      "class": "9B hosted",
+      "price_in": 0.1,
+      "price_out": 0.15,
+      "local": false
+    },
+    "pmm-b": {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.5-27b",
+      "class": "27B hosted",
+      "price_in": 0.195,
+      "price_out": 1.56,
+      "local": false
+    },
+    "pmm-c": {
+      "provider": "openrouter",
+      "model": "anthropic/claude-sonnet-5.5",
+      "class": "Frontier",
+      "price_in": 2.0,
+      "price_out": 10.0,
+      "local": false
+    },
+    "pmm-d": {
+      "provider": "llamacpp",
+      "model": "qwen3.5-9b-q8_0",
+      "class": "9B on laptop",
+      "price_in": 0,
+      "price_out": 0,
+      "local": true
+    }
   },
-  "judge": {"model": "openai/gpt-6-sol", "price_in": 2.00, "price_out": 10.00, "passes": 2},
+  "judge": {
+    "model": "openai/gpt-6-sol",
+    "price_in": 2.0,
+    "price_out": 10.0,
+    "passes": 2
+  },
   "runs_per_task": 3,
   "toolsets": "file",
   "reasoning_effort": "none",

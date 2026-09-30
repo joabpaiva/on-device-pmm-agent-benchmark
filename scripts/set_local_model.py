@@ -1,42 +1,34 @@
 #!/usr/bin/env python3
-"""Find the model served by Hermes' local llama.cpp runtime and point pmm-d at it.
+"""Point the pmm-d profile at the local server started by scripts/start_local_server.sh.
 
-Run after downloading Qwen3.5-9B (Q8_0) in Hermes > Settings > Providers > Local Models,
-with the Hermes desktop app open so the local server is running.
-
-Usage: python3 scripts/set_local_model.py            # list served models, pick the Qwen3.5-9B one
-       python3 scripts/set_local_model.py <model-id>  # set explicitly
+Run with the server already running in another Terminal window.
+Usage: python3 scripts/set_local_model.py [port]
 """
-import json, os, subprocess, sys, urllib.request
+import json, subprocess, sys, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-server = Path.home() / ".hermes/runtimes/llamacpp/server.json"
-if not server.exists():
-    sys.exit(f"No local server state at {server}. Open the Hermes desktop app and start the local model.")
-info = json.loads(server.read_text())
-req = urllib.request.Request(info["base_url"].rstrip("/") + "/models",
-                             headers={"Authorization": f"Bearer {info.get('api_key','')}"})
+port = sys.argv[1] if len(sys.argv) > 1 else "8081"
+base = f"http://127.0.0.1:{port}/v1"
 try:
-    models = [m["id"] for m in json.load(urllib.request.urlopen(req, timeout=10)).get("data", [])]
+    models = [m["id"] for m in json.load(urllib.request.urlopen(base + "/models", timeout=10)).get("data", [])]
 except Exception as e:
-    sys.exit(f"Local server not reachable at {info['base_url']} ({e}). Is the Hermes app open with the model loaded?")
+    sys.exit(f"Local server not reachable at {base} ({e}). Start it first: ./scripts/start_local_server.sh")
+if not models:
+    sys.exit("Server is up but reports no model.")
+model = models[0]
+print(f"Local server at {base} serves: {model}")
 
-print("Models served locally:")
-for m in models:
-    print("  ", m)
+for key, val in [("model.provider", "llamacpp"),
+                 ("providers.llamacpp.base_url", base),
+                 ("providers.llamacpp.model", model),
+                 ("model.default", model),
+                 ("local_runtime.enabled", "false")]:   # use our server, not a second app-managed one
+    subprocess.run(["hermes", "-p", "pmm-d", "config", "set", key, val, "--force"], check=True,
+                   stdout=subprocess.DEVNULL)
 
-if len(sys.argv) > 1:
-    choice = sys.argv[1]
-else:
-    cands = [m for m in models if "qwen3.5-9b" in m.lower().replace("_", "-")]
-    if len(cands) != 1:
-        sys.exit("Could not pick a single Qwen3.5-9B model automatically; pass the id as an argument.")
-    choice = cands[0]
-
-subprocess.run(["hermes", "-p", "pmm-d", "config", "set", "model.default", choice], check=True)
 cfg_path = ROOT / "config/bench.json"
 cfg = json.loads(cfg_path.read_text())
-cfg["profiles"]["pmm-d"]["model"] = choice
-cfg_path.write_text(json.dumps(cfg, indent=2))
-print(f"pmm-d now uses {choice}. Record the quantization (should be Q8_0) in results/machine.md.")
+cfg["profiles"]["pmm-d"]["model"] = model
+cfg_path.write_text(json.dumps(cfg, indent=2) + "\n")
+print(f"pmm-d now uses {model} via {base}")

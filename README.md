@@ -41,10 +41,14 @@ chmod +x profiles/setup_profiles.sh
 ```
 Creates `pmm-a` … `pmm-d` with the same SOUL.md, memory off, background review off, reasoning effort `none`, and file tools only. Only the model differs.
 
-### 3. Download the local model (Hermes desktop app)
-1. Hermes → Settings → Providers → Local Models. Install the runtime if asked.
-2. **Find more models** → search `unsloth/Qwen3.5-9B-GGUF` → download the **Q8_0** file (9.5 GB).
-3. Load it, keep the Hermes app open (the local server runs with the app), then:
+### 3. Local model and server
+1. Hermes → Settings → Providers → Local Models → **Find more models** → `unsloth/Qwen3.5-9B-GGUF` → **Show files** → download **Qwen3.5-9B-Q8_0.gguf** (9.5 GB). It lands in `~/.hermes/models/`.
+2. In a separate Terminal window, start the server and leave it running:
+```bash
+./scripts/start_local_server.sh
+```
+It uses the llama.cpp engine Hermes installed, with fixed settings: full GPU offload, 64K context (the minimum Hermes accepts), thinking off, localhost only.
+3. Point pmm-d at it:
 ```bash
 python3 scripts/set_local_model.py
 ```

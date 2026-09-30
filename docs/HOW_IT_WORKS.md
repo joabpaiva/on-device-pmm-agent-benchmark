@@ -19,12 +19,13 @@ I created one product marketing agent in Hermes Agent (Nous Research) and cloned
 | `pmm-a` | Qwen3.5-9B | OpenRouter (hosted) | What can a laptop-sized model do? |
 | `pmm-b` | Qwen3.5-27B | OpenRouter (hosted) | What does workstation-class memory buy? |
 | `pmm-c` | Claude Sonnet 5.5 | OpenRouter (cloud) | What is the best available quality? |
-| `pmm-d` | Qwen3.5-9B, 8-bit GGUF | My MacBook Air, Hermes built-in llama.cpp | What changes on a real device? |
+| `pmm-d` | Qwen3.5-9B, 8-bit GGUF (Q8_0) | My MacBook Air, Hermes-installed llama.cpp (build 10964, Metal) | What changes on a real device? |
 
 Design choices:
 - **Same model generation for a and b**, so the only variable between them is size.
 - **pmm-d is pmm-a on my laptop**, which isolates the on-device effect.
 - **Neutral names** (`pmm-a` to `pmm-d`) so nothing in the output hints at which model wrote it.
+- **A pinned local server.** Instead of letting the desktop app manage the local model, I launch the same llama.cpp engine Hermes installed with explicit settings (`scripts/start_local_server.sh`): full GPU offload, 64K context (the minimum Hermes accepts), thinking off, listening on localhost only. Every setting is on record and repeatable.
 - **Identical setup:** same `SOUL.md`, memory off, background review off, reasoning effort `none`, file tools only. `profiles/setup_profiles.sh` applies all of it, so it is repeatable.
 
 ## The six tasks

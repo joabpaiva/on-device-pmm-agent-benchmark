@@ -47,12 +47,9 @@ class Monitor(threading.Thread):
         self.peak_rss_kb = 0
         self.endpoints = set()
         self.llama_pid = None
-        sj = Path.home() / ".hermes/runtimes/llamacpp/server.json"
-        if sj.exists():
-            try:
-                self.llama_pid = json.loads(sj.read_text()).get("pid")
-            except Exception:
-                pass
+        pids = subprocess.run(["pgrep", "-f", "llama-server"], capture_output=True, text=True).stdout.split()
+        if pids:
+            self.llama_pid = int(pids[0])
 
     def descendants(self, pid):
         out, frontier = {pid}, [pid]
