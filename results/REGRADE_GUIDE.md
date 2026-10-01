@@ -62,6 +62,24 @@ The task: a table of all three products across 8 attributes, "not stated" where 
 | Battery | 86 Wh | 99 Wh | **not stated** |
 | Ports | 2× TB5, USB-A, HDMI 2.1, SD reader | **not stated** | 2× TB4, USB-A, HDMI 2.1 |
 
-Differentiators the table supports: most memory (128 GB, upgradeable), most storage (4 TB), lightest (1.65 kg), Thunderbolt 5.
+Differentiators the table supports: most memory (128 GB, upgradeable), lightest (1.65 kg), has Thunderbolt 5, more storage than Vantage (4 TB vs 2 TB).
+
+Correction: the answer key given to the judge listed "most storage 4 TB" as supported, yet Summit's storage is "not stated", so "most of the three" can't be confirmed. The judge took the strict reading. The key is left as it was used so the grading stays reproducible.
 
 Watch for: claims the table can't support ("fastest GPU", "best AI performance", "TB5 is faster" as a spec claim), anything filled in where the answer is "not stated", or claims about Vantage's ports or Summit's battery/storage.
+
+---
+
+## Part 2: Audit the judge's fact flags (about 15 minutes)
+
+The blind re-grade can't test facts well unless the grader knows the sources closely. This part does. Each row is one claim the judge called invented, quoted from the output next to the source fact it was checked against. There's no need to study the inputs.
+
+1. Open `results/judge_flag_audit.csv` in Numbers (38 flags across 16 outputs; repeats across the judge's three passes are merged).
+2. For each row, compare `output_says` with `check_against` and enter one word in `verdict`:
+   - **real**: the claim is wrong or not supported by the sources
+   - **borderline**: technically unsupported, but a reasonable reviewer would let it pass or fix it with a word
+   - **wrong**: the judge misread; the source supports the claim
+3. Open the file in `results/regrade/` only if you need the surrounding sentence.
+4. Export to CSV with the same name, then run `python3 scripts/flag_audit.py`.
+
+It reports how many flags hold up, whether flags found by all three judge passes are more reliable than those found by one or two, and how many outputs would change usable status if only confirmed flags triggered the gate.
