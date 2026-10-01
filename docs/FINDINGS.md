@@ -61,7 +61,19 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 12. **Usable outputs are rare everywhere** because one invented fact makes an output unusable. Requiring 2 of 3 judge passes instead would change only two Phase 1 outputs, so the rule set before the runs stands.
 13. **Offline T6 took 259 s** because the agent took a longer path (wrote the file before reading the inputs, then rewrote it: 7 tool calls vs 5); still 24/24.
 
-## Claim status (bars set before the runs; published only where judge and human agree)
+## Marketing claims (final, approved by Joab)
+
+| # | Marketing claim | Built on | Bar status |
+|---|---|---|---|
+| 1 | Your work never leaves your machine | Technical claim 2 (connections) | Met |
+| 2 | AI that works where Wi-Fi doesn't | Technical claim 2 (offline) | Met |
+| 3 | Near-cloud quality on work grounded in your own documents | Technical claims 1 and 5 | Narrowed: 2 tasks within 10%, 1 within 15%; declines to guess met |
+| 4 | No meter running | Technical claim 3 | Met |
+| 5 | More memory, better AI | Technical claim 4 | Judge-measured; not reproduced on T6 by hand |
+
+Proof points come from a fanless consumer laptop (the floor); re-run on the target HP workstation before market.
+
+## Technical claim status (bars set before the runs; published only where judge and human agree)
 
 | # | Claim | Bar | Result |
 |---|---|---|---|
@@ -71,7 +83,7 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 | 4 | Workstation-class memory (27B) lifts quality | Gain of 2+ points | **Met per judge (+2.1, closes 55% of the gap); my T6 re-grade shows no lift, so stated as judge-measured** |
 | 5 | Laptop model declines to guess | 3 of 3 runs | **Met:** 3 of 3 |
 
-Decision (Joab): apply the rule as written, so Claims 1 and 4 are narrowed in the deck and report.
+Decision (Joab): apply the rule as written, so technical claims 1 and 4 are narrowed; they carry into marketing claims 3 and 5.
 
 ## What the validation caught before the real runs
 

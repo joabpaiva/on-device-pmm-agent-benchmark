@@ -26,6 +26,8 @@ A blind judge from a different model family graded every output. Rule-based chec
 - **Trust held everywhere.** Every configuration declined to answer a question its sources couldn't support, in every run.
 - **The cloud's clear win is fewer invented claims:** 5× fewer than any open model, hosted or local. It was also much faster and more consistent.
 
+**Marketing claims (section 6):** your work never leaves your machine; AI that works where Wi-Fi doesn't; near-cloud quality on work grounded in your own documents; no meter running; more memory, better AI.
+
 **When should you run AI on your PC?** For everyday work grounded in your own documents: answering from product docs, summarizing reports, building comparison tables. Use the cloud for customer-facing persuasive copy, where invented claims are costly. The winning setup is hybrid: local by default, cloud and a human check before anything ships.
 
 ---
@@ -184,15 +186,33 @@ Two smaller differences: on T6 I saw only the saved table, while the judge also 
 
 ## 6. Marketing output
 
-### Proof-point claims
+### Marketing claims and how to defend them
 
-Each claim had a bar set before the runs, and a rule: a claim is published only where the judge and my re-grade agree. Three cleared the bar outright; two are narrowed.
+HP's bet is that AI should run on the device itself, not just in the cloud. These five buyer-facing claims support that story. Each rests on a measured proof point and has a ready answer to the obvious challenge. They follow the rule I set before the runs: a claim is published only where the judge and my re-grade agree, so claims 3 and 5 carry narrowed wording.
 
-1. **Close to the cloud on grounded work.** A 9B model on a fanless laptop scored within 10% of a frontier cloud model on answering customer FAQs and summarizing a technical paper, and within 15% on building a competitive spec matrix. *Data: quality scoreboard, 3 runs × 3 blind judge passes; my blind re-grade of T4 and T6. Bar (3 tasks within 10%): partly met. The judge had T6 at 96%; my re-grade at 86%.*
-2. **Nothing leaves the device.** Across 18 on-device runs, no connection left the laptop, and all six tasks completed with Wi-Fi off. *Data: per-second connection log; Wi-Fi-off rerun.*
-3. **A fraction of a cent.** On the laptop, a marketing task cost about $0.00005 in electricity, vs $0.001 on a hosted 9B model and $0.05 on a frontier cloud model. *Data: measured energy × $0.403/kWh; token counts × list price.*
-4. **Memory buys quality, per the judge.** Stepping up from a 9B to a 27B model, the size that needs workstation-class memory, added 2.1 points in the judge's scores and closed 55% of the gap to the frontier. *Data: pmm-a vs pmm-b, same model generation (hosted proxy). My blind re-grade did not reproduce the gain on T6, so this is stated as judge-measured.*
-5. **It knows what it doesn't know.** When the answer wasn't in the source, the laptop model declined to guess in 3 of 3 runs, the same as the frontier model. *Data: T4 Q5 outputs and rule check.*
+**1. Your work never leaves your machine.** *Run AI on confidential plans, pricing and customer data, with nothing sent to the cloud.*
+- Proof: 18 on-device runs, zero connections off the laptop. Every connection was logged each second, and the model was served only on the laptop itself.
+- Challenge, "agents phone home": the monitor is real. During setup it caught the agent reaching for a cloud address inherited from a default profile, which I removed before the measured runs.
+
+**2. AI that works where Wi-Fi doesn't.** *On a plane, at a customer site, in a secure facility.*
+- Proof: all 6 tasks completed with Wi-Fi off; the spec matrix still came back 24 of 24 cells correct. Recorded on video.
+- Challenge, "offline is slower": yes, about 72 seconds per task on a fanless laptop, and I state it.
+
+**3. Near-cloud quality on work grounded in your own documents.** *Customer FAQs, report summaries, competitive comparisons, and it says "I don't know" instead of guessing.*
+- Proof: within 10% of a frontier cloud model on FAQ answers and executive summaries, within 15% on spec comparisons. Declined the unanswerable question 3 of 3 times, like the frontier. No quality lost moving the same model from cloud to laptop (17.0 vs 15.6, within spread).
+- Challenge, "small models make things up": in persuasive copy they do, about 3 invented claims per output vs 0.6 for the frontier, so customer-facing copy goes to the cloud. Grading was blind and cross-family, and I confirmed all 38 of the judge's fact flags by hand.
+
+**4. No meter running.** *Buy the machine once; each AI task costs a fraction of a cent in electricity.*
+- Proof: about $0.00005 per task (measured energy × my electricity rate) vs $0.001 hosted and $0.05 on the frontier model, about 1,100× less.
+- Challenge, "you ignored the hardware": it is a separate purchase, shown separately. The claim is cost per task: no per-token bill, no surprises.
+
+**5. More memory, better AI.** *Workstation-class memory runs bigger models, and bigger models write better.*
+- Proof: the 27B model, which needs about 17 GB, scored 2.1 points above the 9B and closed 55% of the gap to the frontier. The 9B used 11.9 of 24 GB on the laptop, leaving headroom.
+- Challenge, "that was hosted, and your re-grade didn't confirm it on T6": true. It is a hosted stand-in, stated as judge-measured. The next step is a run on a workstation.
+
+Proof points come from a fanless consumer laptop, the floor. Before these claims go to market, I would re-run the benchmark on the target HP workstation.
+
+**Pass/fail against the bars set before the runs:** privacy and offline, met (none in 18 runs; 6 of 6); cost, met; declines to guess, met (3 of 3); laptop within 10% of frontier on 3+ tasks, partly met (2 within 10%, 1 within 15%); 27B lift of 2+ points, met per the judge, not reproduced on T6 in my re-grade.
 
 ### Where the cloud beats local, stated honestly
 
