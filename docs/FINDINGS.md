@@ -119,10 +119,6 @@ Decision: apply the rule as written, so bars A and D are narrowed; they carry in
 - I checked every invented-claim flag the judge raised on the 24 re-graded outputs (38 distinct claims across 16 outputs) against the source facts: **38 of 38 real**, 0 borderline, 0 wrong. I also found one claim it missed (the "official website" referral in `43b431ea`), so the judge is, if anything, slightly lenient on facts.
 - Flags found by only 1 or 2 of the 3 judge passes were as reliable as those found by all 3 (9/9 vs 29/29), so the "any pass" gate rule stands. No output changes usable status.
 - Why my blind facts scores were high: I hadn't studied the source files, so unsupported comparisons read as plausible. That is how fabrications slip through a busy marketing review, and it's the case for automated fact-checking against sources.
-- Even with the confirmed fact cap applied to my blind scores, agreement on totals stays at 9/24: I penalized the same flaws again under ready/reader/format (I'm then 2.4 points stricter than the judge).
+- Even with the confirmed fact cap applied to my blind scores, agreement on totals stays at 9/24: I penalized the same flaws again under ready/reader/format (I'm then about 2 points stricter than the judge).
 - T6 with confirmed facts applied: laptop 18 vs frontier 21 (86%), judge 96%. 27B 11 vs hosted 9B 11 (no lift); judge +5.4.
 - My T4/T6 re-grade used the frontier's saved T6 table only; the judge also saw its replies, which added commentary, and docked format for it.
-
-## Open items
-
-- Demo video.
