@@ -24,8 +24,9 @@ config/       bench.json: profiles, models, prices, judge, runs per task
 scripts/      run_bench.py, check.py, judge.py, report.py, flag_audit.py, common.py,
               start_local_server.sh, set_local_model.py
 runs/         raw outputs, event logs and metrics for every run: main/ (72) and offline/ (6)
-results/      CSVs behind every results table, machine.md (test machine), regrade/ and the
-              human re-grade, judge fact-flag audit and REGRADE_GUIDE.md
+results/      CSVs behind every results table, machine.md and activity_monitor_memory.png
+              (test machine), openrouter_billed_2026-09-30.csv (billing check), regrade/,
+              the human re-grade, judge fact-flag audit and REGRADE_GUIDE.md
 ```
 
 ## Runbook
@@ -115,4 +116,4 @@ Follow `results/REGRADE_GUIDE.md`: grade each blind copy in `results/regrade/` i
 | Off-device connections | `lsof` sampling of the agent and model processes during every on-device run |
 
 ## Limitations
-Fictional inputs; 3 runs per task; AI judge (blind, cross-family; all 38 of its fact flags on T4/T6 confirmed by hand, though my blind totals matched it within 2 points on only 38% of outputs); list prices on run day; hosted precision vs 8-bit local; a fanless consumer laptop is a floor, not a workstation result; prompts frozen with no retries.
+Fictional inputs; 3 runs per task; AI judge (blind, cross-family; all 38 of its fact flags on T4/T6 confirmed by hand, one miss found, though my totals matched it within 2 points on only 38% of outputs); list prices on run day; hosted precision vs 8-bit local; a fanless consumer laptop is a floor, not a workstation result; prompts frozen with no retries.

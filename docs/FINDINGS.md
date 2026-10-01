@@ -41,7 +41,9 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 
 **Electricity rate:** $0.403/kWh, the blended energy charge (PG&E delivery + Pioneer Community Energy generation, net of the generation credit, excluding the fixed daily base charge) from my Jul 27–Aug 25 2026 bill on the E-ELEC time-of-use rate. Peak-hour all-in is about $0.63/kWh, which would put laptop cost at about $0.00007 per task. Energy is chip only (CPU + GPU + neural engine), not the display or the rest of the laptop.
 
-**Spend:** Phase 1 agents $0.96; judge $1.79 (216 gradings) plus $0.30 of smoke-test grading; laptop runs about $0.0008 in electricity.
+**Spend:** Phase 1 agents $0.96 at list price; judge $1.79 (216 gradings) plus $0.30 of smoke-test grading; laptop runs about $0.0008 in electricity. **Billing check:** OpenRouter billed $3.21 for the day (judge $2.09, frontier $0.98, 27B $0.10, 9B $0.04; `results/openrouter_billed_2026-09-30.csv`), so about $0.16 was setup and smoke testing; its 45% cache-hit rate means list-price cost slightly overstates cloud.
+
+**Memory:** llama-server peaked at 11.9 GB during runs; with everyday apps the 24 GB laptop sat at 19.3 GB used, 13.5 GB wired, 1 GB swap (`results/activity_monitor_memory.png`). The 27B needs about 17 GB for weights alone.
 
 **Machine:** MacBook Air (Mac15,12), Apple M3, 8-core CPU (4P + 4E), 10-core GPU, 24 GB unified memory, fanless; macOS 27.0.1; Hermes Agent v0.21.5; llama.cpp build 10964 (Metal) serving Qwen3.5-9B Q8_0 (9.5 GB), 64K context, thinking off, localhost only. Plugged in.
 
@@ -65,11 +67,12 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 
 | # | Marketing claim | Built on | Bar status |
 |---|---|---|---|
-| 1 | Your work never leaves your machine | Bar B (connections) | Met |
-| 2 | AI that works where Wi-Fi doesn't | Bar B (offline) | Met |
-| 3 | Near-cloud quality on work grounded in your own documents | Bars A and E | Narrowed: 2 tasks within 10%, 1 within 15%; declines to guess met |
-| 4 | No meter running | Bar C | Met |
-| 5 | More memory, better AI | Bar D | Judge-measured; not reproduced on T6 by hand |
+| 1 | Private and offline | Bar B (connections, offline) | Met |
+| 2 | A real AI agent on your PC, not just a chatbot | T6 on the laptop: 24/24 cells, 3/3 gaps, 100% tool calls, also offline | Measured, all 3 runs + offline |
+| 3 | Near-cloud quality on your own documents | Bars A and E | Narrowed: 2 tasks within 10%, 1 within 15%; declines to guess met (one decline added an unsupported referral) |
+| 4 | No meter running: 1,000 tasks for about 5¢ | Bar C, plus OpenRouter billing check | Met |
+| 5 | More memory, better AI | Bar D, plus measured memory on the laptop | Score gain judge-measured; memory limit measured |
+| Theme | Hybrid by design: same agent, cloud or device | Laptop vs hosted twin, 17.0 vs 15.6 | Within spread |
 
 Proof points come from a fanless consumer laptop (the floor); re-run on the target HP workstation before market.
 
@@ -100,9 +103,20 @@ Decision: apply the rule as written, so bars A and D are narrowed; they carry in
 | Live end-to-end test | Scoring rules misfired on markdown bold, subject-line variants, extra table rows | Checks rewritten and tested on realistic samples |
 | Judge review | Judge scores moved between grading sessions | 3 passes per output instead of 2 |
 
+## Human re-grade (T4 + T6, 24 outputs, graded blind)
+
+- Agreement: 9 of 24 (38%) within 2 points of 25; mean gap 2.9 (3.3 before the correction below).
+- No leniency: my average 19.9 vs the judge's 20.2; I'm 0.3 points stricter.
+- Same ends: frontier best for both (22.8 me, 21.9 judge); hosted 9B worst for both (17.5 vs 18.7).
+- Middle: I put the laptop 9B (21.0) above the hosted 27B (18.2); the judge has the 27B above (20.9 vs 19.3).
+- Where penalties land: the judge counts an unsupported comparison as an invented claim and docks facts; I docked ready/reader/format instead.
+- Effect on claims: T4 laptop vs frontier, my median 24 vs 22 (109%), confirms. T6 with confirmed facts applied, 18 vs 21 (86%) vs the judge's 96%. T6 27B vs hosted 9B: no lift by hand vs +5.4 judge.
+- Correction after grading: row `43b431ea` (T4) was a clerical slip (complete 1, reader 1 although all five answers were present). Re-scored on the rubric: 2/5/4/4/4 (facts 2 because its Q5 suggests an "official website" the docs never mention). The blind original stays in `results/human_regrade_blind.csv`.
+- Asymmetry: for T6 I saw only the saved table; the judge also saw the reply and docked replies that added commentary.
+
 ## Judge fact-flag audit (human, not blind)
 
-- I checked every invented-claim flag the judge raised on the 24 re-graded outputs (38 distinct claims across 16 outputs) against the source facts: **38 of 38 real**, 0 borderline, 0 wrong.
+- I checked every invented-claim flag the judge raised on the 24 re-graded outputs (38 distinct claims across 16 outputs) against the source facts: **38 of 38 real**, 0 borderline, 0 wrong. I also found one claim it missed (the "official website" referral in `43b431ea`), so the judge is, if anything, slightly lenient on facts.
 - Flags found by only 1 or 2 of the 3 judge passes were as reliable as those found by all 3 (9/9 vs 29/29), so the "any pass" gate rule stands. No output changes usable status.
 - Why my blind facts scores were high: I hadn't studied the source files, so unsupported comparisons read as plausible. That is how fabrications slip through a busy marketing review, and it's the case for automated fact-checking against sources.
 - Even with the confirmed fact cap applied to my blind scores, agreement on totals stays at 9/24: I penalized the same flaws again under ready/reader/format (I'm then 2.4 points stricter than the judge).

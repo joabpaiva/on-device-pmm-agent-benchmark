@@ -110,11 +110,11 @@ Hard gates keep a fluent but wrong answer from scoring well. An invented claim f
 
 I want these limits to be visible, not discovered:
 
-- **Cost** is tokens × list price, with cache discounts ignored, so cloud cost is slightly overstated.
+- **Cost** is tokens × list price, with cache discounts ignored, so cloud cost is slightly overstated. As a check, OpenRouter billed $3.21 for the whole day, smoke tests and grading included (`results/openrouter_billed_2026-09-30.csv`).
 - **Time to first output** is when the model first produces text or a tool call, measured from the start of the Hermes session. It includes prompt processing, which dominates on the laptop.
 - **Tokens per second** is output tokens ÷ total task time. It measures end-to-end throughput, not raw generation speed.
 - **Energy** covers the chip, not the display, and only on the laptop. Cloud energy cannot be measured from outside, so I make no comparative energy claim.
-- **The judge is an AI.** I mitigate that with a different model family, blind grading and three passes, and I checked it: all 38 of its fact flags on T4 and T6 held up, though my blind totals matched it within 2 points on only 38% of those outputs. Claims are published only where the judge and I agree.
+- **The judge is an AI.** I mitigate that with a different model family, blind grading and three passes, and I checked it: all 38 of its fact flags on T4 and T6 held up and I found one it missed, though my totals matched it within 2 points on only 38% of those outputs. Claims are published only where the judge and I agree.
 - **Hosted vs local precision:** pmm-a runs at the provider's precision and pmm-d at 8-bit. Measuring that gap is part of Phase 2.
 - **The frontier model thinks adaptively.** Claude Sonnet 5.5 decides for itself when to reason, and OpenRouter does not fully switch that off. With reasoning set to none it still produced several thousand hidden reasoning tokens on long tasks (about 850 visible tokens vs about 7,900 billed on T1). Those tokens are billed, so they are in its cost. The open models ran with thinking off. I kept this as is: the frontier baseline represents cloud quality as customers actually get it.
 - **The laptop is a floor.** A fanless consumer laptop is not a workstation. More memory and active cooling raise the ceiling.
