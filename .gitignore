@@ -2,7 +2,6 @@
 **/.DS_Store
 .env
 *.env
-results/.regrade_map.json
 __pycache__/
 runs/smoke/
 runs/t/

@@ -10,7 +10,7 @@ This page explains how I set it up, how a run works, how I score the results, an
 
 ## The design in one paragraph
 
-I created one product marketing agent in Hermes Agent (Nous Research) and cloned it into four profiles that differ only in the model behind them. I wrote six realistic PMM tasks, each designed to test a different capability, and froze the prompts. Every task runs three times on every profile, in a fresh session each time. A Python script drives Hermes through its own command line so every run is identical and precisely timed. Scoring combines rule-based checks, a blind AI judge from a different model family than any contestant, and my own re-grade of the two hardest tasks.
+I created one product marketing agent in Hermes Agent (Nous Research) and cloned it into four profiles that differ only in the model behind them. I wrote six realistic PMM tasks, each designed to test a different capability, and froze the prompts. Every task runs three times on every profile, in a fresh session each time. A Python script drives Hermes through its own command line so every run is identical and precisely timed. Scoring combines rule-based checks, a blind AI judge from a different model family than any contestant, and my own blind re-grade of the two tasks with answer keys, plus an audit of every claim the judge called invented on them.
 
 ## The four agents
 
@@ -101,10 +101,10 @@ Every output is graded on the full deliverable: the agent's final reply plus any
 |---|---|---|
 | 1 | `check.py` | Rule-based, no AI: word counts, Q5 declined, caveats kept, T6 cells correct against the answer key, planted gaps marked |
 | 2 | `judge.py` | GPT-6 Sol scores each output 1–5 on five criteria (facts, completeness, fit for the reader, ready to ship, format). It receives the task, the sources and the answer key, never the profile or model name. Outputs are shuffled, and each is graded three times at temperature 0; scores are averaged |
-| 3 | Me | I re-grade T4 and T6 blind: each output is copied to `results/regrade/<id>.md` with the profile hidden, and I score it in `results/human_regrade.csv`; the report shows how often the judge and I agree within 2 points. Then I check every invented-fact flag the judge raised on those outputs against the sources (`results/judge_flag_audit.csv`, scored by `scripts/flag_audit.py`) |
+| 3 | Me | I re-grade T4 and T6 blind: each output is copied to `results/regrade/<id>.md` with the profile hidden, and I score it in `results/human_regrade.csv`; the report shows how often the judge and I agree within 2 points. Then I check every invented-claim flag the judge raised on those outputs against the sources (`results/judge_flag_audit.csv`, scored by `scripts/flag_audit.py`) |
 | 4 | `report.py` | Builds the CSVs behind the results tables |
 
-Hard gates keep a fluent but wrong answer from scoring well. An invented fact found by any judge pass caps the facts score at 2 and makes the output unusable. So does repeating the T2 rumor's price cut. A missing T6 file caps completeness at 2. A fabricated answer to T4 Q5 fails the trust test outright. An output counts as **usable** only at 20/25 or higher with no gate triggered.
+Hard gates keep a fluent but wrong answer from scoring well. An invented claim found by any judge pass caps the facts score at 2 and makes the output unusable. So does repeating the T2 rumor's price cut. A missing T6 file caps completeness at 2. A fabricated answer to T4 Q5 fails the trust test outright. An output counts as **usable** only at 20/25 or higher with no gate triggered.
 
 ## Where the numbers are approximate
 
@@ -134,7 +134,8 @@ Follow the runbook in the [README](../README.md). In short:
 ```bash
 export OPENROUTER_API_KEY=sk-or-...
 ./profiles/setup_profiles.sh                                    # create the four agents
-python3 scripts/set_local_model.py                              # after downloading the local model
+./scripts/start_local_server.sh                                 # separate window; after downloading the local model
+python3 scripts/set_local_model.py                              # points pmm-d at the local server
 python3 scripts/run_bench.py --profiles pmm-a,pmm-b,pmm-c       # Phase 1
 sudo -v && python3 scripts/run_bench.py --profiles pmm-d --energy --cooldown 10   # Phase 2
 python3 scripts/check.py && python3 scripts/judge.py && python3 scripts/report.py # score

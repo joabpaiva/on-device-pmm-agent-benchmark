@@ -4,7 +4,7 @@ Cost per usable output ($),0.00906,0.04232,0.12869,0.0004
 Latency per task (s),14.69,10.69,24.59,72.15
 Time to first output (s),4.68,3.07,19.94,7.91
 Tokens per second,65.23,56.91,135.3,8.09
-Hallucinations (total),61.7,54.7,10.3,52.7
+Invented claims - hallucinations (total),61.7,54.7,10.3,52.7
 T4 Q5 declined correctly,3 of 3,3 of 3,3 of 3,3 of 3
 T6 cells correct (of 24),24,24,24,24
 T6 gaps marked (of 3),3,3,3,3

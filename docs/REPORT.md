@@ -23,7 +23,7 @@ A blind judge from a different model family graded every output. Rule-based chec
 - **The laptop is close to the frontier on grounded work.** It came within 10% of the frontier on the customer FAQ and the executive summary, and within 15% on the competitive spec matrix; 87% of frontier quality overall.
 - **The laptop cost about $0.00005 per task in electricity,** vs $0.001 hosted and $0.05 on the frontier model.
 - **Nothing left the device.** No connection left the laptop in 18 measured runs, and all six tasks completed with Wi-Fi off.
-- **Trust held everywhere.** Every configuration declined to answer a question its sources couldn't support, in every run.
+- **Trust mostly held.** Every configuration declined to answer a question its sources couldn't support, in every run, though 4 of 9 open-model declines added an unsupported referral (the frontier's never did).
 - **The cloud's clear win is fewer invented claims:** 5× fewer than any open model, hosted or local. It was also much faster and more consistent.
 
 **Marketing claims (section 6):** your work never leaves your machine; AI that works where Wi-Fi doesn't; near-cloud quality on work grounded in your own documents; no meter running; more memory, better AI.
@@ -84,11 +84,11 @@ The runs: 6 tasks × 3 runs × 4 configurations = 72 measured runs, plus 6 more 
 **Three layers of grading.**
 1. **Rule checks (no AI):** word and item counts, whether Q5 was declined, caveats kept, T6 cells against the answer key, and whether the T2 rumor was repeated.
 2. **AI judge:** GPT-6 Sol, from a different company than every contestant. It receives the rubric, the task, the sources, the answer-key notes and the agent's full output (reply plus any files written). It never sees which agent wrote the output. Outputs are shuffled, and each is graded three times at temperature 0; scores are averaged.
-3. **Human check:** I re-graded all T4 and T6 outputs blind, on the same rubric, then checked every invented-fact flag the judge raised on them against the sources. Results are in section 4.
+3. **Human check:** I re-graded all T4 and T6 outputs blind, on the same rubric, then checked every invented-claim flag the judge raised on them against the sources. Results are in section 4.
 
 **Rubric.** Five criteria scored 1–5 each (25 max): facts, completeness, fit for the reader, ready to ship, and format.
 
-**Hard gates.** An invented fact found by any judge pass caps facts at 2 and makes the output unusable. So does repeating the T2 rumor. A missing T6 file caps completeness at 2. A fabricated Q5 answer fails the trust test.
+**Hard gates.** An invented claim found by any judge pass caps facts at 2 and makes the output unusable. So does repeating the T2 rumor. A missing T6 file caps completeness at 2. A fabricated Q5 answer fails the trust test.
 
 **Usable output:** 20/25 or higher and no gate triggered.
 
@@ -131,7 +131,7 @@ Quality is the median of 3 runs out of 25, with the spread across runs in bracke
 | Cost per task | $0.0010 | $0.0024 | $0.0500 | $0.000045 |
 | Latency per task | 14.7 s | 10.7 s | 24.6 s | 72.2 s |
 | Output tokens per second | 65 | 57 | 135 | 8.1 |
-| Invented claims per output | 3.4 | 3.0 | 0.6 | 2.9 |
+| Invented claims (hallucinations) per output | 3.4 | 3.0 | 0.6 | 2.9 |
 | Q5 declined correctly | 3 of 3 | 3 of 3 | 3 of 3 | 3 of 3 |
 | T6 cells / gaps correct | 24/24, 3/3 | 24/24, 3/3 | 24/24, 3/3 | 24/24, 3/3 |
 | T6 tool calls succeeded | 91% | 100% | 100% | 100% |
@@ -139,9 +139,9 @@ Quality is the median of 3 runs out of 25, with the spread across runs in bracke
 
 **Reading the results**
 - **Invented claims are the real differentiator, not writing quality.** Open models average about 3 per output; the frontier about 0.6. Typical inventions are plausible benefits the source never states, such as "reduces bandwidth costs" or "protects your investment". Another common one is dropping a qualifier: "runs 30B models" without "with 64 GB or more".
-- **Trust and agent mechanics are a tie.** Every configuration declined Q5 in every run and built the T6 table perfectly.
+- **Trust and agent mechanics are close to a tie.** Every configuration declined Q5 in every run and built the T6 table perfectly. The nuance: 4 of 9 open-model Q5 declines added an unsupported referral, such as an "official support website" the docs never mention; the frontier's never did.
 - **Size helps, per the judge.** 27B vs 9B adds 2.1 points and closes 55% of the gap to the frontier, with the biggest gains on T6 (+5.4) and T5 (+4.0). My blind re-grade did not reproduce the T6 gain, so I state this as judge-measured.
-- **Usable outputs are rare everywhere** because one invented fact disqualifies an output. A looser rule (2 of 3 judge passes must flag) would change only two outputs, so the rule set before the runs stands.
+- **Usable outputs are rare everywhere** because one invented claim disqualifies an output. A looser rule (2 of 3 judge passes must flag) would lift the gate on only two outputs (both T3, below 20), so no usable count changes and the rule set before the runs stands.
 - **T3 is hard for every model.** The prompt asks for every test condition within 250 words, and the judge docks all models equally for omitted test details.
 - **The 9B's weak spot is consistency.** Both 9B versions once wrote only part of the T5 sequence.
 
@@ -154,7 +154,7 @@ I re-graded the two tasks with answer keys (T4 and T6, 24 outputs) blind, then c
 | Blind re-grade, totals | 9 of 24 outputs (38%) within 2 points of 25; mean gap 3.3 |
 | Who is stricter? | Me, by 0.7 points on average: the judge is not lenient |
 | Same best and worst? | Yes: frontier best (22.8 me, 21.9 judge); hosted 9B worst (16.0, 18.7) |
-| Judge's invented-fact flags | 38 of 38 confirmed real |
+| Judge's invented-claim flags | 38 of 38 confirmed real |
 | Flags found by only 1–2 of 3 passes | 9 of 9 confirmed, so the "any pass" gate stands |
 | Where we split | T6, laptop vs frontier: 86% by hand vs 96% judge. T6, 27B vs hosted 9B: no lift by hand vs +5.4 judge |
 
@@ -173,14 +173,15 @@ Two smaller differences: on T6 I saw only the saved table, while the judge also 
 | Connections off-device | all task data | none in 18 runs | Differs: model served only on the Mac |
 | Energy per task | not measurable | 0.11 Wh (0.04–0.28), chip only | |
 | Peak model memory | n/a | 11.9 of 24 GB | Fits with room to spare |
-| Speed over the hour | n/a | 8.3 → 7.7 tok/s (first vs last 4 runs); round averages all 8.1 | Small drift |
+| Speed across the run (about 25 minutes) | n/a | 8.3 → 7.7 tok/s (first vs last 4 runs); rounds 8.1, 8.3, 7.9 | Small drift |
+| Usability | API key; 4.7 s to first output | 9.5 GB model download, a pinned local server (Hermes requires at least 64K context), 7.9 s to first output, zero tool errors | Differs: one-time setup, then the same agent and app |
 | Cost per task | $0.0010 | $0.000045 (electricity) | About 22× cheaper |
 
 - **Where on-device matches Phase 1:**
   - quality
   - trust behavior: Q5 declined 3/3
   - agent mechanics: T6 perfect 3/3, with zero tool errors (the hosted 9B had 2)
-- **Where it differs:** speed, which is the price of a fanless laptop, and privacy and cost, which favor the laptop.
+- **Where it differs:** speed, which is the price of a fanless laptop; setup, a one-time 9.5 GB download and a pinned local server; and privacy and cost, which favor the laptop. Day to day it is the same Hermes agent and app.
 - **Chip power** fell from about 8 W in the first round to about 4.4 W afterwards with no change in speed. I report this as observed; I did not determine the cause.
 - **Earlier setup observation:** in the smoke test before the measured runs, Hermes itself made two startup metadata calls, a model catalog download and an update check. Neither carried task content.
 
@@ -188,9 +189,9 @@ Two smaller differences: on T6 I saw only the saved table, while the judge also 
 
 ### Marketing claims and how to defend them
 
-HP's bet is that AI should run on the device itself, not just in the cloud. These five buyer-facing claims support that story. Each rests on a measured proof point and has a ready answer to the obvious challenge. They follow the rule I set before the runs: a claim is published only where the judge and my re-grade agree, so claims 3 and 5 carry narrowed wording.
+HP's bet is that AI should run on the device itself, not just in the cloud. These five buyer-facing claims support that story. Each rests on a measured proof point and has a ready answer to the obvious challenge. They follow the rules I set before the runs: quality claims use the median of 3 runs, behavior claims (privacy, offline, declining to guess) must hold in all 3, and where both grades exist the judge and my re-grade must agree. Claims 3 and 5 carry narrowed wording as a result.
 
-**1. Your work never leaves your machine.** *Run AI on confidential plans, pricing and customer data, with nothing sent to the cloud.*
+**1. Your work never leaves your machine.** *Run AI on confidential plans, pricing and customer data, with no task data sent to the cloud.*
 - Proof: 18 on-device runs, zero connections off the laptop. Every connection was logged each second, and the model was served only on the laptop itself.
 - Challenge, "agents phone home": the monitor is real. During setup it caught the agent reaching for a cloud address inherited from a default profile, which I removed before the measured runs.
 
@@ -199,15 +200,15 @@ HP's bet is that AI should run on the device itself, not just in the cloud. Thes
 - Challenge, "offline is slower": yes, about 72 seconds per task on a fanless laptop, and I state it.
 
 **3. Near-cloud quality on work grounded in your own documents.** *Customer FAQs, report summaries, competitive comparisons, and it says "I don't know" instead of guessing.*
-- Proof: within 10% of a frontier cloud model on FAQ answers and executive summaries, within 15% on spec comparisons. Declined the unanswerable question 3 of 3 times, like the frontier. No quality lost moving the same model from cloud to laptop (17.0 vs 15.6, within spread).
-- Challenge, "small models make things up": in persuasive copy they do, about 3 invented claims per output vs 0.6 for the frontier, so customer-facing copy goes to the cloud. Grading was blind and cross-family, and I confirmed all 38 of the judge's fact flags by hand.
+- Proof: within 10% of a frontier cloud model on FAQ answers (both graders) and executive summaries (judge; not hand-graded), within 15% on spec comparisons. Declined the unanswerable question 3 of 3 times, like the frontier, though one decline added an unsupported referral. No quality lost moving the same model from cloud to laptop (17.0 vs 15.6, within spread).
+- Challenge, "small models make things up": they do invent more, about 3 invented claims per output vs 0.6 for the frontier, and not only in persuasive copy: the laptop averaged 3.0 per output in the T6 differentiators even though every table cell was correct. So fact-check, or use the cloud, before anything ships. Grading was blind and cross-family, and I confirmed all 38 of the judge's fact flags by hand.
 
 **4. No meter running.** *Buy the machine once; each AI task costs a fraction of a cent in electricity.*
 - Proof: about $0.00005 per task (measured energy × my electricity rate) vs $0.001 hosted and $0.05 on the frontier model, about 1,100× less.
 - Challenge, "you ignored the hardware": it is a separate purchase, shown separately. The claim is cost per task: no per-token bill, no surprises.
 
 **5. More memory, better AI.** *Workstation-class memory runs bigger models, and bigger models write better.*
-- Proof: the 27B model, which needs about 17 GB, scored 2.1 points above the 9B and closed 55% of the gap to the frontier. The 9B used 11.9 of 24 GB on the laptop, leaving headroom.
+- Proof: in the AI judge's scores, the 27B model, which needs about 17 GB, scored 2.1 points above the 9B and closed 55% of the gap to the frontier. The 9B used 11.9 of 24 GB on the laptop, leaving headroom.
 - Challenge, "that was hosted, and your re-grade didn't confirm it on T6": true. It is a hosted stand-in, stated as judge-measured. The next step is a run on a workstation.
 
 Proof points come from a fanless consumer laptop, the floor. Before these claims go to market, I would re-run the benchmark on the target HP workstation.
@@ -231,7 +232,7 @@ Run AI on your PC for everyday work grounded in your own documents: answering fr
 
 - **Inputs:** fictional products written for this test, not real HP or competitor data.
 - **Sample size:** 3 runs per task show a pattern, not a statistical rate.
-- **Judge:** quality is graded by an AI, blind, cross-family, three passes per output. I confirmed all 38 of its fact flags on T4 and T6, but my blind totals matched it within 2 points on only 38% of those outputs.
+- **Judge:** quality is graded by an AI, blind, cross-family, three passes per output (about $1.80 for 216 gradings). I confirmed all 38 of its fact flags on T4 and T6, but my blind totals matched it within 2 points on only 38% of those outputs.
 - **Prices:** OpenRouter list prices on run day. OpenRouter may route a model to different providers.
 - **Precision:** the hosted model runs at the provider's precision and the local one at 8-bit. The laptop-vs-hosted quality difference is within spread and is not a claim that local is better.
 - **The laptop is a floor.** A fanless consumer laptop is not a workstation; more memory and active cooling raise the ceiling.

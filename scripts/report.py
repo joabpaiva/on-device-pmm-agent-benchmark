@@ -145,7 +145,7 @@ def main():
             "Latency per task (s)": mean_of(rs, "duration_s"),
             "Time to first output (s)": mean_of(rs, "ttft_s"),
             "Tokens per second": mean_of(rs, "tokens_per_s"),
-            "Hallucinations (total)": round(sum(r.get("invented", 0) for r in rs), 1),
+            "Invented claims - hallucinations (total)": round(sum(r.get("invented", 0) for r in rs), 1),
             "T4 Q5 declined correctly": f"{sum(1 for r in t4 if r['checks'].get('q5_declined'))} of {len(t4)}",
             "T6 cells correct (of 24)": round(st.mean(r["checks"].get("cells_correct", 0) for r in t6), 1) if t6 else "",
             "T6 gaps marked (of 3)": round(st.mean(r["checks"].get("gaps_marked", 0) for r in t6), 1) if t6 else "",

@@ -2,7 +2,7 @@
 
 *Joab Paiva · running record of results, observations and decisions, written as they happen.*
 
-Status: **Complete.** 72 measured runs + 6 Wi-Fi-off runs graded; blind human re-grade and judge fact-flag audit done.
+Status: **Complete.** 72 measured runs judged and rule-checked; 6 Wi-Fi-off runs rule-checked; blind human re-grade and judge fact-flag audit done.
 
 ---
 
@@ -29,7 +29,7 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 | Latency per task | 14.7 s | 10.7 s | 24.6 s | 72.2 s |
 | Time to first output | 4.7 s | 3.1 s | 19.9 s | 7.9 s |
 | Output tokens per second | 65 | 57 | 135 | 8.1 |
-| Invented facts (total, 18 outputs) | 61.7 | 54.7 | 10.3 | 52.7 |
+| Invented claims (hallucinations), total of 18 outputs | 61.7 | 54.7 | 10.3 | 52.7 |
 | T4 Q5 declined correctly | 3 of 3 | 3 of 3 | 3 of 3 | 3 of 3 |
 | T6 cells / gaps | 24/24, 3/3 | 24/24, 3/3 | 24/24, 3/3 | 24/24, 3/3 |
 | T6 tool calls succeeded | 91% | 100% | 100% | 100% |
@@ -39,7 +39,7 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 | Connections off-device | all task data | all task data | all task data | none in 18 runs |
 | Works with Wi-Fi off | no | no | no | 6 of 6 tasks completed |
 
-**Electricity rate:** $0.403/kWh, the blended energy charge (PG&E delivery + Pioneer Community Energy generation, net of the generation credit, excluding the fixed daily base charge) from Joab's Jul 27–Aug 25 2026 bill on the E-ELEC time-of-use rate. Peak-hour all-in is about $0.63/kWh, which would put laptop cost at about $0.00007 per task. Energy is chip only (CPU + GPU + neural engine), not the display or the rest of the laptop.
+**Electricity rate:** $0.403/kWh, the blended energy charge (PG&E delivery + Pioneer Community Energy generation, net of the generation credit, excluding the fixed daily base charge) from my Jul 27–Aug 25 2026 bill on the E-ELEC time-of-use rate. Peak-hour all-in is about $0.63/kWh, which would put laptop cost at about $0.00007 per task. Energy is chip only (CPU + GPU + neural engine), not the display or the rest of the laptop.
 
 **Spend:** Phase 1 agents $0.96; judge $1.79 (216 gradings) plus $0.30 of smoke-test grading; laptop runs about $0.0008 in electricity.
 
@@ -48,42 +48,44 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 ## What the data says
 
 1. **Moving the 9B model onto the laptop did not cost quality.** Laptop 17.0 vs hosted twin 15.6. The difference is within run-to-run spread, so the fair reading is "no quality loss on-device", not "local is better". Possible contributors: 8-bit local weights vs the hosted provider's precision and runtime.
-2. **The laptop model is within 10% of the frontier on 3 of 6 tasks:** T3 (15.0 vs 13.7, 109%), T4 (23.3 vs 24.3, 96%) and T6 (19.0 vs 19.7, 96%). T2 is just outside (89%). Overall 87% of frontier. (Judge scores. My blind re-grade confirms T4 and puts T6 at 86%.)
+2. **The laptop model is within 10% of the frontier on the FAQ and the executive summary, and within 15% on the spec matrix** (both graders agree on T4 and T6; T3 is judge-only). Judge scores: T3 15.0 vs 13.7 (109%), T4 23.3 vs 24.3 (96%), T6 19.0 vs 19.7 (96%); my blind re-grade puts T6 at 86%. T2 is just outside (89%). Overall 87% of frontier.
 3. **Where the cloud wins: grounded persuasive writing.** The frontier model made about 0.6 invented claims per output vs about 3 for every open model, hosted or local. It led most on the launch blog (20.0 vs 13.3) and the email sequence (18.0 vs 12.7). It was also about 17× faster at generating text than the laptop (135 vs 8 tokens/sec; the hosted 9B was about 8× faster) and more consistent (spread 3.1 vs 5.8).
-4. **Trust and agent mechanics are a tie across all four.** Every configuration declined the unanswerable Q5 in every run and built the T6 table perfectly (24/24 cells, 3/3 gaps). The laptop had zero tool errors; the hosted 9B had 2 of 22.
+4. **Trust and agent mechanics are close to a tie across all four.** Every configuration declined the unanswerable Q5 in every run and built the T6 table perfectly (24/24 cells, 3/3 gaps). The laptop had zero tool errors; the hosted 9B had 2 of 22. Nuance: 4 of 9 open-model Q5 declines (1 of 3 on the laptop) added an unsupported referral; the frontier's never did.
 5. **Cost:** laptop about $0.000045 per task in electricity, about 22× cheaper than the hosted 9B and about 1,100× cheaper than the frontier ($0.050). Hardware is excluded and shown separately.
 6. **Privacy:** no connection left the laptop in any of the 18 measured runs, and all 6 tasks completed with Wi-Fi off.
 7. **Size helps:** 27B vs 9B +2.1 points, closing 55% of the 9B-to-frontier gap; biggest on T6 (+5.4) and T5 (+4.0). (Judge scores; my blind re-grade shows no T6 lift.)
-8. **Speed on a fanless laptop:** about 5× slower end to end (72 vs 15 s per task). Generation speed 8.3 tokens/sec in the first four runs vs 7.7 in the last four; round averages identical at 8.1. Chip power fell from about 8 W in round 1 to about 4.4 W afterwards with no change in speed; reported as observed, cause not determined.
+8. **Speed on a fanless laptop:** about 5× slower end to end (72 vs 15 s per task). Generation speed 8.3 tokens/sec in the first four runs vs 7.7 in the last four; round averages 8.1, 8.3 and 7.9 across the 25-minute run. Chip power fell from about 8 W in round 1 to about 4.4 W afterwards with no change in speed; reported as observed, cause not determined.
 9. **The 9B's weak spot is consistency.** Both the hosted and the laptop 9B wrote only part of the T5 sequence once (the hosted run stopped after its plan and "Email 1"; the laptop run wrote one email of three). Largest run-to-run spread of all configurations.
 10. **The frontier model thinks even with reasoning off.** Claude Sonnet 5.5 reasons adaptively and OpenRouter does not fully switch that off: about 850 visible vs about 7,900 billed tokens on T1. The open models ran with thinking off. Kept and disclosed: the frontier baseline represents cloud quality as customers actually get it.
 11. **T3 is hard for all models** because the prompt asks for every test condition within 250 words; the judge docks every model for omitted test details, equally.
-12. **Usable outputs are rare everywhere** because one invented fact makes an output unusable. Requiring 2 of 3 judge passes instead would change only two Phase 1 outputs, so the rule set before the runs stands.
+12. **Usable outputs are rare everywhere** because one invented claim makes an output unusable. Requiring 2 of 3 judge passes instead would lift the gate on only two outputs (both T3, below 20), so no usable count changes; the flag audit later confirmed all 9 single- or double-pass flags were real.
 13. **Offline T6 took 259 s** because the agent took a longer path (wrote the file before reading the inputs, then rewrote it: 7 tool calls vs 5); still 24/24.
 
-## Marketing claims (final, approved by Joab)
+## Marketing claims (final)
 
 | # | Marketing claim | Built on | Bar status |
 |---|---|---|---|
-| 1 | Your work never leaves your machine | Technical claim 2 (connections) | Met |
-| 2 | AI that works where Wi-Fi doesn't | Technical claim 2 (offline) | Met |
-| 3 | Near-cloud quality on work grounded in your own documents | Technical claims 1 and 5 | Narrowed: 2 tasks within 10%, 1 within 15%; declines to guess met |
-| 4 | No meter running | Technical claim 3 | Met |
-| 5 | More memory, better AI | Technical claim 4 | Judge-measured; not reproduced on T6 by hand |
+| 1 | Your work never leaves your machine | Bar B (connections) | Met |
+| 2 | AI that works where Wi-Fi doesn't | Bar B (offline) | Met |
+| 3 | Near-cloud quality on work grounded in your own documents | Bars A and E | Narrowed: 2 tasks within 10%, 1 within 15%; declines to guess met |
+| 4 | No meter running | Bar C | Met |
+| 5 | More memory, better AI | Bar D | Judge-measured; not reproduced on T6 by hand |
 
 Proof points come from a fanless consumer laptop (the floor); re-run on the target HP workstation before market.
 
-## Technical claim status (bars set before the runs; published only where judge and human agree)
+## Proof bars (set before the runs)
+
+Publishing rule: quality claims use the median of 3 runs; behavior claims must hold in all 3 runs; where both grades exist, judge and human must agree.
 
 | # | Claim | Bar | Result |
 |---|---|---|---|
-| 1 | Laptop model within 10% of frontier on everyday tasks | Within 10% on 3+ tasks | **Partly met:** T3 and T4 within 10%; T6 within 15% (judge 96%, my re-grade 86%) |
-| 2 | Nothing leaves the laptop; works offline | No outside connections; offline completes | **Met:** none in 18 runs; 6/6 offline |
-| 3 | On-device cost per task vs cloud | Measured on all runs | **Met:** $0.000045 vs $0.0010 / $0.050 |
-| 4 | Workstation-class memory (27B) lifts quality | Gain of 2+ points | **Met per judge (+2.1, closes 55% of the gap); my T6 re-grade shows no lift, so stated as judge-measured** |
-| 5 | Laptop model declines to guess | 3 of 3 runs | **Met:** 3 of 3 |
+| A | Laptop model within 10% of frontier on everyday tasks | Within 10% on 3+ tasks | **Partly met:** T3 and T4 within 10%; T6 within 15% (judge 96%, my re-grade 86%) |
+| B | No task data leaves the laptop; works offline | No outside connections; offline completes | **Met:** none in 18 runs; 6/6 offline |
+| C | On-device cost per task vs cloud | Measured on all runs | **Met:** $0.000045 vs $0.0010 / $0.050 |
+| D | Workstation-class memory (27B) lifts quality | Gain of 2+ points | **Met per judge (+2.1, closes 55% of the gap); my T6 re-grade shows no lift, so stated as judge-measured** |
+| E | Laptop model declines to guess | 3 of 3 runs | **Met:** 3 of 3 (one decline added an unsupported referral) |
 
-Decision (Joab): apply the rule as written, so technical claims 1 and 4 are narrowed; they carry into marketing claims 3 and 5.
+Decision: apply the rule as written, so bars A and D are narrowed; they carry into marketing claims 3 and 5.
 
 ## What the validation caught before the real runs
 
@@ -100,7 +102,7 @@ Decision (Joab): apply the rule as written, so technical claims 1 and 4 are narr
 
 ## Judge fact-flag audit (human, not blind)
 
-- I checked every invented-fact flag the judge raised on the 24 re-graded outputs (38 distinct claims across 16 outputs) against the source facts: **38 of 38 real**, 0 borderline, 0 wrong.
+- I checked every invented-claim flag the judge raised on the 24 re-graded outputs (38 distinct claims across 16 outputs) against the source facts: **38 of 38 real**, 0 borderline, 0 wrong.
 - Flags found by only 1 or 2 of the 3 judge passes were as reliable as those found by all 3 (9/9 vs 29/29), so the "any pass" gate rule stands. No output changes usable status.
 - Why my blind facts scores were high: I hadn't studied the source files, so unsupported comparisons read as plausible. That is how fabrications slip through a busy marketing review, and it's the case for automated fact-checking against sources.
 - Even with the confirmed fact cap applied to my blind scores, agreement on totals stays at 9/24: I penalized the same flaws again under ready/reader/format (I'm then 2.4 points stricter than the judge).
