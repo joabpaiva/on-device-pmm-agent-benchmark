@@ -2,7 +2,7 @@
 
 *Joab Paiva · running record of results, observations and decisions, written as they happen.*
 
-Status: **All runs complete and graded (72 measured runs + 6 Wi-Fi-off runs).** Human re-grade of T4 and T6 pending.
+Status: **Complete.** 72 measured runs + 6 Wi-Fi-off runs graded; blind human re-grade and judge fact-flag audit done.
 
 ---
 
@@ -48,12 +48,12 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 ## What the data says
 
 1. **Moving the 9B model onto the laptop did not cost quality.** Laptop 17.0 vs hosted twin 15.6. The difference is within run-to-run spread, so the fair reading is "no quality loss on-device", not "local is better". Possible contributors: 8-bit local weights vs the hosted provider's precision and runtime.
-2. **The laptop model is within 10% of the frontier on 3 of 6 tasks:** T3 (15.0 vs 13.7, 109%), T4 (23.3 vs 24.3, 96%) and T6 (19.0 vs 19.7, 96%). T2 is just outside (89%). Overall 87% of frontier.
+2. **The laptop model is within 10% of the frontier on 3 of 6 tasks:** T3 (15.0 vs 13.7, 109%), T4 (23.3 vs 24.3, 96%) and T6 (19.0 vs 19.7, 96%). T2 is just outside (89%). Overall 87% of frontier. (Judge scores. My blind re-grade confirms T4 and puts T6 at 86%.)
 3. **Where the cloud wins: grounded persuasive writing.** The frontier model made about 0.6 invented claims per output vs about 3 for every open model, hosted or local. It led most on the launch blog (20.0 vs 13.3) and the email sequence (18.0 vs 12.7). It was also about 17× faster at generating text than the laptop (135 vs 8 tokens/sec; the hosted 9B was about 8× faster) and more consistent (spread 3.1 vs 5.8).
 4. **Trust and agent mechanics are a tie across all four.** Every configuration declined the unanswerable Q5 in every run and built the T6 table perfectly (24/24 cells, 3/3 gaps). The laptop had zero tool errors; the hosted 9B had 2 of 22.
 5. **Cost:** laptop about $0.000045 per task in electricity, about 22× cheaper than the hosted 9B and about 1,100× cheaper than the frontier ($0.050). Hardware is excluded and shown separately.
 6. **Privacy:** no connection left the laptop in any of the 18 measured runs, and all 6 tasks completed with Wi-Fi off.
-7. **Size helps:** 27B vs 9B +2.1 points, closing 55% of the 9B-to-frontier gap; biggest on T6 (+5.4) and T5 (+4.0).
+7. **Size helps:** 27B vs 9B +2.1 points, closing 55% of the 9B-to-frontier gap; biggest on T6 (+5.4) and T5 (+4.0). (Judge scores; my blind re-grade shows no T6 lift.)
 8. **Speed on a fanless laptop:** about 5× slower end to end (72 vs 15 s per task). Generation speed 8.3 tokens/sec in the first four runs vs 7.7 in the last four; round averages identical at 8.1. Chip power fell from about 8 W in round 1 to about 4.4 W afterwards with no change in speed; reported as observed, cause not determined.
 9. **The 9B's weak spot is consistency.** Both the hosted and the laptop 9B wrote only part of the T5 sequence once (the hosted run stopped after its plan and "Email 1"; the laptop run wrote one email of three). Largest run-to-run spread of all configurations.
 10. **The frontier model thinks even with reasoning off.** Claude Sonnet 5.5 reasons adaptively and OpenRouter does not fully switch that off: about 850 visible vs about 7,900 billed tokens on T1. The open models ran with thinking off. Kept and disclosed: the frontier baseline represents cloud quality as customers actually get it.
@@ -61,17 +61,17 @@ Quality is the judge's score out of 25 (mean of 3 blind passes), median of 3 run
 12. **Usable outputs are rare everywhere** because one invented fact makes an output unusable. Requiring 2 of 3 judge passes instead would change only two Phase 1 outputs, so the rule set before the runs stands.
 13. **Offline T6 took 259 s** because the agent took a longer path (wrote the file before reading the inputs, then rewrote it: 7 tool calls vs 5); still 24/24.
 
-## Claim status (bars set before the runs)
+## Claim status (bars set before the runs; published only where judge and human agree)
 
 | # | Claim | Bar | Result |
 |---|---|---|---|
-| 1 | Laptop model within 10% of frontier on everyday tasks | Within 10% on 3+ tasks | **Met:** 3 tasks (T3, T4, T6) |
+| 1 | Laptop model within 10% of frontier on everyday tasks | Within 10% on 3+ tasks | **Partly met:** T3 and T4 within 10%; T6 within 15% (judge 96%, my re-grade 86%) |
 | 2 | Nothing leaves the laptop; works offline | No outside connections; offline completes | **Met:** none in 18 runs; 6/6 offline |
 | 3 | On-device cost per task vs cloud | Measured on all runs | **Met:** $0.000045 vs $0.0010 / $0.050 |
-| 4 | Workstation-class memory (27B) lifts quality | Gain of 2+ points | **Met:** +2.1, closes 55% of the gap |
+| 4 | Workstation-class memory (27B) lifts quality | Gain of 2+ points | **Met per judge (+2.1, closes 55% of the gap); my T6 re-grade shows no lift, so stated as judge-measured** |
 | 5 | Laptop model declines to guess | 3 of 3 runs | **Met:** 3 of 3 |
 
-Pending: judge vs human agreement from the T4/T6 re-grade.
+Decision (Joab): apply the rule as written, so Claims 1 and 4 are narrowed in the deck and report.
 
 ## What the validation caught before the real runs
 
@@ -97,4 +97,4 @@ Pending: judge vs human agreement from the T4/T6 re-grade.
 
 ## Open items
 
-- Human re-grade of T4 and T6 (24 outputs in `results/regrade/`) to measure judge agreement.
+- Demo video.

@@ -15,12 +15,12 @@ I built one product marketing agent in Hermes Agent (Nous Research) and ran the 
 - Claude Sonnet 5.5 (frontier cloud)
 - Qwen3.5-9B running on my own fanless MacBook Air
 
-A blind judge from a different model family graded every output. Rule-based checks and my own re-grade back it up.
+A blind judge from a different model family graded every output. Rule-based checks back it up, and I checked the judge myself: a blind re-grade of two tasks, then an audit of every claim it called invented (38 of 38 confirmed).
 
 **What I found**
 
 - **Moving the 9B model from the cloud onto the laptop cost no measurable quality:** 17.0 vs 15.6 out of 25, within run-to-run spread.
-- **The laptop is close to the frontier on grounded work.** It came within 10% of the frontier on 3 of 6 tasks (customer FAQ, executive summary, competitive spec matrix), and 87% of frontier quality overall.
+- **The laptop is close to the frontier on grounded work.** It came within 10% of the frontier on the customer FAQ and the executive summary, and within 15% on the competitive spec matrix; 87% of frontier quality overall.
 - **The laptop cost about $0.00005 per task in electricity,** vs $0.001 hosted and $0.05 on the frontier model.
 - **Nothing left the device.** No connection left the laptop in 18 measured runs, and all six tasks completed with Wi-Fi off.
 - **Trust held everywhere.** Every configuration declined to answer a question its sources couldn't support, in every run.
@@ -82,7 +82,7 @@ The runs: 6 tasks × 3 runs × 4 configurations = 72 measured runs, plus 6 more 
 **Three layers of grading.**
 1. **Rule checks (no AI):** word and item counts, whether Q5 was declined, caveats kept, T6 cells against the answer key, and whether the T2 rumor was repeated.
 2. **AI judge:** GPT-6 Sol, from a different company than every contestant. It receives the rubric, the task, the sources, the answer-key notes and the agent's full output (reply plus any files written). It never sees which agent wrote the output. Outputs are shuffled, and each is graded three times at temperature 0; scores are averaged.
-3. **Human check:** I re-graded all T4 and T6 outputs blind, on the same rubric.
+3. **Human check:** I re-graded all T4 and T6 outputs blind, on the same rubric, then checked every invented-fact flag the judge raised on them against the sources. Results are in section 4.
 
 **Rubric.** Five criteria scored 1–5 each (25 max): facts, completeness, fit for the reader, ready to ship, and format.
 
@@ -138,10 +138,27 @@ Quality is the median of 3 runs out of 25, with the spread across runs in bracke
 **Reading the results**
 - **Invented claims are the real differentiator, not writing quality.** Open models average about 3 per output; the frontier about 0.6. Typical inventions are plausible benefits the source never states, such as "reduces bandwidth costs" or "protects your investment". Another common one is dropping a qualifier: "runs 30B models" without "with 64 GB or more".
 - **Trust and agent mechanics are a tie.** Every configuration declined Q5 in every run and built the T6 table perfectly.
-- **Size helps, mostly on complex tasks.** 27B vs 9B adds 2.1 points and closes 55% of the gap to the frontier. The biggest gains are on T6 (+5.4) and T5 (+4.0).
+- **Size helps, per the judge.** 27B vs 9B adds 2.1 points and closes 55% of the gap to the frontier, with the biggest gains on T6 (+5.4) and T5 (+4.0). My blind re-grade did not reproduce the T6 gain, so I state this as judge-measured.
 - **Usable outputs are rare everywhere** because one invented fact disqualifies an output. A looser rule (2 of 3 judge passes must flag) would change only two outputs, so the rule set before the runs stands.
 - **T3 is hard for every model.** The prompt asks for every test condition within 250 words, and the judge docks all models equally for omitted test details.
 - **The 9B's weak spot is consistency.** Both 9B versions once wrote only part of the T5 sequence.
+
+### Checking the judge
+
+I re-graded the two tasks with answer keys (T4 and T6, 24 outputs) blind, then checked every claim the judge called invented on those outputs against the source facts.
+
+| Check | Result |
+|---|---|
+| Blind re-grade, totals | 9 of 24 outputs (38%) within 2 points of 25; mean gap 3.3 |
+| Who is stricter? | Me, by 0.7 points on average: the judge is not lenient |
+| Same best and worst? | Yes: frontier best (22.8 me, 21.9 judge); hosted 9B worst (16.0, 18.7) |
+| Judge's invented-fact flags | 38 of 38 confirmed real |
+| Flags found by only 1–2 of 3 passes | 9 of 9 confirmed, so the "any pass" gate stands |
+| Where we split | T6, laptop vs frontier: 86% by hand vs 96% judge. T6, 27B vs hosted 9B: no lift by hand vs +5.4 judge |
+
+**What it means.** The judge's fact-checking held up completely. On my blind pass I read for tone and polish and did not check every comparison against the spec files, so lines like "fastest connectivity" (no file gives port speeds) looked plausible to me. That is how fabrications slip through a busy marketing review, and it is the case for automated fact checks before anything ships. Where we differed in judgment, on T6, I narrowed the claims (section 6).
+
+Two smaller differences: on T6 I saw only the saved table, while the judge also saw each agent's reply and docked replies that added commentary; and the T6 answer key listed "most storage" as supported although Summit's storage is not stated (the judge applied the strict reading; the key is kept as used so the grading reproduces).
 
 ## 5. On-device reality check (Phase 2)
 
@@ -169,12 +186,12 @@ Quality is the median of 3 runs out of 25, with the spread across runs in bracke
 
 ### Proof-point claims
 
-Each claim had a bar set before the runs; all five cleared it.
+Each claim had a bar set before the runs, and a rule: a claim is published only where the judge and my re-grade agree. Three cleared the bar outright; two are narrowed.
 
-1. **Close to the cloud on grounded work.** A 9B model on a fanless laptop scored within 10% of a frontier cloud model on 3 of 6 marketing tasks: answering customer FAQs, summarizing a technical paper, and building a competitive spec matrix. *Data: quality scoreboard, 3 runs × 3 blind judge passes.*
+1. **Close to the cloud on grounded work.** A 9B model on a fanless laptop scored within 10% of a frontier cloud model on answering customer FAQs and summarizing a technical paper, and within 15% on building a competitive spec matrix. *Data: quality scoreboard, 3 runs × 3 blind judge passes; my blind re-grade of T4 and T6. Bar (3 tasks within 10%): partly met. The judge had T6 at 96%; my re-grade at 86%.*
 2. **Nothing leaves the device.** Across 18 on-device runs, no connection left the laptop, and all six tasks completed with Wi-Fi off. *Data: per-second connection log; Wi-Fi-off rerun.*
 3. **A fraction of a cent.** On the laptop, a marketing task cost about $0.00005 in electricity, vs $0.001 on a hosted 9B model and $0.05 on a frontier cloud model. *Data: measured energy × $0.403/kWh; token counts × list price.*
-4. **Memory buys quality.** Stepping up from a 9B to a 27B model, the size that needs workstation-class memory, added 2.1 points and closed 55% of the gap to the frontier. *Data: pmm-a vs pmm-b, same model generation (hosted proxy).*
+4. **Memory buys quality, per the judge.** Stepping up from a 9B to a 27B model, the size that needs workstation-class memory, added 2.1 points in the judge's scores and closed 55% of the gap to the frontier. *Data: pmm-a vs pmm-b, same model generation (hosted proxy). My blind re-grade did not reproduce the gain on T6, so this is stated as judge-measured.*
 5. **It knows what it doesn't know.** When the answer wasn't in the source, the laptop model declined to guess in 3 of 3 runs, the same as the frontier model. *Data: T4 Q5 outputs and rule check.*
 
 ### Where the cloud beats local, stated honestly
@@ -184,17 +201,17 @@ Each claim had a bar set before the runs; all five cleared it.
 - **Speed:** 135 vs 8 tokens/sec; 25 vs 72 seconds per task.
 - **Consistency:** run-to-run spread 3.1 vs 5.8.
 
-Where I expected the cloud to win and it didn't: the agentic spec matrix (T6) was a tie, 19.7 vs 19.0.
+Where I expected the cloud to win and it didn't: the agent mechanics on T6. All four configurations built the table perfectly. On the writing around the table, the judge saw a tie (19.7 vs 19.0) and my re-grade favored the cloud.
 
 ### When should you run AI on your PC?
 
-Run AI on your PC for everyday work grounded in your own documents: answering from product docs, summarizing reports, building comparison tables. There, a 9B model on a fanless laptop came within 10% of a frontier cloud model, for about $0.00005 a task, with every prompt kept on the device. Use the cloud for customer-facing persuasive copy, where the frontier model made 5× fewer unsupported claims. The winning setup is hybrid: local by default, cloud and a human check before anything ships.
+Run AI on your PC for everyday work grounded in your own documents: answering from product docs, summarizing reports, building comparison tables. There, a 9B model on a fanless laptop came within 10% of a frontier cloud model on docs and summaries, and within 15% on tables, for about $0.00005 a task, with every prompt kept on the device. Use the cloud for customer-facing persuasive copy, where the frontier model made 5× fewer unsupported claims. The winning setup is hybrid: local by default, cloud and a human check before anything ships.
 
 ## 7. Limitations and caveats
 
 - **Inputs:** fictional products written for this test, not real HP or competitor data.
 - **Sample size:** 3 runs per task show a pattern, not a statistical rate.
-- **Judge:** quality is graded by an AI. I mitigated that with blind, cross-family grading, three passes per output, and my own re-grade of T4 and T6.
+- **Judge:** quality is graded by an AI, blind, cross-family, three passes per output. I confirmed all 38 of its fact flags on T4 and T6, but my blind totals matched it within 2 points on only 38% of those outputs.
 - **Prices:** OpenRouter list prices on run day. OpenRouter may route a model to different providers.
 - **Precision:** the hosted model runs at the provider's precision and the local one at 8-bit. The laptop-vs-hosted quality difference is within spread and is not a claim that local is better.
 - **The laptop is a floor.** A fanless consumer laptop is not a workstation; more memory and active cooling raise the ceiling.
